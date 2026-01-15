@@ -1,11 +1,13 @@
 import './App.css'
-import Container from '@/components/layout/container/Container'
+import Containerreview from './components/layout/containerreview/Containerreview'
 
 function App() {
 
   return (
-    <div className='bg-fondo min-h-screen max-w-screen'>
-      <Container />
+    <div className='bg-fondo bg-none min-h-screen max-w-screen'>
+      {/* Contenedor sólido que cubra posibles patrones */}
+
+      <Containerreview />
     </div>
   )
 }

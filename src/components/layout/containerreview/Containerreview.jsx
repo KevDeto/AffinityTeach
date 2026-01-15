@@ -1,0 +1,56 @@
+import React from 'react';
+import { CircleUserRound, UserRound } from 'lucide-react'
+import Startrating from './startrating';
+import Cardreview from '../cardreview/Cardreview';
+import FilterCombobox from '@/components/ui/filtercombobox/Filtercombobox';
+import Buttonreview from '@/components/ui/buttonreview/Buttonreview';
+
+const Containerreview = () => {
+
+    return (
+        <main className="w-200 min-h-full bg-fondo border-2 
+            border-dashed border-y-transparent border-bordes
+            m-auto text-white p-4">
+            <div className="relative flex justify-center p-3 mt-4">
+                <h1 className="text-3xl font-semibold">AffinityTeach</h1>
+                <CircleUserRound
+                    strokeWidth={1}
+                    size={48}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
+                />
+            </div>
+            <div className="w-175 flex justify-start m-auto mt-10 items-center gap-4 mb-6 px-1.5">
+                <div className="w-17 h-17 rounded-full bg-gray-600 flex justify-center 
+                        items-center">
+                    <UserRound size={32} />
+                </div>
+                <div>
+                    <h2 className="text-[18px]">docente</h2>
+                </div>
+            </div>
+            <div className="w-175 flex-col justify-center m-auto mt-6">
+                <Startrating />
+                <div className='flex justify-between align-middle'>
+                    <FilterCombobox />
+                    <Buttonreview />
+                </div>
+                <div className="w-180">
+                    <div className="max-h-[calc(100vh-510px)] overflow-y-auto 
+                        [&::-webkit-scrollbar]:w-2
+                        [&::-webkit-scrollbar-track]:bg-transparent
+                         [&::-webkit-scrollbar-thumb]:bg-bordes
+                        [&::-webkit-scrollbar-thumb]:rounded-full
+                         [&::-webkit-scrollbar-thumb]:hover:bg-gray-500
+                         [&::-webkit-scrollbar-thumb]:cursor-pointer
+                        mt-6">
+                        <div className="pr-3">
+                            <Cardreview />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    );
+}
+
+export default Containerreview;
