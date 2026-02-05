@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Loader2, LogIn, LogOut, UserRound } from 'lucide-react'
-import Startrating from './startrating';
+import Startrating from './Startrating';
 import Cardreview from '../cardreview/Cardreview';
 import FilterCombobox from '@/components/ui/filtercombobox/Filtercombobox';
 import Buttonreview from '@/components/ui/buttonreview/Buttonreview';
