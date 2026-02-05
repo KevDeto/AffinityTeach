@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { Search, X } from "lucide-react";
 
-const SearchBar = () => {
-    const [value, setValue] = useState("");
+const SearchBar = ({ value = "", onChange }) => {
 
     const handleChange = (e) => {
-        setValue(e.target.value);
-        if (props.onChange) {
-            props.onChange(e);
+        if (onChange) {
+            onChange(e);
         }
+    };
+
+    const handleClear = () => {
+        onChange({ target: { value: '' } });
     };
 
     return (
@@ -18,6 +20,7 @@ const SearchBar = () => {
                 className="w-full h-13 px-4
                      bg-campo grid grid-cols-[auto_1fr_auto] items-center gap-3
                      rounded-sm border border-bordes"
+                onSubmit={(e) => e.preventDefault()}
             >
                 <Search
                     className="col-start-1 cursor-pointer mr-1"
@@ -42,7 +45,7 @@ const SearchBar = () => {
                             size={28}
                             strokeWidth={1.3}
                             color="white"
-                            onClick={() => setValue("")}
+                            onClick={handleClear}
                             className="cursor-pointer"
                         />
                     </button>

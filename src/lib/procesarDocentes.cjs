@@ -1,6 +1,6 @@
-//este codigo me lo dio la IA para filtrar mas rapido 
-// main.js
+// procesador-docentes.js
 const XLSX = require('xlsx');
+const fs = require('fs');
 
 /**
  * Capitaliza un string (primera letra de cada palabra en mayúscula)
@@ -33,7 +33,7 @@ function separarDocentes(docentesStr) {
 }
 
 /**
- * Elimina duplicados exactos (mismo docente y mismas materias)
+ * Elimina duplicados exactos (mismo nombre y mismas materias)
  * @param {Array} docentes - Array de objetos docente
  * @returns {Array} Array sin duplicados
  */
@@ -41,9 +41,9 @@ function eliminarDuplicadosExactos(docentes) {
     const unicos = new Map();
     
     docentes.forEach(docente => {
-        // Crear una clave única basada en docente y materias ordenadas
+        // Crear una clave única basada en nombre y materias ordenadas
         const materiasOrdenadas = [...docente.materias].sort().join('|');
-        const clave = `${docente.docente}|${materiasOrdenadas}`;
+        const clave = `${docente.nombre}|${materiasOrdenadas}`;
         
         if (!unicos.has(clave)) {
             unicos.set(clave, docente);
@@ -71,9 +71,6 @@ function procesarExcelDocentes(filePath) {
         // Objeto para agrupar docentes y sus materias
         const docentesMap = new Map();
         
-        // Contador para IDs
-        let idCounter = 1;
-        
         // Procesar cada fila del Excel
         datos.forEach((row, index) => {
             const actividad = capitalizeString(row['actividad'] || row['Actividad'] || '');
@@ -87,23 +84,19 @@ function procesarExcelDocentes(filePath) {
             
             // Procesar cada docente individualmente
             docentesIndividuales.forEach(docenteNombre => {
-                const docenteCapitalizado = capitalizeString(docenteNombre);
+                const nombreCapitalizado = capitalizeString(docenteNombre);
                 
                 // Si es la primera vez que vemos a este docente, inicializarlo
-                if (!docentesMap.has(docenteCapitalizado)) {
-                    docentesMap.set(docenteCapitalizado, {
-                        id: idCounter++,
-                        docente: docenteCapitalizado,
-                        materias: [],
-                        puntaje: 0,
-                        cantReseñas: 0,
-                        reseñas: []
+                if (!docentesMap.has(nombreCapitalizado)) {
+                    docentesMap.set(nombreCapitalizado, {
+                        nombre: nombreCapitalizado,
+                        materias: []
                     });
                 }
                 
                 // Agregar la materia si existe y no está ya en la lista
-                if (actividad && !docentesMap.get(docenteCapitalizado).materias.includes(actividad)) {
-                    docentesMap.get(docenteCapitalizado).materias.push(actividad);
+                if (actividad && !docentesMap.get(nombreCapitalizado).materias.includes(actividad)) {
+                    docentesMap.get(nombreCapitalizado).materias.push(actividad);
                 }
             });
         });
@@ -114,11 +107,8 @@ function procesarExcelDocentes(filePath) {
         // Eliminar duplicados exactos (por si acaso)
         resultado = eliminarDuplicadosExactos(resultado);
         
-        // Reasignar IDs en orden
-        resultado = resultado.map((docente, index) => ({
-            ...docente,
-            id: index + 1
-        }));
+        // Ordenar alfabéticamente por nombre
+        resultado.sort((a, b) => a.nombre.localeCompare(b.nombre));
         
         return resultado;
         
@@ -135,7 +125,6 @@ function procesarExcelDocentes(filePath) {
  */
 function guardarJSON(datos, outputPath) {
     try {
-        const fs = require('fs');
         const jsonString = JSON.stringify(datos, null, 2);
         fs.writeFileSync(outputPath, jsonString, 'utf8');
         console.log(`✅ Datos guardados exitosamente en: ${outputPath}`);
@@ -146,22 +135,67 @@ function guardarJSON(datos, outputPath) {
 }
 
 /**
+ * Guarda los datos en formato JSON simple para POST al backend
+ * @param {Array} datos - Datos a guardar
+ * @param {string} outputPath - Ruta del archivo de salida
+ */
+function guardarJSONParaBackend(datos, outputPath) {
+    try {
+        // Formato específico para enviar al backend
+        const docentesFormatoBackend = datos.map(docente => ({
+            nombre: docente.nombre,
+            especialidad: docente.materias.join(', ') // Unir materias en string
+        }));
+        
+        const jsonString = JSON.stringify(docentesFormatoBackend, null, 2);
+        fs.writeFileSync(outputPath, jsonString, 'utf8');
+        console.log(`✅ JSON para backend guardado en: ${outputPath}`);
+        console.log(`📊 Listo para enviar al endpoint POST`);
+    } catch (error) {
+        console.error('Error al guardar el JSON para backend:', error);
+    }
+}
+
+/**
+ * Guarda los datos en formato array puro para bulk insert
+ * @param {Array} datos - Datos a guardar
+ * @param {string} outputPath - Ruta del archivo de salida
+ */
+function guardarJSONBulkArray(datos, outputPath) {
+    try {
+        // Formato array puro para bulk insert
+        const bulkArray = datos.map(docente => ({
+            nombre: docente.nombre,
+            materias: docente.materias // Mantener como array si el backend lo acepta
+        }));
+        
+        const jsonString = JSON.stringify(bulkArray, null, 2);
+        fs.writeFileSync(outputPath, jsonString, 'utf8');
+        console.log(`✅ JSON array para bulk insert guardado en: ${outputPath}`);
+    } catch (error) {
+        console.error('Error al guardar el JSON bulk array:', error);
+    }
+}
+
+/**
  * Función principal
  */
 function main() {
-    console.log('=== PROCESADOR DE EXCEL A JSON ===\n');
+    console.log('=== PROCESADOR DE EXCEL A JSON (Versión Simplificada) ===\n');
     
     // Configuración
     const archivoExcel = './materiasydocentes.xlsx';
-    const archivoSalida = './docentes.json';
+    const archivoSalidaJSON = './docentes-simplificado.json';
+    const archivoParaBackend = './docentes-para-backend.json';
+    const archivoBulkArray = './docentes-bulk-array.json';
     
     console.log(`📂 Procesando archivo: ${archivoExcel}`);
     
     // Verificar si el archivo existe
-    const fs = require('fs');
     if (!fs.existsSync(archivoExcel)) {
         console.error(`❌ Error: No se encuentra el archivo "${archivoExcel}"`);
         console.log('Por favor verifica que el archivo esté en la misma carpeta.');
+        console.log('Puedes cambiar el nombre en la variable "archivoExcel" (línea 136)');
         return;
     }
     
@@ -169,21 +203,31 @@ function main() {
     const datosProcesados = procesarExcelDocentes(archivoExcel);
     
     if (datosProcesados.length > 0) {
-        // Guardar en JSON
-        guardarJSON(datosProcesados, archivoSalida);
+        // 1. Guardar JSON simplificado (solo nombre y materias)
+        guardarJSON(datosProcesados, archivoSalidaJSON);
+        
+        // 2. Guardar formato para enviar al backend
+        guardarJSONParaBackend(datosProcesados, archivoParaBackend);
+        
+        // 3. Guardar como array para bulk insert
+        guardarJSONBulkArray(datosProcesados, archivoBulkArray);
         
         // Mostrar resumen
         console.log('\n📋 RESUMEN DE DOCENTES PROCESADOS:');
-        console.log('─'.repeat(60));
+        console.log('─'.repeat(70));
         
-        // Ordenar alfabéticamente por nombre de docente
-        datosProcesados.sort((a, b) => a.docente.localeCompare(b.docente));
-        
-        datosProcesados.forEach(docente => {
-            console.log(`ID: ${docente.id.toString().padEnd(4)} | Docente: ${docente.docente.padEnd(40)} | Materias: ${docente.materias.length}`);
+        datosProcesados.slice(0, 10).forEach((docente, index) => {
+            console.log(`${(index + 1).toString().padEnd(3)} | Nombre: ${docente.nombre.padEnd(40)} | Materias: ${docente.materias.length}`);
+            if (docente.materias.length > 0) {
+                console.log(`     Materias: ${docente.materias.slice(0, 3).join(', ')}${docente.materias.length > 3 ? '...' : ''}`);
+            }
         });
         
-        console.log('─'.repeat(60));
+        if (datosProcesados.length > 10) {
+            console.log(`     ... y ${datosProcesados.length - 10} docentes más`);
+        }
+        
+        console.log('─'.repeat(70));
         
         // Mostrar estadísticas
         console.log('\n📈 ESTADÍSTICAS:');
@@ -194,13 +238,22 @@ function main() {
         console.log(`• Total de materias asignadas: ${totalMaterias}`);
         console.log(`• Promedio de materias por docente: ${promedioMaterias}`);
         
-        // Mostrar algunos ejemplos
-        console.log('\n👨‍🏫 EJEMPLOS DE DOCENTES PROCESADOS:');
-        const ejemplos = datosProcesados.slice(0, 3);
-        ejemplos.forEach(docente => {
-            console.log(`\nDocente: ${docente.docente}`);
-            console.log(`Materias: ${docente.materias.join(', ')}`);
-        });
+        // Mostrar archivos generados
+        console.log('\n📁 ARCHIVOS GENERADOS:');
+        console.log(`1. ${archivoSalidaJSON} - JSON con estructura completa`);
+        console.log(`2. ${archivoParaBackend} - JSON listo para enviar al backend (POST)`);
+        console.log(`3. ${archivoBulkArray} - JSON como array para bulk insert`);
+        
+        console.log('\n📤 CÓMO USAR LOS ARCHIVOS:');
+        console.log('Para enviar a tu backend:');
+        console.log('1. Abre Postman');
+        console.log('2. Método: POST');
+        console.log('3. URL: http://tu-backend.com/api/docentes');
+        console.log('4. Body → raw → JSON');
+        console.log('5. Copia el contenido de docentes-para-backend.json');
+        console.log('\nO para bulk insert:');
+        console.log('1. Copia el contenido de docentes-bulk-array.json');
+        console.log('2. Envía como array puro al endpoint bulk');
         
     } else {
         console.log('⚠️ No se encontraron datos para procesar.');
@@ -216,6 +269,8 @@ if (require.main === module) {
 module.exports = {
     procesarExcelDocentes,
     guardarJSON,
+    guardarJSONParaBackend,
+    guardarJSONBulkArray,
     capitalizeString,
     separarDocentes,
     eliminarDuplicadosExactos

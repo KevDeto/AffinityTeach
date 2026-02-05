@@ -1,15 +1,23 @@
 import React, { useState } from "react";
 import { ChevronDown, Filter } from "lucide-react";
-import Buttonreview from "../buttonreview/Buttonreview";
 
-const FilterCombobox = () => {
+const FilterCombobox = ({ onChange, value }) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [selected, setSelected] = useState("highest");
+    const [selected, setSelected] = useState(value || "highest");
 
     const options = [
         { value: "highest", label: "Puntaje más alto" },
         { value: "lowest", label: "Puntaje más bajo" },
     ];
+
+    const handleOptionClick = (optionValue) => {
+        setSelected(optionValue);
+        setIsOpen(false);
+        // Llamar a la función onChange del padre
+        if (onChange) {
+            onChange(optionValue);
+        }
+    };
 
     return (
         <div className="relative inline-block">
@@ -36,11 +44,7 @@ const FilterCombobox = () => {
                             <button
                                 key={option.value}
                                 type="button"
-                                onClick={() => {
-                                    setSelected(option.value);
-                                    setIsOpen(false);
-                                    // funcion de filtrado
-                                }}
+                                onClick={() => handleOptionClick(option.value)}
                                 className={`w-full text-left px-4 py-3 text-sm transition-colors 
                                             duration-150 flex items-center justify-between cursor-pointer
                                             ${selected === option.value
