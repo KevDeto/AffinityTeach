@@ -1,0 +1,4606 @@
+[
+  {
+    "nombre": "Abal Silvana Daniela",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Aban Marcela Gabriela",
+    "materias": [
+      "Lógica Y Teoría De Números",
+      "Taller Inicial Obligatorio Del Área De Matemática"
+    ]
+  },
+  {
+    "nombre": "Abramovich Ana Luz",
+    "materias": [
+      "Laboratorio Interdisciplinario (redes Sociales Y Condiciones De Vida: Las Organizaciones Soc. En Accion)"
+    ]
+  },
+  {
+    "nombre": "Acevedo Sosa Maria Elisa",
+    "materias": [
+      "Filosofía Antigua Y Medieval",
+      "Problemas De Filosofía"
+    ]
+  },
+  {
+    "nombre": "Acosta Esteban Fernando",
+    "materias": [
+      "Estadística Aplicada (ingenierías)",
+      "Sistemas E Informática Industrial",
+      "Taller De Introducción A La Ingeniería"
+    ]
+  },
+  {
+    "nombre": "Acosta Felicitas",
+    "materias": [
+      "Problemática Educativa",
+      "Seminario De Educación Comparada"
+    ]
+  },
+  {
+    "nombre": "Adelstein Andreína",
+    "materias": [
+      "Seminario De Investigación En Lingüística Y Literatura:teoria Del Lexico Y Lexicografia"
+    ]
+  },
+  {
+    "nombre": "Agoff Sergio",
+    "materias": [
+      "Diseño De Estructuras Y Procesos En El Sector Público",
+      "Taller De Práctica Pre-profesional (administración pública)"
+    ]
+  },
+  {
+    "nombre": "Agotegaray Juan Carlos",
+    "materias": [
+      "Instrumentación Y Comunicaciones Industriales",
+      "Máquinas Eléctricas"
+    ]
+  },
+  {
+    "nombre": "Aiello Matias",
+    "materias": [
+      "Introducción A La Física"
+    ]
+  },
+  {
+    "nombre": "Alabart Mónica",
+    "materias": [
+      "Historia Latinoamericana I"
+    ]
+  },
+  {
+    "nombre": "Alarcon Deborah Antonela",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Albarracin Paula Mariel",
+    "materias": [
+      "Lógica Y Teoría De Números"
+    ]
+  },
+  {
+    "nombre": "Alfaro Rodrigo Ezequiel",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Allami Cecilia",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Alles Gustavo Martin",
+    "materias": [
+      "Taller De Tecnología"
+    ]
+  },
+  {
+    "nombre": "Alliende Gonzalez Jorge Andres",
+    "materias": [
+      "Física Inicial",
+      "Introducción A La Física (ingeniería)"
+    ]
+  },
+  {
+    "nombre": "Almada Laura Beatriz",
+    "materias": [
+      "Organización Del Computador",
+      "Organización Del Computador I"
+    ]
+  },
+  {
+    "nombre": "Almeira Gustavo Javier",
+    "materias": [
+      "Climatología"
+    ]
+  },
+  {
+    "nombre": "Altamirano Debora Belen",
+    "materias": [
+      "Lógica Y Teoría De Números"
+    ]
+  },
+  {
+    "nombre": "Althaparro Simoni Gabriel Ignacio",
+    "materias": [
+      "Programación Ii",
+      "Sistemas Operativos Y Redes",
+      "Sistemas Operativos Y Redes I"
+    ]
+  },
+  {
+    "nombre": "Altube Lucas Ariel",
+    "materias": [
+      "Ingeniería Financiera"
+    ]
+  },
+  {
+    "nombre": "Alvarez Agustin",
+    "materias": [
+      "Probabilidad Y Estadística"
+    ]
+  },
+  {
+    "nombre": "Alvarez Andrea Karina",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Alvarez Daniel Sebastian",
+    "materias": [
+      "Ingeniería De Software",
+      "Ingeniería De Software I"
+    ]
+  },
+  {
+    "nombre": "Alvarez Guadalupe",
+    "materias": [
+      "Enseñanza De La Lengua Y La Literatura",
+      "Tecnología Educativa"
+    ]
+  },
+  {
+    "nombre": "Alvarez Marisa",
+    "materias": [
+      "Taller Inicial Obligatorio Del Área De Matemática",
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Alvarez Marta Susana",
+    "materias": [
+      "Problemática Educativa"
+    ]
+  },
+  {
+    "nombre": "Alvarez Veronica Romina",
+    "materias": [
+      "Residencia I. La Escuela: Ámbito Del Trabajo Docente"
+    ]
+  },
+  {
+    "nombre": "Alvez Fatima Marisa",
+    "materias": [
+      "Historia Contemporánea De Europa"
+    ]
+  },
+  {
+    "nombre": "Amaya Myriam Anabella",
+    "materias": [
+      "Fenómenos De Transporte (ingeniería)",
+      "Práctica Profesional Supervisada (ingeniería Química - anual)"
+    ]
+  },
+  {
+    "nombre": "Ameghino Nadia",
+    "materias": [
+      "Estado Y Administración Pública En La Argentina",
+      "Laboratorio Interdisciplinario (temas De Generos. desigualdades, Disidencias Y Derechos)",
+      "Seminario (administración Pública)"
+    ]
+  },
+  {
+    "nombre": "Amigo Roberto Pablo",
+    "materias": [
+      "Problemas De Arte Argentino Y Latinoamericano Ii"
+    ]
+  },
+  {
+    "nombre": "Andrada Regina Mariel",
+    "materias": [
+      "Taller De Práctica Pre-profesional (administración pública)"
+    ]
+  },
+  {
+    "nombre": "Angelopulo Andres Mario",
+    "materias": [
+      "Robótica Industrial"
+    ]
+  },
+  {
+    "nombre": "Antonelli Romina Anahi",
+    "materias": [
+      "Comunicación Masiva Y Matrices Culturales",
+      "Concepciones De La Comunicación",
+      "Sociología Clásica"
+    ]
+  },
+  {
+    "nombre": "Antunez Andrea Carolina",
+    "materias": [
+      "Elementos De Cálculo"
+    ]
+  },
+  {
+    "nombre": "Anzoategui Mirtha",
+    "materias": [
+      "Teoría De La Organización"
+    ]
+  },
+  {
+    "nombre": "Aranda Bao Ignacio Nehuén",
+    "materias": [
+      "Organización Del Computador",
+      "Organización Del Computador I"
+    ]
+  },
+  {
+    "nombre": "Aranda Marcos Dario",
+    "materias": [
+      "Organización Del Computador Ii"
+    ]
+  },
+  {
+    "nombre": "Aranibar Caceres Victor Hugo",
+    "materias": [
+      "Diseño Asistido",
+      "Medios De Representación",
+      "Sistemas De Representación"
+    ]
+  },
+  {
+    "nombre": "Arce Horacio Adrián",
+    "materias": [
+      "Matemática Para Economistas Ii"
+    ]
+  },
+  {
+    "nombre": "Arellano Nicolás Alejandro",
+    "materias": [
+      "Semántica, Pragmática Y Estudios Del Texto"
+    ]
+  },
+  {
+    "nombre": "Argañaras Omar Javier",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Arias Regalia Diego Enrique",
+    "materias": [
+      "Enseñanza De La Física",
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Ariovich Ana",
+    "materias": [
+      "Estadística Aplicada A Las Ciencias Sociales",
+      "Estructura Jurídica Del Estado"
+    ]
+  },
+  {
+    "nombre": "Arroyo Gustavo Javier",
+    "materias": [
+      "Filosofía De La Ciencia"
+    ]
+  },
+  {
+    "nombre": "Arroyo Mariela",
+    "materias": [
+      "Residencia I. La Escuela: Ámbito Del Trabajo Docente",
+      "Sociología De La Educación"
+    ]
+  },
+  {
+    "nombre": "Arzeluz Adriana Fabiana",
+    "materias": [
+      "Portugués I"
+    ]
+  },
+  {
+    "nombre": "Aschieri Nestor Enrique",
+    "materias": [
+      "Cuentas Nacionales"
+    ]
+  },
+  {
+    "nombre": "Aspiroz Isabel",
+    "materias": [
+      "Física Inicial",
+      "Introducción A La Física (ingeniería)"
+    ]
+  },
+  {
+    "nombre": "Assisi Luciano Agustin",
+    "materias": [
+      "Diseño Estructural Y Procesos"
+    ]
+  },
+  {
+    "nombre": "Avila Silvana Noemí",
+    "materias": [
+      "Matemática Aplicada"
+    ]
+  },
+  {
+    "nombre": "Ayala Analia Belen",
+    "materias": [
+      "Laboratorio Interdisciplinario (redes Sociales Y Condiciones De Vida: Las Organizaciones Soc. En Accion)"
+    ]
+  },
+  {
+    "nombre": "Ayala Rodrigo Emmanuel",
+    "materias": [
+      "Costos Industriales"
+    ]
+  },
+  {
+    "nombre": "Baeza Gaston Eduardo",
+    "materias": [
+      "Electrónica I"
+    ]
+  },
+  {
+    "nombre": "Bagnes Patricia Andrea",
+    "materias": [
+      "Introducción A La Programación",
+      "Programación Iii"
+    ]
+  },
+  {
+    "nombre": "Baldini Guido Joaquin",
+    "materias": [
+      "Programación I"
+    ]
+  },
+  {
+    "nombre": "Ballester Guadalupe Anahi",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Humanas"
+    ]
+  },
+  {
+    "nombre": "Barberis Braian Nahuel",
+    "materias": [
+      "Química General"
+    ]
+  },
+  {
+    "nombre": "Barbero Vanina",
+    "materias": [
+      "Inglés Académico Profesional Iii",
+      "Inglés Con Propósitos Específicos Iii",
+      "Inglés Con Propósitos Específicos V Economía"
+    ]
+  },
+  {
+    "nombre": "Barletta Florencia",
+    "materias": [
+      "Organización De La Producción E Innovación",
+      "Teoría De La Innovación Y Del Cambio Tecnológico"
+    ]
+  },
+  {
+    "nombre": "Barreto Roberto Antonio",
+    "materias": [
+      "Física Ii",
+      "Física Ii (ingenierías)"
+    ]
+  },
+  {
+    "nombre": "Barreto Romina Isabel",
+    "materias": [
+      "Matemática Para Economistas I"
+    ]
+  },
+  {
+    "nombre": "Barrientos Maria Belen",
+    "materias": [
+      "Algebra Lineal",
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Barrigas Buelvas Nelson Javier",
+    "materias": [
+      "Laboratorio Interdisciplinario (capacidades emprendedoras)",
+      "Laboratorio Interdisciplinario De Capacidades emprendedoras"
+    ]
+  },
+  {
+    "nombre": "Barrios Mannara Mariana",
+    "materias": [
+      "Literatura Española"
+    ]
+  },
+  {
+    "nombre": "Barros Michelle",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Barsky Andrés",
+    "materias": [
+      "Geografía Física"
+    ]
+  },
+  {
+    "nombre": "Barsotti María Soledad",
+    "materias": [
+      "Estética"
+    ]
+  },
+  {
+    "nombre": "Basack Silvana Beatriz",
+    "materias": [
+      "Química Ambiental",
+      "Química General"
+    ]
+  },
+  {
+    "nombre": "Bassa Figueredo Maria Lorena",
+    "materias": [
+      "Enseñanza De La Lengua Y La Literatura"
+    ]
+  },
+  {
+    "nombre": "Bea Edgar Alejandro",
+    "materias": [
+      "Física Inicial",
+      "Introducción A La Física (ingeniería)",
+      "Mecánica Elemental"
+    ]
+  },
+  {
+    "nombre": "Belvedere Carlos",
+    "materias": [
+      "Filosofía Contemporánea",
+      "Problemas De Filosofía"
+    ]
+  },
+  {
+    "nombre": "Ben Roberto Ignacio",
+    "materias": [
+      "Análisis Matemático"
+    ]
+  },
+  {
+    "nombre": "Benchimol Karina Veronica",
+    "materias": [
+      "Desafíos De La Profesión Docente En La Escuela secundaria Y En El Nivel Superior"
+    ]
+  },
+  {
+    "nombre": "Benech Arnold Tomas",
+    "materias": [
+      "Química Orgánica"
+    ]
+  },
+  {
+    "nombre": "Benedini Fiorella Denise",
+    "materias": [
+      "Administración De La Producción Y Mantenimiento"
+    ]
+  },
+  {
+    "nombre": "Benegas Miguel Diogenes",
+    "materias": [
+      "Logística Industrial"
+    ]
+  },
+  {
+    "nombre": "Bengochea Natalia",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Benitez Diego Hernan",
+    "materias": [
+      "Historia Argentina Contemporánea",
+      "Problemas De Historia Argentina Contemporánea"
+    ]
+  },
+  {
+    "nombre": "Benitez Gustavo Eduardo",
+    "materias": [
+      "Planeamiento Y Control Organizacional"
+    ]
+  },
+  {
+    "nombre": "Beraha Natalia",
+    "materias": [
+      "Física Inicial",
+      "Introducción A La Física",
+      "Introducción A La Física (ingeniería)"
+    ]
+  },
+  {
+    "nombre": "Berardi Spairani Adrian Pablo",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Berman Romina Laura",
+    "materias": [
+      "Teoría De La Organización"
+    ]
+  },
+  {
+    "nombre": "Berri Marina",
+    "materias": [
+      "Lenguaje, Comunicación Y Cultura"
+    ]
+  },
+  {
+    "nombre": "Bertaccini Daniel Claudio",
+    "materias": [
+      "Bases De Datos I",
+      "Gestión Y Administración De Bases De Datos",
+      "Programación Iii"
+    ]
+  },
+  {
+    "nombre": "Bertizzolo Maria Eugenia Leila",
+    "materias": [
+      "Derecho Y Legislación Profesional",
+      "Ética, Derecho Y Legislación Profesional",
+      "Informática Y Sociedad"
+    ]
+  },
+  {
+    "nombre": "Bidart Gauna Gaston Alejandro",
+    "materias": [
+      "Algebra Ii"
+    ]
+  },
+  {
+    "nombre": "Bidart Gauna Lucas Ezequiel",
+    "materias": [
+      "Introducción A La Programación",
+      "Programación I"
+    ]
+  },
+  {
+    "nombre": "Bielsa Raquel Ofelia",
+    "materias": [
+      "Gestión De Los Recursos Energéticos",
+      "Gestión De Recursos Renovables",
+      "Higiene, Seguridad Industrial Y Medio Ambiente",
+      "Higiene, Seguridad Y Protección Ambiental"
+    ]
+  },
+  {
+    "nombre": "Billan Yesica Alejandra",
+    "materias": [
+      "Enseñanza De La Historia"
+    ]
+  },
+  {
+    "nombre": "Bisso Ignacio Luis",
+    "materias": [
+      "Teoría De La Computación"
+    ]
+  },
+  {
+    "nombre": "Blanco Camila Erika",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Blanco Ilari Juan Ignacio",
+    "materias": [
+      "Etica",
+      "Filosofía Moderna"
+    ]
+  },
+  {
+    "nombre": "Blanda Alexa Daniela",
+    "materias": [
+      "Introducción A La Geografía"
+    ]
+  },
+  {
+    "nombre": "Blaum Akerman Manuela",
+    "materias": [
+      "Elementos De Álgebra Lineal"
+    ]
+  },
+  {
+    "nombre": "Blois Juan Pedro",
+    "materias": [
+      "Sociología Clásica"
+    ]
+  },
+  {
+    "nombre": "Blugerman Leopoldo Ernesto",
+    "materias": [
+      "Gestión En Economía Mixta"
+    ]
+  },
+  {
+    "nombre": "Bohrn Andrea Laura",
+    "materias": [
+      "Estudios Gramaticales"
+    ]
+  },
+  {
+    "nombre": "Boschiroli Victoria De Los Angeles",
+    "materias": [
+      "Lenguaje, Comunicación Y Cultura Escrita",
+      "Seminario De Investigación En Lingüística Y Literatura: teoria Del Lexico Y Lexicografia"
+    ]
+  },
+  {
+    "nombre": "Bottaro Lorena Fabiana",
+    "materias": [
+      "Sociología Contemporánea"
+    ]
+  },
+  {
+    "nombre": "Bottino Flavia Maria",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Bouzas Patricia",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Braga Mónica Andrea",
+    "materias": [
+      "Lógica Y Teoría De Números"
+    ]
+  },
+  {
+    "nombre": "Brandani Lucía Veronica",
+    "materias": [
+      "Adquisición E Historia De La Lengua",
+      "Lenguaje, Comunicación Y Cultura Escrita"
+    ]
+  },
+  {
+    "nombre": "Breitman Mansilla Monica",
+    "materias": [
+      "Algebra Lineal"
+    ]
+  },
+  {
+    "nombre": "Bressan Horacio Jorge",
+    "materias": [
+      "Instrumentación Y Comunicaciones Industriales"
+    ]
+  },
+  {
+    "nombre": "Bressan Raquel Valeria",
+    "materias": [
+      "Historia Argentina I"
+    ]
+  },
+  {
+    "nombre": "Bressky Daniel Alberto",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Brown Brenda",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Bruchanski Marcelos",
+    "materias": [
+      "Economía Keynesiana",
+      "Teorías Contemporáneas De La Economía Política I"
+    ]
+  },
+  {
+    "nombre": "Bustelo Rocio Andrea",
+    "materias": [
+      "Estadística Aplicada (ingenierías)",
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Cabrera Fontecilla María Ximena",
+    "materias": [
+      "Portugués I"
+    ]
+  },
+  {
+    "nombre": "Caceres Andrea Veronica",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Caceres Manuel Adrian",
+    "materias": [
+      "Programación Ii",
+      "Taller De Utilitarios"
+    ]
+  },
+  {
+    "nombre": "Cáceres Veronica Lucia",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Cafure Antonio Artemio",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Caicedo Lopez Victor Hugo",
+    "materias": [
+      "Creación Y Desarrollo De Empresas"
+    ]
+  },
+  {
+    "nombre": "Calamari Marina Laura",
+    "materias": [
+      "Diseño Estructural Y Procesos"
+    ]
+  },
+  {
+    "nombre": "Calanchi German Jacobo",
+    "materias": [
+      "Introducción A La Tecnología De Procesos",
+      "Introducción Al Equipamiento Y Procesos De Planta"
+    ]
+  },
+  {
+    "nombre": "Calderon Jonatan Ariel",
+    "materias": [
+      "Estática Y Resistencia De Materiales"
+    ]
+  },
+  {
+    "nombre": "Calderone Romina Daiana",
+    "materias": [
+      "Introducción A La Geografía"
+    ]
+  },
+  {
+    "nombre": "Calello Pablo Rodolfo",
+    "materias": [
+      "Matemática Para Economistas Ii",
+      "Matemática Para Economistas Iii"
+    ]
+  },
+  {
+    "nombre": "Calello Tomás",
+    "materias": [
+      "Teorías De La Cultura Ii"
+    ]
+  },
+  {
+    "nombre": "Caloni Nicolas",
+    "materias": [
+      "Programas De Sistemas De Información Geográfica"
+    ]
+  },
+  {
+    "nombre": "Calvo Crende Matias Sebastian",
+    "materias": [
+      "Estado, Administración Y Políticas Públicas",
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Cameli Micaela",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Cantero Javier",
+    "materias": [
+      "Planeamiento Y Control Organizacional",
+      "Planificación Y Proceso Decisorio En Las Organizaciones"
+    ]
+  },
+  {
+    "nombre": "Caponi Ruben Jose",
+    "materias": [
+      "Introducción A La Tecnología De Procesos",
+      "Introducción Al Equipamiento Y Procesos De Planta"
+    ]
+  },
+  {
+    "nombre": "Cardo Andrea Romina",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Carlos Roxana Clarisa",
+    "materias": [
+      "Sistemas De Información Contable I",
+      "Sistemas De Información Contable Ii"
+    ]
+  },
+  {
+    "nombre": "Carmona Rodrigo",
+    "materias": [
+      "Geografía Social Y Económica De América Latina",
+      "Geografía Social Y Económica De Los Espacios Mundiales"
+    ]
+  },
+  {
+    "nombre": "Carnelli Gustavo Fabian",
+    "materias": [
+      "Taller Inicial Obligatorio Del Área De Matemática"
+    ]
+  },
+  {
+    "nombre": "Carrere Fabian Fernando",
+    "materias": [
+      "Taller De Diseño Y Producción De Medios Gráficos Ii"
+    ]
+  },
+  {
+    "nombre": "Carrillo Daniel Bernardo",
+    "materias": [
+      "Programación Ii"
+    ]
+  },
+  {
+    "nombre": "Carrillo Gabriel Martin",
+    "materias": [
+      "Programación Iii"
+    ]
+  },
+  {
+    "nombre": "Carrizo Daiana Noelia",
+    "materias": [
+      "Historia De Asia"
+    ]
+  },
+  {
+    "nombre": "Carruego Ruben Modesto",
+    "materias": [
+      "Taller De Utilitarios"
+    ]
+  },
+  {
+    "nombre": "Carusela Maria Florencia",
+    "materias": [
+      "Física I"
+    ]
+  },
+  {
+    "nombre": "Casas Matias David",
+    "materias": [
+      "Ingeniería Financiera"
+    ]
+  },
+  {
+    "nombre": "Cassano Daniel",
+    "materias": [
+      "Derecho Urbanístico Y Ambiental",
+      "Política, Actores Y Legislación De La Gestión Ambiental"
+    ]
+  },
+  {
+    "nombre": "Cassetti Julia Analia",
+    "materias": [
+      "Estadística (profesorado En Matemática)"
+    ]
+  },
+  {
+    "nombre": "Castillo Benitez Bibiana Ruby",
+    "materias": [
+      "Lenguaje, Comunicación Y Cultura"
+    ]
+  },
+  {
+    "nombre": "Castillo Denisse Azucena",
+    "materias": [
+      "Matemática General"
+    ]
+  },
+  {
+    "nombre": "Castro Dolores",
+    "materias": [
+      "Elementos De Prehistoria E Historia De Oriente, Historia antigua Y Altomedieval"
+    ]
+  },
+  {
+    "nombre": "Castro Dominguez Silvana",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Castro Sabrina Elizabeth",
+    "materias": [
+      "Programación I"
+    ]
+  },
+  {
+    "nombre": "Castro Sardiña Leticia Sabrina",
+    "materias": [
+      "Cartografía, Sensores Remotos Y Sistemas De información Geográfica"
+    ]
+  },
+  {
+    "nombre": "Catalano Marina",
+    "materias": [
+      "Laboratorio Iii"
+    ]
+  },
+  {
+    "nombre": "Ceballos Graciela Noemi",
+    "materias": [
+      "Diseño Estructural Y Procesos",
+      "Laboratorio Interdisciplinario (capacidades emprendedoras)",
+      "Laboratorio Interdisciplinario De Capacidades emprendedoras"
+    ]
+  },
+  {
+    "nombre": "Cejas Nazareno Alfredo",
+    "materias": [
+      "Economía Política E Internacional"
+    ]
+  },
+  {
+    "nombre": "Cerdan Sergio Fabian",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Cesar Ruben Angel",
+    "materias": [
+      "Laboratorio Interdisciplinario (capacidades\r\nemprendedoras)",
+      "Laboratorio Interdisciplinario De Capacidades\r\nemprendedoras"
+    ]
+  },
+  {
+    "nombre": "Cesaratto Eda",
+    "materias": [
+      "Algebra Ii"
+    ]
+  },
+  {
+    "nombre": "Chacon Martín Alfredo",
+    "materias": [
+      "Geometría Ii"
+    ]
+  },
+  {
+    "nombre": "Chavez Luna Patricia Liliana",
+    "materias": [
+      "Teoría De La Organización"
+    ]
+  },
+  {
+    "nombre": "Chej Lucas Gabriel",
+    "materias": [
+      "Física Inicial",
+      "Introducción A La Física (ingeniería)"
+    ]
+  },
+  {
+    "nombre": "Chiavarino Nicolás Alejandro",
+    "materias": [
+      "Lenguaje, Comunicación Y Cultura"
+    ]
+  },
+  {
+    "nombre": "Chiliotte Claudio Ezequiel",
+    "materias": [
+      "Física Ii",
+      "Física Ii (ingenierías)",
+      "Mecánica Elemental"
+    ]
+  },
+  {
+    "nombre": "Chosco Diaz Gilda Cecilia",
+    "materias": [
+      "Teoría De La Organización"
+    ]
+  },
+  {
+    "nombre": "Chuquimango Chilon Luis Benjamin",
+    "materias": [
+      "Sistemas Operativos Y Redes Ii"
+    ]
+  },
+  {
+    "nombre": "Churio Silvera Oscar Eduardo",
+    "materias": [
+      "Química General"
+    ]
+  },
+  {
+    "nombre": "Cimolai Silvina",
+    "materias": [
+      "Psicología General"
+    ]
+  },
+  {
+    "nombre": "Cisneros Luciana Anahi",
+    "materias": [
+      "Estudios De La Literatura Moderna"
+    ]
+  },
+  {
+    "nombre": "Cisneros Pablo Enrique",
+    "materias": [
+      "Economía Neoclásica",
+      "Estadística Para Economistas"
+    ]
+  },
+  {
+    "nombre": "Codnia Jorge",
+    "materias": [
+      "Física Inicial",
+      "Introducción A La Física (ingeniería)"
+    ]
+  },
+  {
+    "nombre": "Coiro Julio Amadeo",
+    "materias": [
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Colella Viviana Jorgelina",
+    "materias": [
+      "Planificación Y Gestión Territorial"
+    ]
+  },
+  {
+    "nombre": "Conde Cristian Marcelo",
+    "materias": [
+      "Cálculo I"
+    ]
+  },
+  {
+    "nombre": "Conocheli Maria Belen",
+    "materias": [
+      "Taller Inicial Obligatorio Del Área De Matemática"
+    ]
+  },
+  {
+    "nombre": "Conti Gabriel Carlos",
+    "materias": [
+      "Ingeniería De Software Ii"
+    ]
+  },
+  {
+    "nombre": "Coppola Roxana Elizabeth",
+    "materias": [
+      "Química General"
+    ]
+  },
+  {
+    "nombre": "Coradeghini Luciana Soledad",
+    "materias": [
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Cordoba Jorge Fernando",
+    "materias": [
+      "Régimen Tributario"
+    ]
+  },
+  {
+    "nombre": "Cordoba Maria De Los Angeles",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Cordova Naranjo Jonathan Alexis",
+    "materias": [
+      "Química General"
+    ]
+  },
+  {
+    "nombre": "Corral Damián Gustavo",
+    "materias": [
+      "Sociología Política"
+    ]
+  },
+  {
+    "nombre": "Corvalán Alvaro",
+    "materias": [
+      "Taller Inicial Obligatorio Del Área De Matemática"
+    ]
+  },
+  {
+    "nombre": "Corvalan Dario Abel",
+    "materias": [
+      "Física Ii",
+      "Física Ii (ingenierías)"
+    ]
+  },
+  {
+    "nombre": "Corvalan Tatiana Marilyn",
+    "materias": [
+      "Residencia I. La Escuela: Ámbito Del Trabajo Docente"
+    ]
+  },
+  {
+    "nombre": "Costa María Ignacia",
+    "materias": [
+      "Política Social V: Análisis De Las Políticas Sociales"
+    ]
+  },
+  {
+    "nombre": "Costa Roberto Sebastian",
+    "materias": [
+      "Sistemas De Información",
+      "Teoría De La Organización"
+    ]
+  },
+  {
+    "nombre": "Costantini Franco Leon",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Cremonte Petrillo Juan Pablo",
+    "materias": [
+      "Comunicación Masiva Y Matrices Culturales",
+      "Semiótica De Los Medios Masivos"
+    ]
+  },
+  {
+    "nombre": "Crojethovic Maria",
+    "materias": [
+      "Fundamentos De La Investigación Social",
+      "Política Social Comparada"
+    ]
+  },
+  {
+    "nombre": "Cubilla Erica Elizabeth",
+    "materias": [
+      "Historia Argentina Contemporánea",
+      "Laboratorio Interdisciplinario (temas De Generos.\r\ndesigualdades, Disidencias Y Derechos)"
+    ]
+  },
+  {
+    "nombre": "Cuello Camila",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Sociales",
+      "Teoría Política Clásica"
+    ]
+  },
+  {
+    "nombre": "Cuenca Joel Ivan",
+    "materias": [
+      "Introducción A Los Estudios De La Literatura",
+      "Literatura Argentina: Teatro Y Poesía",
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Cusolito Fernando Juan",
+    "materias": [
+      "Gestión De La Calidad Y La Mejora Continua",
+      "Organización De La Producción Iii"
+    ]
+  },
+  {
+    "nombre": "D´onofrio Alejandro Gustavo",
+    "materias": [
+      "Física Inicial",
+      "Introducción A La Física (ingeniería)"
+    ]
+  },
+  {
+    "nombre": "D´urso Lucila Florencia",
+    "materias": [
+      "Política Social Iv: Actores Y Procesos Culturales De Las\r\npolíticas Sociales"
+    ]
+  },
+  {
+    "nombre": "Da Costa Tatiana Solange",
+    "materias": [
+      "Matemática General"
+    ]
+  },
+  {
+    "nombre": "Da Representaçao Natalia",
+    "materias": [
+      "Seminario De Agenda Metropolitana"
+    ]
+  },
+  {
+    "nombre": "Daniel Maria Alejandra",
+    "materias": [
+      "Química Inorgánica"
+    ]
+  },
+  {
+    "nombre": "Darmohraj Adrian",
+    "materias": [
+      "Diseño Estructural Y Procesos"
+    ]
+  },
+  {
+    "nombre": "De Argolo Benicio Elizia",
+    "materias": [
+      "Portugués Ii"
+    ]
+  },
+  {
+    "nombre": "De Vito Julian",
+    "materias": [
+      "Cartografía, Sensores Remotos Y Sistemas De\r\ninformación Geográfica"
+    ]
+  },
+  {
+    "nombre": "Deboli Alberto Fernando",
+    "materias": [
+      "Ecuaciones Diferenciales (ingenierías Y Física)",
+      "Ecuaciones Diferenciales (matemática)",
+      "Matemática General"
+    ]
+  },
+  {
+    "nombre": "Dei Gladys Marta",
+    "materias": [
+      "Inglés Lectocomprensión I",
+      "Inglés Lectocomprensión Ii"
+    ]
+  },
+  {
+    "nombre": "Del Cueto Carla Muriel",
+    "materias": [
+      "Sociología De La Cultura"
+    ]
+  },
+  {
+    "nombre": "Del Grosso Carla Anahi",
+    "materias": [
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Delcauce Jorge Gonzalo",
+    "materias": [
+      "Automatización Industrial I",
+      "Tecnología Mecánica",
+      "Tecnología Mecánica I"
+    ]
+  },
+  {
+    "nombre": "Delgadino Daiana Natalia",
+    "materias": [
+      "Lógica Y Teoría De Números"
+    ]
+  },
+  {
+    "nombre": "Dell´elicine Eleonora Ariadna",
+    "materias": [
+      "Elementos De Prehistoria E Historia De Oriente, Historia\r\nantigua Y Altomedieval"
+    ]
+  },
+  {
+    "nombre": "Demmel Gustavo Andrés",
+    "materias": [
+      "Introducción A La Física"
+    ]
+  },
+  {
+    "nombre": "Devia Darío Daniel",
+    "materias": [
+      "Análisis Matemático",
+      "Elementos De Cálculo"
+    ]
+  },
+  {
+    "nombre": "Di Franco Leonardo",
+    "materias": [
+      "Construcción Y Gestión De Bases De Datos Geográficas\r\naplicadas A Sistemas De Información Geográfica"
+    ]
+  },
+  {
+    "nombre": "Di Gesú María Gabriela",
+    "materias": [
+      "Inglés Con Propósitos Específicos Iv Ingenieria",
+      "Inglés Lectocomprensión I",
+      "Inglés Lectocomprensión Ii"
+    ]
+  },
+  {
+    "nombre": "Di Giano Leandro Andres",
+    "materias": [
+      "Laboratorio Ii"
+    ]
+  },
+  {
+    "nombre": "Di Marco Laura Cecilia",
+    "materias": [
+      "Portugués I",
+      "Portugués Ii"
+    ]
+  },
+  {
+    "nombre": "Di Vincenzo Diego Gabriel",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Diab Pabla",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Diaz Cristian Daniel",
+    "materias": [
+      "Instalaciones Electromecánicas I",
+      "Instalaciones Industriales",
+      "Instalaciones Industriales A",
+      "Instalaciones Industriales (ingeniería)",
+      "Instalaciones Industriales Para Ingeniería Química"
+    ]
+  },
+  {
+    "nombre": "Diaz Daiana Valeria",
+    "materias": [
+      "Teoría De La Organización",
+      "Tópicos De Comercialización"
+    ]
+  },
+  {
+    "nombre": "Diaz Juan Ignacio",
+    "materias": [
+      "Máquinas Hidráulicas",
+      "Mecanismos Y Elementos De Máquina",
+      "Práctica Profesional Supervisada (anual - Ingeniería\r\nelectromecánica)"
+    ]
+  },
+  {
+    "nombre": "Diaz Oscar Alfredo",
+    "materias": [
+      "Matemática Para Economistas I"
+    ]
+  },
+  {
+    "nombre": "Diaz Porres Monica",
+    "materias": [
+      "Las Bases De La Vida Y Su Evolución"
+    ]
+  },
+  {
+    "nombre": "Diaz Yamila Belen",
+    "materias": [
+      "Laboratorio Iii"
+    ]
+  },
+  {
+    "nombre": "Difalcis Micaela",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Dikenstein Hidalgo Leandro",
+    "materias": [
+      "Laboratorio De Construcción De Software",
+      "Proyecto Profesional I",
+      "Sistemas Operativos Y Redes",
+      "Sistemas Operativos Y Redes I"
+    ]
+  },
+  {
+    "nombre": "Diker Gabriela Leticia",
+    "materias": [
+      "Pedagogía",
+      "Teorías Pedagógicas"
+    ]
+  },
+  {
+    "nombre": "Dileo Estefanía Soledad",
+    "materias": [
+      "Economía Clásica"
+    ]
+  },
+  {
+    "nombre": "Dip Patricia Carina",
+    "materias": [
+      "Metafísica"
+    ]
+  },
+  {
+    "nombre": "Dobler Sandra Marcela",
+    "materias": [
+      "Inglés Académico Profesional I",
+      "Inglés Con Propósitos Específicos I",
+      "Inglés Lectocomprensión I"
+    ]
+  },
+  {
+    "nombre": "Dombroski Lucas Jordan",
+    "materias": [
+      "Planificación Y Gestión Territorial"
+    ]
+  },
+  {
+    "nombre": "Domecq Gabriela",
+    "materias": [
+      "Seminario De Lectura Y Producción Filosófica"
+    ]
+  },
+  {
+    "nombre": "Donamari Agustin Matias",
+    "materias": [
+      "Organización De La Producción",
+      "Organización De La Producción I"
+    ]
+  },
+  {
+    "nombre": "Doyle Santiago Raul",
+    "materias": [
+      "Los Organismos En Funcionamiento"
+    ]
+  },
+  {
+    "nombre": "Dragun Nahuel Ernesto",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Dratman Ezequiel",
+    "materias": [
+      "Matemática Discreta"
+    ]
+  },
+  {
+    "nombre": "Dubra Hernan Gabriel",
+    "materias": [
+      "Portugués I"
+    ]
+  },
+  {
+    "nombre": "Ducatenzeiler Genoveva",
+    "materias": [
+      "Medios De Representación",
+      "Sistemas De Representación"
+    ]
+  },
+  {
+    "nombre": "Duhalde Mariela Cecilia",
+    "materias": [
+      "Aprendizaje Escolar"
+    ]
+  },
+  {
+    "nombre": "Dvoskin Nicolas",
+    "materias": [
+      "Economía Keynesiana"
+    ]
+  },
+  {
+    "nombre": "Ebertz Ximena Aylen",
+    "materias": [
+      "Bases De Datos I",
+      "Gestión Y Administración De Bases De Datos"
+    ]
+  },
+  {
+    "nombre": "Echegoyen Raul Esteban",
+    "materias": [
+      "Ciencia De Los Materiales"
+    ]
+  },
+  {
+    "nombre": "Eiff Leonardo",
+    "materias": [
+      "Teoría Política Clásica"
+    ]
+  },
+  {
+    "nombre": "El Hasi Claudio Daniel",
+    "materias": [
+      "Electromagnetismo"
+    ]
+  },
+  {
+    "nombre": "Engemann Marcela Elvira",
+    "materias": [
+      "Inglés Lectocomprensión Iii"
+    ]
+  },
+  {
+    "nombre": "Erbes Sandra Analia",
+    "materias": [
+      "Organización De La Producción E Innovación",
+      "Teoría De La Innovación Y Del Cambio Tecnológico"
+    ]
+  },
+  {
+    "nombre": "Escobar Noelia Natalia",
+    "materias": [
+      "Lógica Y Teoría De Números"
+    ]
+  },
+  {
+    "nombre": "Espinola Maria Rocio",
+    "materias": [
+      "Organizaciones Y Comunicación"
+    ]
+  },
+  {
+    "nombre": "Esposito Fernando Fabian",
+    "materias": [
+      "Proyecto Final (anual - Ingeniería Química)"
+    ]
+  },
+  {
+    "nombre": "Espro Manuel",
+    "materias": [
+      "Economía Clásica"
+    ]
+  },
+  {
+    "nombre": "Fagnola Augusto Ismael",
+    "materias": [
+      "Procesos Industriales"
+    ]
+  },
+  {
+    "nombre": "Fagundez Laura Andrea",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Falappa Fernando",
+    "materias": [
+      "Política Social I: Política Y Cuestión Social",
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Falsetti Marcela Cristina",
+    "materias": [
+      "Geometría Ii"
+    ]
+  },
+  {
+    "nombre": "Farias Maria Laura",
+    "materias": [
+      "Dirección Estratégica",
+      "Planificación Y Proceso Decisorio En Las Organizaciones"
+    ]
+  },
+  {
+    "nombre": "Faroppa Sabrina",
+    "materias": [
+      "Inglés Académico Profesional Iii",
+      "Inglés Con Propósitos Específicos Iii",
+      "Inglés Lectocomprensión I"
+    ]
+  },
+  {
+    "nombre": "Fassio Esteban\r\nleonardo",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Fassio Esteban Leonardo",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Fau Omar Damian",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos",
+      "Sociología Contemporánea"
+    ]
+  },
+  {
+    "nombre": "Favier Mariano Sebastián",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Federico Juan Salvador",
+    "materias": [
+      "Desarrollo Y Gestión De Proyectos Emprendedores",
+      "Laboratorio Interdisciplinario (capacidades\r\nemprendedoras)",
+      "Laboratorio Interdisciplinario De Capacidades\r\nemprendedoras"
+    ]
+  },
+  {
+    "nombre": "Feld Natalia Carla",
+    "materias": [
+      "Perspectivas Y Problemas Del Urbanismo Actual"
+    ]
+  },
+  {
+    "nombre": "Felicioni Silvina Leonor",
+    "materias": [
+      "Residencia I. La Escuela: Ámbito Del Trabajo Docente"
+    ]
+  },
+  {
+    "nombre": "Fellay Gustavo Omar",
+    "materias": [
+      "Sistemas E Informática Industrial",
+      "Taller De Introducción A La Ingeniería"
+    ]
+  },
+  {
+    "nombre": "Fernandez Ana Laura",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Fernandez Ceci Santiago Ezequiel",
+    "materias": [
+      "Infraestructura Y Servicios Urbanos: Energía",
+      "Sustentabilidad Ambiental"
+    ]
+  },
+  {
+    "nombre": "Fernandez Diego Mariano",
+    "materias": [
+      "Física I"
+    ]
+  },
+  {
+    "nombre": "Fernandez Enrique Domingo",
+    "materias": [
+      "Práctica Profesional Supervisada",
+      "Sistemas De Información"
+    ]
+  },
+  {
+    "nombre": "Fernandez Leonardo Hernan",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos",
+      "Taller Inicial Orientado: Ciencias Sociales"
+    ]
+  },
+  {
+    "nombre": "Fernández Marcelo Oscar",
+    "materias": [
+      "Diseño Asistido",
+      "Medios De Representación",
+      "Sistemas De Representación"
+    ]
+  },
+  {
+    "nombre": "Fernández María Alejandra",
+    "materias": [
+      "Historia Moderna Y Contemporánea"
+    ]
+  },
+  {
+    "nombre": "Fernandez Maria Soledad",
+    "materias": [
+      "Problemática Educativa"
+    ]
+  },
+  {
+    "nombre": "Fernandez Victor Leonardo",
+    "materias": [
+      "Ecología Urbana",
+      "Geografía Urbana Y Regional"
+    ]
+  },
+  {
+    "nombre": "Ferrari Laura Daniela",
+    "materias": [
+      "Semántica, Pragmática Y Estudios Del Texto"
+    ]
+  },
+  {
+    "nombre": "Ferreyra Ana Carolina",
+    "materias": [
+      "Adolescencia Y Educación Secundaria"
+    ]
+  },
+  {
+    "nombre": "Ferreyra Maria Fernanda",
+    "materias": [
+      "Industrias Y Procesos"
+    ]
+  },
+  {
+    "nombre": "Ferreyra Monica Sandra",
+    "materias": [
+      "Artes Escénicas I"
+    ]
+  },
+  {
+    "nombre": "Ferroni Martin Federico",
+    "materias": [
+      "Metodología De La Investigación En Economía"
+    ]
+  },
+  {
+    "nombre": "Fidmay Paloma",
+    "materias": [
+      "Gestión De Recursos Humanos"
+    ]
+  },
+  {
+    "nombre": "Filipetto Sonia Marina",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Fiorentin Florencia Alejandra",
+    "materias": [
+      "Macroeconomía Argentina Y Latinoamericana"
+    ]
+  },
+  {
+    "nombre": "Fiquepron Maximiliano Ricardo",
+    "materias": [
+      "Historia Moderna Y Contemporánea"
+    ]
+  },
+  {
+    "nombre": "Fito Friedrichs Gretel Alejandra",
+    "materias": [
+      "Química General"
+    ]
+  },
+  {
+    "nombre": "Flax Javier",
+    "materias": [
+      "Filosofía Del Derecho Y Ciudadanía"
+    ]
+  },
+  {
+    "nombre": "Fleischer Karin Beatriz",
+    "materias": [
+      "Organización Del Computador",
+      "Organización Del Computador I"
+    ]
+  },
+  {
+    "nombre": "Flores María Celina",
+    "materias": [
+      "Historia De África"
+    ]
+  },
+  {
+    "nombre": "Flores Pedro Agustin",
+    "materias": [
+      "Química General",
+      "Química Inorgánica"
+    ]
+  },
+  {
+    "nombre": "Foglia Carolina",
+    "materias": [
+      "Estado Y Administración Pública En La Argentina",
+      "Infancias, Juventudes Y Políticas Sociales"
+    ]
+  },
+  {
+    "nombre": "Forcinito Maria Karina",
+    "materias": [
+      "Historia Económica Y Social Argentina"
+    ]
+  },
+  {
+    "nombre": "Foresti Joaquin Gonzalo",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos",
+      "Sociología Política"
+    ]
+  },
+  {
+    "nombre": "Formento Maria Cecilia",
+    "materias": [
+      "Taller De Introducción A La Ingeniería"
+    ]
+  },
+  {
+    "nombre": "Fournier Marisa Lis",
+    "materias": [
+      "Perspectiva De Generos: Aportes Y Debates"
+    ]
+  },
+  {
+    "nombre": "Fragalá Marina",
+    "materias": [
+      "Algebra I",
+      "Algebra Lineal"
+    ]
+  },
+  {
+    "nombre": "Fraguas José",
+    "materias": [
+      "Introducción A Los Estudios De La Literatura",
+      "Seminario Sobre Filósofo O Corriente Filosófica"
+    ]
+  },
+  {
+    "nombre": "Fraidenraich Y Waisman Ariel",
+    "materias": [
+      "Mecánica De Los Fluidos"
+    ]
+  },
+  {
+    "nombre": "Franck Diego Martin",
+    "materias": [
+      "Especificación De Software",
+      "Especificaciones Y Verificación De Software"
+    ]
+  },
+  {
+    "nombre": "Franco Accinelli Ailín Paula",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Freijomil Andres Gabriel",
+    "materias": [
+      "Problemas Del Conocimiento Histórico"
+    ]
+  },
+  {
+    "nombre": "Frete Romina Elisabeth",
+    "materias": [
+      "Métodos Numéricos",
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Fritzsche Federico Javier",
+    "materias": [
+      "Epistemología De La Geografía"
+    ]
+  },
+  {
+    "nombre": "Fuentes Carlos Alberto",
+    "materias": [
+      "Matemática Discreta"
+    ]
+  },
+  {
+    "nombre": "Fuentes Sonia Beatriz",
+    "materias": [
+      "Diseño Estructural Y Procesos"
+    ]
+  },
+  {
+    "nombre": "Fusilo Ezequiel Matias",
+    "materias": [
+      "Máquinas Hidráulicas",
+      "Mecanismos Y Elementos De Máquina"
+    ]
+  },
+  {
+    "nombre": "Gabrielli Miguel Angel",
+    "materias": [
+      "Especificación De Software",
+      "Especificaciones Y Verificación De Software",
+      "Programación Ii"
+    ]
+  },
+  {
+    "nombre": "Gagliano Luciano Ricardo",
+    "materias": [
+      "Procesos Industriales"
+    ]
+  },
+  {
+    "nombre": "Gago Maria Cecilia",
+    "materias": [
+      "Inglés Académico Profesional Ii",
+      "Inglés Con Propósitos Específicos Ii",
+      "Inglés Lectocomprensión I",
+      "Inglés Lectocomprensión Ii"
+    ]
+  },
+  {
+    "nombre": "Galvan Silvia Luciana",
+    "materias": [
+      "Geografía Física",
+      "Laboratorio Interdisciplinario (diagnóstico Ambiental)"
+    ]
+  },
+  {
+    "nombre": "Gandulfo Juan Patricio",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Garcia Ferrari Mercedes",
+    "materias": [
+      "Historia Argentina Ii"
+    ]
+  },
+  {
+    "nombre": "Garcia Marina Luz",
+    "materias": [
+      "Sociología Clásica"
+    ]
+  },
+  {
+    "nombre": "Gatti Genaro Joaquín Felipe",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Gatti Maria Paula",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Gatti Sebastian Pablo",
+    "materias": [
+      "Gestión De La Calidad Y La Mejora Continua",
+      "Organización De La Producción Iii",
+      "Práctica Profesional Supervisada (ingeniería Industrial)\r\n(anual)"
+    ]
+  },
+  {
+    "nombre": "Gaudiani Adriana Angelica",
+    "materias": [
+      "Programación Ii"
+    ]
+  },
+  {
+    "nombre": "Gauna Pablo Salvador",
+    "materias": [
+      "Operaciones Unitarias I"
+    ]
+  },
+  {
+    "nombre": "Gayol Sandra Viviana",
+    "materias": [
+      "Historia Argentina Ii"
+    ]
+  },
+  {
+    "nombre": "Gerber Clea",
+    "materias": [
+      "Literatura Española"
+    ]
+  },
+  {
+    "nombre": "Giacoponello Mariela Carolina",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Girard Melisa",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Glock Vanesa Lorena",
+    "materias": [
+      "Inglés Académico Profesional Ii",
+      "Inglés Con Propósitos Específicos Ii",
+      "Inglés Lectocomprensión I"
+    ]
+  },
+  {
+    "nombre": "Godoy Alejandro Martin",
+    "materias": [
+      "Diseño Asistido",
+      "Medios De Representación",
+      "Sistemas De Representación"
+    ]
+  },
+  {
+    "nombre": "Godoy Claudio Leonardo",
+    "materias": [
+      "Lógica Y Teoría De Números"
+    ]
+  },
+  {
+    "nombre": "Godoy Gonzalo",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Gomes Gabriela Daiana",
+    "materias": [
+      "Historia Latinoamericana Contemporánea",
+      "Historia Latinoamericana Ii"
+    ]
+  },
+  {
+    "nombre": "Gomez Fernando Daniel",
+    "materias": [
+      "Historia Argentina I"
+    ]
+  },
+  {
+    "nombre": "Gomez Rodriguez Cristina Ines",
+    "materias": [
+      "Portugués I",
+      "Portugués Ii"
+    ]
+  },
+  {
+    "nombre": "Gonzalez De Urreta Emiliano",
+    "materias": [
+      "Cálculo En Varias Variables"
+    ]
+  },
+  {
+    "nombre": "González Gartland Georgina",
+    "materias": [
+      "Planificación Y Evaluación De Proyectos Comunicativos",
+      "Taller De Práctica Profesional (comunicación)"
+    ]
+  },
+  {
+    "nombre": "Gonzalez Iglesias Maria Ximena",
+    "materias": [
+      "Enseñanza De La Historia"
+    ]
+  },
+  {
+    "nombre": "Gonzalez Leandro Ramiro",
+    "materias": [
+      "Organizaciones Y Comunicación",
+      "Seminario: Análisis De Datos Para Comunicación"
+    ]
+  },
+  {
+    "nombre": "González Maria Celeste",
+    "materias": [
+      "Matemática General"
+    ]
+  },
+  {
+    "nombre": "Gonzalez Maria Paula",
+    "materias": [
+      "Enseñanza De La Historia"
+    ]
+  },
+  {
+    "nombre": "González Natalia Lorena",
+    "materias": [
+      "Planeamiento Y Control Organizacional"
+    ]
+  },
+  {
+    "nombre": "Gonzalez Nicolas",
+    "materias": [
+      "Laboratorio Iii"
+    ]
+  },
+  {
+    "nombre": "González Rafael",
+    "materias": [
+      "Taller Inicial Obligatorio Del Área De Matemática"
+    ]
+  },
+  {
+    "nombre": "González Rodrigo Gastón",
+    "materias": [
+      "Programación I"
+    ]
+  },
+  {
+    "nombre": "Gonzalez Victoria",
+    "materias": [
+      "Empresas Públicas"
+    ]
+  },
+  {
+    "nombre": "Gottas Gerardo Jorge",
+    "materias": [
+      "Química Inorgánica"
+    ]
+  },
+  {
+    "nombre": "Gottig Juan Francisco",
+    "materias": [
+      "Algebra I"
+    ]
+  },
+  {
+    "nombre": "Gotting Andrea Soledad",
+    "materias": [
+      "Introducción A La Física",
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Grippo Anahí",
+    "materias": [
+      "Introducción A Los Estudios De La Literatura"
+    ]
+  },
+  {
+    "nombre": "Guala Sebastian Diego",
+    "materias": [
+      "Metodología De La Programación"
+    ]
+  },
+  {
+    "nombre": "Gudiño Juan Jose",
+    "materias": [
+      "Electrotecnia Y Máquinas Eléctricas"
+    ]
+  },
+  {
+    "nombre": "Guitart Violeta Carolina",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Gulino Ivana Laura",
+    "materias": [
+      "Laboratorio Interdisciplinario (capacidades\r\nemprendedoras)",
+      "Laboratorio Interdisciplinario De Capacidades\r\nemprendedoras"
+    ]
+  },
+  {
+    "nombre": "Gullino Pablo Francisco",
+    "materias": [
+      "Taller De Medios Interactivos"
+    ]
+  },
+  {
+    "nombre": "Gun Marcelo Claudio",
+    "materias": [
+      "Electrotecnia Aplicada",
+      "Máquinas Eléctricas"
+    ]
+  },
+  {
+    "nombre": "Gutierrez Leonor Silvia",
+    "materias": [
+      "Programación I"
+    ]
+  },
+  {
+    "nombre": "Hamer Mariana",
+    "materias": [
+      "Laboratorio Iii"
+    ]
+  },
+  {
+    "nombre": "Hamer Micaela",
+    "materias": [
+      "Laboratorio Ii"
+    ]
+  },
+  {
+    "nombre": "Herrera Cristina Mabel",
+    "materias": [
+      "Matemática General"
+    ]
+  },
+  {
+    "nombre": "Herrera Noelia Yanil",
+    "materias": [
+      "Máquinas Térmicas",
+      "Máquinas Térmicas (ingeniería)"
+    ]
+  },
+  {
+    "nombre": "Honeker Marianela",
+    "materias": [
+      "Inglés Académico Profesional I",
+      "Inglés Académico Profesional Ii",
+      "Inglés Con Propósitos Específicos I",
+      "Inglés Con Propósitos Específicos Ii"
+    ]
+  },
+  {
+    "nombre": "Hoyos Sandra Analia",
+    "materias": [
+      "Evaluación De Políticas Públicas Y Programas Sociales"
+    ]
+  },
+  {
+    "nombre": "Ibarra Garcia Sabrina Alicia",
+    "materias": [
+      "Matemática Para Economistas Ii"
+    ]
+  },
+  {
+    "nombre": "Iglesias Ana Laura",
+    "materias": [
+      "Química Analítica I"
+    ]
+  },
+  {
+    "nombre": "Isla Zuvialde Daniela",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Isuani Fernando Javier",
+    "materias": [
+      "Implementación De Políticas Públicas",
+      "Seminario (administración Pública)"
+    ]
+  },
+  {
+    "nombre": "Jacovkis Lina Gabriela",
+    "materias": [
+      "Inglés Lectocomprensión Ii"
+    ]
+  },
+  {
+    "nombre": "Jader Daniel",
+    "materias": [
+      "Elementos De Álgebra Lineal",
+      "Matemática General"
+    ]
+  },
+  {
+    "nombre": "Jagër Nina",
+    "materias": [
+      "Introducción A Los Estudios De La Literatura"
+    ]
+  },
+  {
+    "nombre": "Jaime Maria Eugenia",
+    "materias": [
+      "Gestión Del Hábitat",
+      "Sustentabilidad Ambiental",
+      "Técnicas E Instrumentos De Representación Ii"
+    ]
+  },
+  {
+    "nombre": "Janeiro Tudanca Ana Maria",
+    "materias": [
+      "Química General"
+    ]
+  },
+  {
+    "nombre": "Janjetic María Belén",
+    "materias": [
+      "Enseñar En La Escuela Secundaria Y En El Nivel Superior"
+    ]
+  },
+  {
+    "nombre": "Jensen Florencia",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Jimenez Alfredo Alberto",
+    "materias": [
+      "Planeamiento Y Control Organizacional"
+    ]
+  },
+  {
+    "nombre": "Jimenez Carlos Nelson",
+    "materias": [
+      "Circuitos Eléctricos",
+      "Informática Aplicada A Los Sistemas De Información\r\ngeografica, Parte Ii",
+      "Ingeniería De Software",
+      "Ingeniería De Software I",
+      "Matemática General",
+      "Organización Del Computador Ii",
+      "Sistemas De Representación"
+    ]
+  },
+  {
+    "nombre": "Jorge Guillermo Antonio",
+    "materias": [
+      "Electricidad Y Magnetismo"
+    ]
+  },
+  {
+    "nombre": "Juarez Angel Nicolas",
+    "materias": [
+      "Programación I",
+      "Programación Ii"
+    ]
+  },
+  {
+    "nombre": "Juarez Mayra Eliana",
+    "materias": [
+      "Historia Moderna Y Contemporánea"
+    ]
+  },
+  {
+    "nombre": "Juncal Santiago Eduardo",
+    "materias": [
+      "Teoría Del Crecimiento Y Desarrollo Económico"
+    ]
+  },
+  {
+    "nombre": "Jure Elisa Claudia",
+    "materias": [
+      "Problemática Educativa"
+    ]
+  },
+  {
+    "nombre": "Kantis Hugo",
+    "materias": [
+      "Creación Y Desarrollo De Empresas"
+    ]
+  },
+  {
+    "nombre": "Kaplan Krep Christian Lionel",
+    "materias": [
+      "Estadística Para Economistas"
+    ]
+  },
+  {
+    "nombre": "Kenig Francisco Sebastian",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Kloster Agustina Lujan",
+    "materias": [
+      "Diseño Asistido",
+      "Medios De Representación",
+      "Sistemas De Representación"
+    ]
+  },
+  {
+    "nombre": "Kohan Gustavo Ariel",
+    "materias": [
+      "Geografía Social Y Económica De América Latina",
+      "Geografía Social Y Económica De Los Espacios Mundiales"
+    ]
+  },
+  {
+    "nombre": "Kornblihtt Juan",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos",
+      "Sociología Clásica"
+    ]
+  },
+  {
+    "nombre": "Kranewitter Basgall Virginia",
+    "materias": [
+      "Los Organismos En Funcionamiento",
+      "Taller Inicial Obligatorio Del Área De Matemática"
+    ]
+  },
+  {
+    "nombre": "Krickeberg Gabriela Fernanda",
+    "materias": [
+      "Lenguaje, Comunicación Y Cultura",
+      "Lenguaje, Comunicación Y Cultura Escrita"
+    ]
+  },
+  {
+    "nombre": "Labado Silvia",
+    "materias": [
+      "Narrativa De Los Siglos Xx Y Xxi"
+    ]
+  },
+  {
+    "nombre": "Lafiosca Marcelo Rubén",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Lagrutta Alan Cristian",
+    "materias": [
+      "Taller Inicial Obligatorio Del Área De Matemática"
+    ]
+  },
+  {
+    "nombre": "Lagrutta Juan Pablo",
+    "materias": [
+      "Lenguaje, Cultura Y Comunicación De La Imagen",
+      "Semiótica De Los Medios Masivos"
+    ]
+  },
+  {
+    "nombre": "Larison Mariana Isabel",
+    "materias": [
+      "Filosofía Especial Ii"
+    ]
+  },
+  {
+    "nombre": "Lastra Luis Emmanuel",
+    "materias": [
+      "Algebra Lineal",
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Lavié Claudia Marcela",
+    "materias": [
+      "Filosofía Política"
+    ]
+  },
+  {
+    "nombre": "Lazzarini Behrmann Irene Constanza",
+    "materias": [
+      "Química Analítica I"
+    ]
+  },
+  {
+    "nombre": "Leon Torres Hollman Dario",
+    "materias": [
+      "Macroeconomía Argentina Y Latinoamericana"
+    ]
+  },
+  {
+    "nombre": "Leoni Silvia Fabiana",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Leonian Paula Vanesa",
+    "materias": [
+      "Enseñanza De La Matemática Ii"
+    ]
+  },
+  {
+    "nombre": "Leski Fernando Javier",
+    "materias": [
+      "Química General"
+    ]
+  },
+  {
+    "nombre": "Levin Florencia Paula",
+    "materias": [
+      "Seminario De Investigacion En Historia (el Pasado En El Presente. Historia, Memoria Y Trauma En La\r\nreconstruccion De Experiencias Limite)"
+    ]
+  },
+  {
+    "nombre": "Librandi Juan Martin",
+    "materias": [
+      "Evaluación De Políticas Públicas Y Programas Sociales"
+    ]
+  },
+  {
+    "nombre": "Linares Debora Carolina",
+    "materias": [
+      "Costos Industriales",
+      "Costos Para La Toma De Decisiones"
+    ]
+  },
+  {
+    "nombre": "Llera Maria Angela",
+    "materias": [
+      "Física General",
+      "Física Inicial",
+      "Introducción A La Física (ingeniería)"
+    ]
+  },
+  {
+    "nombre": "Lo Cascio Jorge Damian",
+    "materias": [
+      "Enseñanza De La Economía"
+    ]
+  },
+  {
+    "nombre": "Lombardo Berchesi Rubén Jorge",
+    "materias": [
+      "Ecología De Poblaciones Y Comunidades",
+      "Matemática Aplicada",
+      "Taller De Memoria De Licenciatura (ecología)"
+    ]
+  },
+  {
+    "nombre": "Longa Francisco Tomas",
+    "materias": [
+      "Análisis Político"
+    ]
+  },
+  {
+    "nombre": "Longueira Ariel Sebastian",
+    "materias": [
+      "Metodología De La Programación"
+    ]
+  },
+  {
+    "nombre": "López Andrea Alejandra",
+    "materias": [
+      "Inglés Lectocomprensión I"
+    ]
+  },
+  {
+    "nombre": "Lopez Arias Augusto Ezequiel",
+    "materias": [
+      "Lógica Y Teoría De Números"
+    ]
+  },
+  {
+    "nombre": "Lopez Julio Emmanuel",
+    "materias": [
+      "Taller Inicial Obligatorio Del Área De Matemática"
+    ]
+  },
+  {
+    "nombre": "López María Pía Luján",
+    "materias": [
+      "Culturas Populares, Creencias E Interculturalidad",
+      "Practica Pre Profesional/ De Investigacion (cultura Y\r\nlenguajes Artísticos)",
+      "Problemas Culturales Latinoamericanos"
+    ]
+  },
+  {
+    "nombre": "Lorenzo Colombet Jezabel",
+    "materias": [
+      "Sistemas De Información Contable",
+      "Sistemas De Información Contable I"
+    ]
+  },
+  {
+    "nombre": "Lorenzo Luis Maria",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Humanas"
+    ]
+  },
+  {
+    "nombre": "Lucero Germán Andrés",
+    "materias": [
+      "Introducción A La Programación",
+      "Lógica Y Teoría De Números"
+    ]
+  },
+  {
+    "nombre": "Lucero Silvana Isabel",
+    "materias": [
+      "Planificación Y Evaluación De Proyectos Comunicativos",
+      "Seminario: Analisis Y Evaluacion De Estrategias\r\ncomunicacionales"
+    ]
+  },
+  {
+    "nombre": "Ludueña Arnaldo Alejandro",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Luna Natalia Alejandra",
+    "materias": [
+      "Taller De Introducción A La Ingeniería",
+      "Taller De Tecnología"
+    ]
+  },
+  {
+    "nombre": "Luna Yamila Macarena",
+    "materias": [
+      "Elementos De Cálculo",
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Lvovich Daniel",
+    "materias": [
+      "Historia De La Historiografía"
+    ]
+  },
+  {
+    "nombre": "Maceira Veronica",
+    "materias": [
+      "Análisis Social De La Argentina Contemporánea"
+    ]
+  },
+  {
+    "nombre": "Machicado Susana Gimena",
+    "materias": [
+      "Enseñar En La Escuela Secundaria Y En El Nivel Superior",
+      "Taller De Desarrollo Profesional A: Nucleo Didactica Y\r\ncurriculum",
+      "Taller De Desarrollo Profesional B: Nucleo Didactica Y\r\ncurriculum"
+    ]
+  },
+  {
+    "nombre": "Macías Facundo Sebastián",
+    "materias": [
+      "Historia Medieval Y Moderna"
+    ]
+  },
+  {
+    "nombre": "Maciel Luis Ignacio",
+    "materias": [
+      "Administración De La Producción Y Mantenimiento",
+      "Gestión De Proyectos"
+    ]
+  },
+  {
+    "nombre": "Malec Daniel Rolando",
+    "materias": [
+      "Electrónica Analógica Y Digital"
+    ]
+  },
+  {
+    "nombre": "Malegarie Daniela Analia",
+    "materias": [
+      "Elementos De Cálculo",
+      "Matemática Para Economistas I"
+    ]
+  },
+  {
+    "nombre": "Malleret Lautaro Ezequiel",
+    "materias": [
+      "Organización Del Computador",
+      "Organización Del Computador I"
+    ]
+  },
+  {
+    "nombre": "Mallia Fernando Alberto",
+    "materias": [
+      "Enseñanza De La Geografía"
+    ]
+  },
+  {
+    "nombre": "Mancardo Viotti Agustin Matias",
+    "materias": [
+      "Costos Industriales",
+      "Introducción A La Física"
+    ]
+  },
+  {
+    "nombre": "Manfredi Mariano Agustin",
+    "materias": [
+      "Instrumentación Y Control De Procesos",
+      "Instrumentación Y Control Industrial"
+    ]
+  },
+  {
+    "nombre": "Mangas Martin Luis",
+    "materias": [
+      "Finanzas Públicas",
+      "Régimen Tributario"
+    ]
+  },
+  {
+    "nombre": "Mansilla Gabriela",
+    "materias": [
+      "Estado, Administración Y Políticas Públicas"
+    ]
+  },
+  {
+    "nombre": "Manterola Juan Ignacio",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Margarit David Hipolito",
+    "materias": [
+      "Mecánica Elemental"
+    ]
+  },
+  {
+    "nombre": "Marino Tamara Haydee",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Martinez Ariel Enrique",
+    "materias": [
+      "Diseño Asistido",
+      "Medios De Representación",
+      "Sistemas De Representación",
+      "Taller De Tecnología"
+    ]
+  },
+  {
+    "nombre": "Martinez Carlos Rodolfo",
+    "materias": [
+      "Introducción A La Macroeconomía"
+    ]
+  },
+  {
+    "nombre": "Martinez Del Sel Valeria",
+    "materias": [
+      "Problemática Educativa"
+    ]
+  },
+  {
+    "nombre": "Martinez Diego Javier",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Martinez Fuente Montserrat Jazmin",
+    "materias": [
+      "Laboratorio Ii"
+    ]
+  },
+  {
+    "nombre": "Martinez Nora Alicia",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Martinez Ortiz Tamara",
+    "materias": [
+      "Laboratorio Interdisciplinario (temas De Generos.\r\ndesigualdades, Disidencias Y Derechos)",
+      "Perspectiva De Generos: Aportes Y Debates"
+    ]
+  },
+  {
+    "nombre": "Martinez Viademonte Javier",
+    "materias": [
+      "Proyecto Profesional Ii"
+    ]
+  },
+  {
+    "nombre": "Martinez Walter Guillermo",
+    "materias": [
+      "Organización Industrial",
+      "Taller De Tecnología"
+    ]
+  },
+  {
+    "nombre": "Martucci Liliana",
+    "materias": [
+      "Laboratorio Interdisciplinario (diagnóstico Ambiental)"
+    ]
+  },
+  {
+    "nombre": "Matera Guillermo",
+    "materias": [
+      "Análisis Numérico"
+    ]
+  },
+  {
+    "nombre": "Matteucci Julieta Beatriz",
+    "materias": [
+      "Métodos Numéricos"
+    ]
+  },
+  {
+    "nombre": "Mattia Sebastian Leandro",
+    "materias": [
+      "Concepciones De La Comunicación"
+    ]
+  },
+  {
+    "nombre": "Mauro Andres Alberto Luis",
+    "materias": [
+      "Electrotecnia Y Máquinas Eléctricas"
+    ]
+  },
+  {
+    "nombre": "Mayer Lucas Martin",
+    "materias": [
+      "Aprendizaje Escolar"
+    ]
+  },
+  {
+    "nombre": "Mazzariol Andrea Soledad",
+    "materias": [
+      "Ingeniería De Software",
+      "Ingeniería De Software I",
+      "Lógica Y Teoría De Números"
+    ]
+  },
+  {
+    "nombre": "Medina Daniela Del Carmen",
+    "materias": [
+      "Diseño Estructural Y Procesos",
+      "Gestión De Recursos Humanos"
+    ]
+  },
+  {
+    "nombre": "Meilan Carlos",
+    "materias": [
+      "Teoría De La Organización"
+    ]
+  },
+  {
+    "nombre": "Mendez Erica Elizabeth",
+    "materias": [
+      "Cálculo I",
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Menendez Maria Cecilia",
+    "materias": [
+      "Economía Neoclásica"
+    ]
+  },
+  {
+    "nombre": "Merino Fontal Mercedes Inés",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Merodo Alicia Liliana",
+    "materias": [
+      "Residencia I. La Escuela: Ámbito Del Trabajo Docente",
+      "Teoría Y Diseño Del Curriculum"
+    ]
+  },
+  {
+    "nombre": "Miceli Paola Alejandra",
+    "materias": [
+      "Historia Medieval Y Moderna"
+    ]
+  },
+  {
+    "nombre": "Micha Ariela Susana",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Mieres Jose Luis",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Miguez Pablo Fernando",
+    "materias": [
+      "Teorías Contemporáneas De La Economía Política Ii"
+    ]
+  },
+  {
+    "nombre": "Milesi Darío",
+    "materias": [
+      "Teoría De La Empresa Y De Los Mercados"
+    ]
+  },
+  {
+    "nombre": "Miliá Daniel Alberto",
+    "materias": [
+      "Estadística Para Economistas"
+    ]
+  },
+  {
+    "nombre": "Miraglia Marina",
+    "materias": [
+      "Taller Final De Aplicación: Proyecto Cartográfico"
+    ]
+  },
+  {
+    "nombre": "Molina Luisina",
+    "materias": [
+      "Laboratorio Interdisciplinario (diagnóstico Ambiental)"
+    ]
+  },
+  {
+    "nombre": "Molina Marcelo Fernando",
+    "materias": [
+      "Econometría"
+    ]
+  },
+  {
+    "nombre": "Monaco Cesar Dario",
+    "materias": [
+      "Problemas De Historia Argentina Contemporánea"
+    ]
+  },
+  {
+    "nombre": "Monasterios Claudia Sabrina",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Monastra Alejandro",
+    "materias": [
+      "Física I"
+    ]
+  },
+  {
+    "nombre": "Monferrán Daniel Juan Jose",
+    "materias": [
+      "Automatización Industrial I"
+    ]
+  },
+  {
+    "nombre": "Monje Mario Ruben",
+    "materias": [
+      "Máquinas Térmicas",
+      "Máquinas Térmicas (ingeniería)"
+    ]
+  },
+  {
+    "nombre": "Monroy Andrea Micaela",
+    "materias": [
+      "Química Analítica I",
+      "Química Inorgánica"
+    ]
+  },
+  {
+    "nombre": "Montaño Maria Cecilia",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Montaos Lucila Soledad",
+    "materias": [
+      "Introducción A La Matemática",
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Montenegro Betiana Anahi",
+    "materias": [
+      "Teoría De La Empresa Y De Los Mercados"
+    ]
+  },
+  {
+    "nombre": "Montenegro Ricardo Luis",
+    "materias": [
+      "Física I"
+    ]
+  },
+  {
+    "nombre": "Monteros Juan Carlos",
+    "materias": [
+      "Laboratorio De Construcción De Software",
+      "Proyecto Profesional I"
+    ]
+  },
+  {
+    "nombre": "Montes Karina Griselda",
+    "materias": [
+      "Diseño De Estructuras Y Procesos En El Sector Público",
+      "Implementación De Políticas Públicas"
+    ]
+  },
+  {
+    "nombre": "Monticelli Jorge Lucio",
+    "materias": [
+      "Tópicos De Comercialización"
+    ]
+  },
+  {
+    "nombre": "Montiel Santiago Daniel",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Montino Marisol",
+    "materias": [
+      "Física Inicial",
+      "Introducción A La Física (ingeniería)"
+    ]
+  },
+  {
+    "nombre": "Montserrat Javier",
+    "materias": [
+      "Química Orgánica"
+    ]
+  },
+  {
+    "nombre": "Monzon Gabriel",
+    "materias": [
+      "Cálculo Ii"
+    ]
+  },
+  {
+    "nombre": "Morelli Arami Elizabeth",
+    "materias": [
+      "Introducción A Los Estudios De La Literatura"
+    ]
+  },
+  {
+    "nombre": "Morgavi Silvia Susana",
+    "materias": [
+      "Inglés Lectocomprensión Ii",
+      "Inglés Lectocomprensión Iii"
+    ]
+  },
+  {
+    "nombre": "Moron Ignacio",
+    "materias": [
+      "Generación, Transmisión Y Distribución De La Energía\r\neléctrica",
+      "Instalaciones Electromecánicas Ii",
+      "Sistemas De Generación, Transmisión Y Distribución De La\r\nenergía Eléctrica"
+    ]
+  },
+  {
+    "nombre": "Moscona Gustavo",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Mossier Veronica Ines",
+    "materias": [
+      "Política Social I: Política Y Cuestión Social"
+    ]
+  },
+  {
+    "nombre": "Motto Aldo Leopoldo",
+    "materias": [
+      "Principios De Biotecnología"
+    ]
+  },
+  {
+    "nombre": "Moyano Mario Renzo",
+    "materias": [
+      "Metodología De La Investigación Cuantitativa",
+      "Metodología De La Investigación Cuantitativa Aplicada A La Educación",
+      "Metodología De La Investigación Cuantitativa Aplicada A\r\nla Educación"
+    ]
+  },
+  {
+    "nombre": "Moyano Veronica Andrea",
+    "materias": [
+      "Programación I"
+    ]
+  },
+  {
+    "nombre": "Muñoz Ruth Mariana",
+    "materias": [
+      "Economía Urbana Y Regional"
+    ]
+  },
+  {
+    "nombre": "Mura Nahuel",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Murgia Lucia Clara",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Mussi Emiliano Andres",
+    "materias": [
+      "Economía Clásica",
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Mydlarz Marcelo",
+    "materias": [
+      "Modelado Y Optimización"
+    ]
+  },
+  {
+    "nombre": "Nakatsuka Patricia Viviana",
+    "materias": [
+      "Organización Del Computador",
+      "Organización Del Computador I"
+    ]
+  },
+  {
+    "nombre": "Nardin Santiago",
+    "materias": [
+      "Fundamentos De La Investigación Social"
+    ]
+  },
+  {
+    "nombre": "Narvaja Susana Graciela",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Natale Cintia Erica",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas",
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Natale Daniela Noelia",
+    "materias": [
+      "Taller De Aplicación Inicial"
+    ]
+  },
+  {
+    "nombre": "Navarro Prieto Jose Joaquin",
+    "materias": [
+      "Programación Ii"
+    ]
+  },
+  {
+    "nombre": "Navarro Sofia Lara",
+    "materias": [
+      "Taller Inicial Obligatorio Del Área De Matemática"
+    ]
+  },
+  {
+    "nombre": "Nawratil Aimé",
+    "materias": [
+      "Elementos De Cálculo"
+    ]
+  },
+  {
+    "nombre": "Neuman Marcelo Bernardo",
+    "materias": [
+      "Industrias Y Procesos"
+    ]
+  },
+  {
+    "nombre": "Nielsen Hernan Ezequiel",
+    "materias": [
+      "Especificación De Software",
+      "Especificaciones Y Verificación De Software"
+    ]
+  },
+  {
+    "nombre": "Nieto Ana Lucia",
+    "materias": [
+      "Inglés Académico Profesional I",
+      "Inglés Con Propósitos Específicos I"
+    ]
+  },
+  {
+    "nombre": "Nieto Facundo",
+    "materias": [
+      "Enseñanza De La Lengua Y La Literatura"
+    ]
+  },
+  {
+    "nombre": "Nitti Alejandro Leonardo",
+    "materias": [
+      "Automatización Avanzada",
+      "Automatización Ii",
+      "Electrónica I",
+      "Informática Industrial"
+    ]
+  },
+  {
+    "nombre": "Niveyro Cesar Horacio",
+    "materias": [
+      "Programación I"
+    ]
+  },
+  {
+    "nombre": "Nores Jose Ezequiel",
+    "materias": [
+      "Programación Ii"
+    ]
+  },
+  {
+    "nombre": "Nores Nancy Johana",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Nothstein Susana Beatriz",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Nuñez Garcia Javier Luis Mariano",
+    "materias": [
+      "Ingeniería De Las Reacciones Químicas"
+    ]
+  },
+  {
+    "nombre": "Obedman Mario Raul",
+    "materias": [
+      "Medios De Representación",
+      "Sistemas De Representación"
+    ]
+  },
+  {
+    "nombre": "Ochoa Marcelo David",
+    "materias": [
+      "Gobierno Y Administración De La Educación",
+      "Infancias, Juventudes Y Políticas Sociales"
+    ]
+  },
+  {
+    "nombre": "Ogasawara Guillermo",
+    "materias": [
+      "Circuitos Eléctricos",
+      "Generación, Transmisión Y Distribución De La Energía\r\neléctrica",
+      "Sistemas De Generación, Transmisión Y Distribución De La\r\nenergía Eléctrica"
+    ]
+  },
+  {
+    "nombre": "Oliva Martin Alejandro",
+    "materias": [
+      "Sociología",
+      "Sociología Clásica"
+    ]
+  },
+  {
+    "nombre": "Olivieri Nestor Armando",
+    "materias": [
+      "Mecánica Elemental"
+    ]
+  },
+  {
+    "nombre": "Olmos Gisele Azul",
+    "materias": [
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Orellano Romina Belen",
+    "materias": [
+      "Cálculo I",
+      "Elementos De Cálculo"
+    ]
+  },
+  {
+    "nombre": "Ormachea Cielo Luciana",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Sociales"
+    ]
+  },
+  {
+    "nombre": "Orozco De La Hoz Francisco Simón",
+    "materias": [
+      "Laboratorio De Construcción De Software",
+      "Proyecto Profesional I"
+    ]
+  },
+  {
+    "nombre": "Ortega Damian Rafael",
+    "materias": [
+      "Circuitos Eléctricos",
+      "Microcontroladores"
+    ]
+  },
+  {
+    "nombre": "Ortiz De Rozas Victoria",
+    "materias": [
+      "Estructuras Y Actores Políticos"
+    ]
+  },
+  {
+    "nombre": "Ortiz Mariana Florencia",
+    "materias": [
+      "Matemática Para Economistas Ii"
+    ]
+  },
+  {
+    "nombre": "Ostroviesky Heber Roman",
+    "materias": [
+      "Políticas Culturales Y Gestión"
+    ]
+  },
+  {
+    "nombre": "Oviedo Marina Anabella",
+    "materias": [
+      "Cálculo Para Computación",
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Oxman Julieta",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Paccosi Ruben Gustavo",
+    "materias": [
+      "Análisis Numérico"
+    ]
+  },
+  {
+    "nombre": "Paiaro Diego Gonzalo",
+    "materias": [
+      "Historia Medieval Y Moderna"
+    ]
+  },
+  {
+    "nombre": "Palacios Victoria",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Palermo Silvana Alejandra",
+    "materias": [
+      "Historia Contemporánea De Europa"
+    ]
+  },
+  {
+    "nombre": "Panario Centeno\r\nmaría Marta",
+    "materias": [
+      "Sistemas De Información Contable I"
+    ]
+  },
+  {
+    "nombre": "Panario Centeno María Marta",
+    "materias": [
+      "Sistemas De Información Contable",
+      "Sistemas De Información Contable I"
+    ]
+  },
+  {
+    "nombre": "Panero Marcelo Oscar",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Paparas Ricardo Alejandro",
+    "materias": [
+      "Gestión De Recursos Humanos En El Sector Público"
+    ]
+  },
+  {
+    "nombre": "Pared Alejandra Belen",
+    "materias": [
+      "Calidad De Procesos",
+      "Higiene, Seguridad Y Protección Ambiental"
+    ]
+  },
+  {
+    "nombre": "Pared Maria Veronica",
+    "materias": [
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Parra Suyai Roxana Yelma",
+    "materias": [
+      "Taller De Utilitarios"
+    ]
+  },
+  {
+    "nombre": "Paul Andrea Maria Noel",
+    "materias": [
+      "Filosofía Antigua Y Medieval",
+      "Problemas De Filosofía"
+    ]
+  },
+  {
+    "nombre": "Pavon Ramon Hector",
+    "materias": [
+      "Introducción A Los Estudios De La Literatura",
+      "Literatura Argentina: Teatro Y Poesía",
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Peez Klein Daniela Inés",
+    "materias": [
+      "Portugués I",
+      "Portugués Ii"
+    ]
+  },
+  {
+    "nombre": "Pengue Walter Alberto",
+    "materias": [
+      "Agroecología",
+      "Cuestiones Ambientales Contemporáneas"
+    ]
+  },
+  {
+    "nombre": "Pereira Mariano",
+    "materias": [
+      "Econometría"
+    ]
+  },
+  {
+    "nombre": "Pereyra Francisca",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos",
+      "Sociología"
+    ]
+  },
+  {
+    "nombre": "Perez Enriquez\r\ndarlin Johana",
+    "materias": [
+      "Introducción A La Tecnología De Procesos"
+    ]
+  },
+  {
+    "nombre": "Perez Patricia Mariana",
+    "materias": [
+      "Residencia I. La Escuela: Ámbito Del Trabajo Docente"
+    ]
+  },
+  {
+    "nombre": "Picon Borregales David Emmanuel",
+    "materias": [
+      "Química Inorgánica"
+    ]
+  },
+  {
+    "nombre": "Pinazo Germán Diego",
+    "materias": [
+      "Economía Política E Internacional"
+    ]
+  },
+  {
+    "nombre": "Pinkasz Daniel Máximo",
+    "materias": [
+      "Historia De La Educación Argentina"
+    ]
+  },
+  {
+    "nombre": "Pinotti Luciana",
+    "materias": [
+      "Teorías De La Cultura I"
+    ]
+  },
+  {
+    "nombre": "Pizarro Martin Alejandro",
+    "materias": [
+      "Introducción A La Comunicación",
+      "Metodología De La Investigación Cuantitativa",
+      "Metodología De La Investigación Cuantitativa Aplicada A La Educación",
+      "Metodología De La Investigación Cuantitativa Aplicada A\r\nla Educación"
+    ]
+  },
+  {
+    "nombre": "Ponce Belén",
+    "materias": [
+      "Laboratorio Ii"
+    ]
+  },
+  {
+    "nombre": "Ponce De Leon Maria Ludmila",
+    "materias": [
+      "Estudios De La Literatura Medieval, Renacentista Y\r\nbarroca"
+    ]
+  },
+  {
+    "nombre": "Poth Carla Mariela",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos",
+      "Sociedad, Cultura Y Ambiente"
+    ]
+  },
+  {
+    "nombre": "Prado Analia Gisele",
+    "materias": [
+      "Laboratorio Interdisciplinario (capacidades\r\nemprendedoras)",
+      "Laboratorio Interdisciplinario De Capacidades\r\nemprendedoras"
+    ]
+  },
+  {
+    "nombre": "Presman Betina Giselle",
+    "materias": [
+      "Medios Masivos Y Sistemas Políticos"
+    ]
+  },
+  {
+    "nombre": "Pujalte Mercedes Susana",
+    "materias": [
+      "Estudios Gramaticales"
+    ]
+  },
+  {
+    "nombre": "Quagliata Luciano Humberto",
+    "materias": [
+      "Inglés Lectocomprensión I"
+    ]
+  },
+  {
+    "nombre": "Querejeta Giselle Andrea",
+    "materias": [
+      "Elementos De Química Orgánica, Analítica Y Biológica"
+    ]
+  },
+  {
+    "nombre": "Quintero Vivas Mariela Alejandra",
+    "materias": [
+      "Problemática Educativa"
+    ]
+  },
+  {
+    "nombre": "Quinteros Cynthia Edith",
+    "materias": [
+      "Inglés Académico Profesional Iii",
+      "Inglés Con Propósitos Específicos Iii",
+      "Inglés Lectocomprensión I"
+    ]
+  },
+  {
+    "nombre": "Rafic Estefania Constanza",
+    "materias": [
+      "Química Inorgánica"
+    ]
+  },
+  {
+    "nombre": "Rages Fernando Gabriel",
+    "materias": [
+      "Desarrollo De Proyectos I",
+      "Desarrollo De Proyectos Ii",
+      "Sistemas De Supervisión Industrial"
+    ]
+  },
+  {
+    "nombre": "Raiter Barbara Ines",
+    "materias": [
+      "Historia Moderna Y Contemporánea"
+    ]
+  },
+  {
+    "nombre": "Ramos Laura Mabel",
+    "materias": [
+      "Agroecología",
+      "Cuestiones Ambientales Contemporáneas"
+    ]
+  },
+  {
+    "nombre": "Real Gustavo",
+    "materias": [
+      "Desarrollo Avanzado De Microcontroladores"
+    ]
+  },
+  {
+    "nombre": "Reale Marcela Veronica",
+    "materias": [
+      "Cálculo I",
+      "Matemática Aplicada"
+    ]
+  },
+  {
+    "nombre": "Reano Ariana",
+    "materias": [
+      "Teoría Política Contemporánea"
+    ]
+  },
+  {
+    "nombre": "Rearte Juan Lázaro",
+    "materias": [
+      "Estudios De La Literatura Moderna"
+    ]
+  },
+  {
+    "nombre": "Rebeco Ana Belen",
+    "materias": [
+      "Elementos De Cálculo",
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Rebutti Gustavo Martin",
+    "materias": [
+      "Laboratorio Interdisciplinario (capacidades\r\nemprendedoras)",
+      "Laboratorio Interdisciplinario De Capacidades\r\nemprendedoras"
+    ]
+  },
+  {
+    "nombre": "Reciulschi Eduardo Gustavo",
+    "materias": [
+      "Organización De Laboratorios"
+    ]
+  },
+  {
+    "nombre": "Requena Mariano\r\njose",
+    "materias": [
+      "Elementos De Prehistoria E Historia De Oriente, Historia\r\nantigua Y Altomedieval"
+    ]
+  },
+  {
+    "nombre": "Requena Mariano Jose",
+    "materias": [
+      "Elementos De Prehistoria E Historia De Oriente, Historia\r\nantigua Y Altomedieval"
+    ]
+  },
+  {
+    "nombre": "Resnik Gabriela",
+    "materias": [
+      "Adquisición E Historia De La Lengua",
+      "Estudios Gramaticales"
+    ]
+  },
+  {
+    "nombre": "Restrepo Mendoza Felipe Alberto",
+    "materias": [
+      "Taller De Producción Audiovisual I",
+      "Taller De Producción Audiovisual Ii"
+    ]
+  },
+  {
+    "nombre": "Reyes Ana Laura Ayelen",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas"
+    ]
+  },
+  {
+    "nombre": "Reynoso Laura",
+    "materias": [
+      "Elementos De Cálculo"
+    ]
+  },
+  {
+    "nombre": "Rial Jorgelina Valeria",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Ribera Gonzalo Pablo",
+    "materias": [
+      "Desarrollo Avanzado De Microcontroladores"
+    ]
+  },
+  {
+    "nombre": "Ricciardi Jose Augusto",
+    "materias": [
+      "Taller De Diseño Y Producción De Medios Gráficos Ii"
+    ]
+  },
+  {
+    "nombre": "Ricosta Marcela Adriana",
+    "materias": [
+      "Laboratorio Interdisciplinario (capacidades\r\nemprendedoras)",
+      "Laboratorio Interdisciplinario De Capacidades\r\nemprendedoras"
+    ]
+  },
+  {
+    "nombre": "Rinesi Eduardo",
+    "materias": [
+      "Política"
+    ]
+  },
+  {
+    "nombre": "Rionda Macarena Haydee",
+    "materias": [
+      "Las Bases De La Vida Y Su Evolución"
+    ]
+  },
+  {
+    "nombre": "Rivarola Y Benitez Marcela Raquel",
+    "materias": [
+      "Taller De Aplicación Ii: Escala Regional"
+    ]
+  },
+  {
+    "nombre": "Rodriguez Eduardo Esteban",
+    "materias": [
+      "Física Ii",
+      "Física Ii (ingenierías)"
+    ]
+  },
+  {
+    "nombre": "Rodriguez Mabel Alicia",
+    "materias": [
+      "Enseñanza De La Matemática I",
+      "Enseñanza De La Matemática Ii"
+    ]
+  },
+  {
+    "nombre": "Rodríguez Miguel Alejandro",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Rodriguez Miguel Angel",
+    "materias": [
+      "Electrónica Analógica Y Digital"
+    ]
+  },
+  {
+    "nombre": "Rodriguez Yesica Rosa",
+    "materias": [
+      "Problemas De Filosofía"
+    ]
+  },
+  {
+    "nombre": "Roitter Sonia Beatriz",
+    "materias": [
+      "Economía Neoclásica"
+    ]
+  },
+  {
+    "nombre": "Rojas Fernando Ariel",
+    "materias": [
+      "Proyecto Final (anual - Ingeniería Química)"
+    ]
+  },
+  {
+    "nombre": "Rojas Paredes Andres Avelino",
+    "materias": [
+      "Sistemas Operativos Y Redes",
+      "Sistemas Operativos Y Redes I"
+    ]
+  },
+  {
+    "nombre": "Romera Belis Cristian Esteban",
+    "materias": [
+      "Derecho I: Derecho Político Y Constitucional",
+      "Política"
+    ]
+  },
+  {
+    "nombre": "Romiti Antonella",
+    "materias": [
+      "Inglés Lectocomprensión I",
+      "Inglés Lectocomprensión Ii"
+    ]
+  },
+  {
+    "nombre": "Rondelli Hernan Daniel",
+    "materias": [
+      "Bases De Datos I",
+      "Gestión Y Administración De Bases De Datos"
+    ]
+  },
+  {
+    "nombre": "Rosenblatt Mariel",
+    "materias": [
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Roslan Cecilia",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Rossi Sergio Rafael",
+    "materias": [
+      "Instalaciones Electromecánicas I",
+      "Instalaciones Industriales",
+      "Instalaciones Industriales A",
+      "Instalaciones Industriales (ingeniería)",
+      "Instalaciones Industriales Para Ingeniería Química",
+      "Tecnología Mecánica",
+      "Tecnología Mecánica I"
+    ]
+  },
+  {
+    "nombre": "Rotondo Ernesto",
+    "materias": [
+      "Física Inicial",
+      "Introducción A La Física (ingeniería)"
+    ]
+  },
+  {
+    "nombre": "Rottenschweiler Sergio Gabriel",
+    "materias": [
+      "Introducción A La Economía"
+    ]
+  },
+  {
+    "nombre": "Rouge Pablo",
+    "materias": [
+      "Organización De Laboratorios"
+    ]
+  },
+  {
+    "nombre": "Rozenmacher Lucas",
+    "materias": [
+      "Artes Audiovisuales Ii"
+    ]
+  },
+  {
+    "nombre": "Ruggerio Carlos Alberto",
+    "materias": [
+      "Taller De Evaluación De Impacto Ambiental"
+    ]
+  },
+  {
+    "nombre": "Ruggiero Jose Gustavo",
+    "materias": [
+      "Enseñanza De La Filosofía",
+      "Estética"
+    ]
+  },
+  {
+    "nombre": "Russo Sebastian Juan",
+    "materias": [
+      "Taller De Escritura Periodistica I"
+    ]
+  },
+  {
+    "nombre": "Sabatino Pablo Luis Esteban",
+    "materias": [
+      "Bases De Datos Ii"
+    ]
+  },
+  {
+    "nombre": "Salmoiraghi Rodrigo Andres",
+    "materias": [
+      "Taller De Escritura Periodistica I"
+    ]
+  },
+  {
+    "nombre": "Salomone Horacio Daniel",
+    "materias": [
+      "Taller Inicial Obligatorio Del Área De Matemática"
+    ]
+  },
+  {
+    "nombre": "Sambrana Daniel Leonardo",
+    "materias": [
+      "Taller De Radio Ii"
+    ]
+  },
+  {
+    "nombre": "Sanchez Florencia Belen",
+    "materias": [
+      "Lógica Y Teoría De Números"
+    ]
+  },
+  {
+    "nombre": "Sanchez Florencia Yasmin",
+    "materias": [
+      "Matemática Discreta"
+    ]
+  },
+  {
+    "nombre": "Sanchez Roxana Celeste",
+    "materias": [
+      "Teoría De La Organización"
+    ]
+  },
+  {
+    "nombre": "Santa Cruz Sergio Marcelo",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Santarsieri Maria Paula",
+    "materias": [
+      "Taller De Lectura Y Escritura En Las Disciplinas",
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Santillan Claudia Elizabeth",
+    "materias": [
+      "Residencia I. La Escuela: Ámbito Del Trabajo Docente"
+    ]
+  },
+  {
+    "nombre": "Sarni Melina Soledad",
+    "materias": [
+      "Probabilidad Y Estadística"
+    ]
+  },
+  {
+    "nombre": "Sartarelli Andrés",
+    "materias": [
+      "Introducción A La Cuántica Y A La Relatividad",
+      "Temas De Física"
+    ]
+  },
+  {
+    "nombre": "Sauma Nahuel Hernan",
+    "materias": [
+      "Introducción A La Programación",
+      "Programación I"
+    ]
+  },
+  {
+    "nombre": "Sburlatti Santiago Esteban",
+    "materias": [
+      "Adolescencia Y Educación Secundaria"
+    ]
+  },
+  {
+    "nombre": "Scavino Natalia Carolina",
+    "materias": [
+      "Aprendizaje Escolar"
+    ]
+  },
+  {
+    "nombre": "Schillagi Carolina",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Schmit Roberto",
+    "materias": [
+      "Historia Argentina I"
+    ]
+  },
+  {
+    "nombre": "Seijo Gustavo",
+    "materias": [
+      "Diseño Estructural Y Procesos"
+    ]
+  },
+  {
+    "nombre": "Semken Martha Josefina",
+    "materias": [
+      "Organización Del Computador",
+      "Organización Del Computador I",
+      "Programación Ii"
+    ]
+  },
+  {
+    "nombre": "Sendra Carlos Maximiliano",
+    "materias": [
+      "Física General",
+      "Física Inicial",
+      "Introducción A La Física (ingeniería)",
+      "Mecánica De Los Fluidos"
+    ]
+  },
+  {
+    "nombre": "Serafinoff Valeria Analia",
+    "materias": [
+      "Formulación, Gestión Y Evaluación De Proyectos"
+    ]
+  },
+  {
+    "nombre": "Serra Juan Carlos",
+    "materias": [
+      "Residencia I. La Escuela: Ámbito Del Trabajo Docente"
+    ]
+  },
+  {
+    "nombre": "Sgubin Nadina Gisela",
+    "materias": [
+      "Geografía Rural"
+    ]
+  },
+  {
+    "nombre": "Sibio David Antonio Paolo",
+    "materias": [
+      "Filosofía Del Derecho Y Ciudadanía",
+      "Taller Inicial Orientado: Ciencias Humanas"
+    ]
+  },
+  {
+    "nombre": "Sierra Ortega Maria Victoria",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Silva Ariel Jeremias",
+    "materias": [
+      "Historia Contemporánea De Europa"
+    ]
+  },
+  {
+    "nombre": "Silva Matias Fernando",
+    "materias": [
+      "Matemática Para Economistas I"
+    ]
+  },
+  {
+    "nombre": "Sisti Pablo Marcelo",
+    "materias": [
+      "Economía Clásica"
+    ]
+  },
+  {
+    "nombre": "Sisto Horacio Martín",
+    "materias": [
+      "Etica",
+      "Filosofía Moderna"
+    ]
+  },
+  {
+    "nombre": "Solá Alvarez María De Los Angeles",
+    "materias": [
+      "Problemas Socioeconómicos Contemporáneos"
+    ]
+  },
+  {
+    "nombre": "Soria Lucia Carla",
+    "materias": [
+      "Programación Ii"
+    ]
+  },
+  {
+    "nombre": "Soria Noelia Anahi Del Jesus",
+    "materias": [
+      "Química General"
+    ]
+  },
+  {
+    "nombre": "Soria Verónica Lorena",
+    "materias": [
+      "Inglés Académico Profesional I",
+      "Inglés Con Propósitos Específicos I",
+      "Inglés Lectocomprensión I"
+    ]
+  },
+  {
+    "nombre": "Soriano Maria Rosario",
+    "materias": [
+      "Fisicoquímica"
+    ]
+  },
+  {
+    "nombre": "Sosa Griselda Leonor",
+    "materias": [
+      "Química Analítica I"
+    ]
+  },
+  {
+    "nombre": "Sosa Laura Valeria",
+    "materias": [
+      "Gestión De Los Recursos Energéticos",
+      "Gestión De Recursos Renovables"
+    ]
+  },
+  {
+    "nombre": "Soto Graciela Haydee",
+    "materias": [
+      "Costos Industriales",
+      "Costos Para La Toma De Decisiones"
+    ]
+  },
+  {
+    "nombre": "Spina Veronica\r\nandrea",
+    "materias": [
+      "Cartografía, Sensores Remotos Y Sistemas De\r\ninformación Geográfica"
+    ]
+  },
+  {
+    "nombre": "Stegman Tania Jaqueline",
+    "materias": [
+      "Diseño Asistido",
+      "Medios De Representación",
+      "Sistemas De Representación"
+    ]
+  },
+  {
+    "nombre": "Steiervalt Andrea Alejandra",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Straccia Julieta Romina",
+    "materias": [
+      "Lenguaje, Comunicación Y Cultura"
+    ]
+  },
+  {
+    "nombre": "Suárez Francisco",
+    "materias": [
+      "Sociedad, Cultura Y Ambiente",
+      "Taller De Memoria De Licenciatura (ecología)"
+    ]
+  },
+  {
+    "nombre": "Suazo Gisela Eleonora",
+    "materias": [
+      "Antropología Filosófica"
+    ]
+  },
+  {
+    "nombre": "Suster Mateo Ezequiel",
+    "materias": [
+      "Matemática Para Economistas Iii"
+    ]
+  },
+  {
+    "nombre": "Szeftel Micaela",
+    "materias": [
+      "Filosofía Contemporánea",
+      "Problemas De Filosofía"
+    ]
+  },
+  {
+    "nombre": "Szlechter Diego Fabian",
+    "materias": [
+      "Teoría De La Organización"
+    ]
+  },
+  {
+    "nombre": "Szretter Noste Mariana",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Sztulwark Sebastian",
+    "materias": [
+      "Teoría Del Crecimiento Y Desarrollo Económico"
+    ]
+  },
+  {
+    "nombre": "Tabare Mariana Ines",
+    "materias": [
+      "Taller Inicial Orientado: Ciencias Exactas"
+    ]
+  },
+  {
+    "nombre": "Taborda Martin Alejandro",
+    "materias": [
+      "Planeamiento Y Control Organizacional"
+    ]
+  },
+  {
+    "nombre": "Taborda Silvina Analia",
+    "materias": [
+      "Elementos De Cálculo"
+    ]
+  },
+  {
+    "nombre": "Tacchini Lautaro Daniel",
+    "materias": [
+      "Proyecto Profesional Ii"
+    ]
+  },
+  {
+    "nombre": "Taraborrelli Diego Sebastian",
+    "materias": [
+      "Geografía Rural",
+      "Geografía Urbana Y Regional"
+    ]
+  },
+  {
+    "nombre": "Terzibachian Maria Fernanda",
+    "materias": [
+      "Derecho Administrativo"
+    ]
+  },
+  {
+    "nombre": "Tesi Leonardo Javier",
+    "materias": [
+      "Logística Industrial"
+    ]
+  },
+  {
+    "nombre": "Tetzlaff Guillermo Tomas",
+    "materias": [
+      "Cálculo Para Computación"
+    ]
+  },
+  {
+    "nombre": "Tevez Juan Ezequiel",
+    "materias": [
+      "Ciencia De Los Materiales",
+      "Medios De Representación",
+      "Sistemas De Representación"
+    ]
+  },
+  {
+    "nombre": "Tobal Jonathan Elias",
+    "materias": [
+      "Geomorfología"
+    ]
+  },
+  {
+    "nombre": "Todaro Ariel",
+    "materias": [
+      "Adolescencia Y Educación Secundaria"
+    ]
+  },
+  {
+    "nombre": "Toledo Gabriela Alejandra",
+    "materias": [
+      "Seminario Abierto Sobre Procesos Educativos\r\ncontemporáneos",
+      "Taller De Desarrollo Profesional A: Nucleo\r\ninstitucional",
+      "Taller De Desarrollo Profesional A: Núcleo Institucional Perspectivas De Discapacidad Y Acccesibilidad Con Foco En La Discapacidad Cognitiva E\r\nintelectual",
+      "Taller De Desarrollo Profesional B: Nucleo\r\ninstitucional",
+      "Taller De Desarrollo Profesional B: Núcleo Institucional Perspectivas De Discapacidad Y Accesibilidad Con Foco En La Discapacidad Cognitiva E\r\nintelectual",
+      "Teorías Del Aprendizaje"
+    ]
+  },
+  {
+    "nombre": "Toledo Marina Del Carmen",
+    "materias": [
+      "Ecología De Poblaciones Y Comunidades"
+    ]
+  },
+  {
+    "nombre": "Torres Angela Ayelen",
+    "materias": [
+      "Taller De Medios Interactivos"
+    ]
+  },
+  {
+    "nombre": "Torres Julian",
+    "materias": [
+      "Circuitos Eléctricos",
+      "Desarrollo De Proyectos I",
+      "Desarrollo De Proyectos Ii",
+      "Sistemas De Control"
+    ]
+  },
+  {
+    "nombre": "Torres María Alejandra",
+    "materias": [
+      "Lenguaje, Cultura Y Comunicación De La Imagen"
+    ]
+  },
+  {
+    "nombre": "Toscano Ana Gracia",
+    "materias": [
+      "Adolescencia Y Educación Secundaria"
+    ]
+  },
+  {
+    "nombre": "Treacy Mariano Ignacio",
+    "materias": [
+      "Política Económica"
+    ]
+  },
+  {
+    "nombre": "Triador Daniela Belen",
+    "materias": [
+      "Historia Económica Y Social Mundial Y Latinoamericana"
+    ]
+  },
+  {
+    "nombre": "Tufaro Maria Fernanda",
+    "materias": [
+      "Diseño Asistido",
+      "Estática Y Resistencia De Materiales",
+      "Medios De Representación",
+      "Sistemas De Representación"
+    ]
+  },
+  {
+    "nombre": "Tula Ignacio Mariano",
+    "materias": [
+      "Organización Del Computador",
+      "Organización Del Computador I"
+    ]
+  },
+  {
+    "nombre": "Uhrig Leandro Damian",
+    "materias": [
+      "Antropología Filosófica"
+    ]
+  },
+  {
+    "nombre": "Urcola Giselle Carolina",
+    "materias": [
+      "Matemática Para Economistas I"
+    ]
+  },
+  {
+    "nombre": "Vaca Sergio Gabriel",
+    "materias": [
+      "Elementos De Química Orgánica, Analítica Y Biológica",
+      "Laboratorio Interdisciplinario (diagnóstico Ambiental)"
+    ]
+  },
+  {
+    "nombre": "Valente Claudia",
+    "materias": [
+      "Artes Visuales Ii",
+      "Practica Pre Profesional/ De Investigacion (cultura Y\r\nlenguajes Artísticos)"
+    ]
+  },
+  {
+    "nombre": "Vallejo Maria Florencia",
+    "materias": [
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Valls Damián Enrique",
+    "materias": [
+      "Taller De Radio I",
+      "Taller De Radio Ii"
+    ]
+  },
+  {
+    "nombre": "Varela\r\nomar David",
+    "materias": [
+      "Sustentabilidad Ambiental"
+    ]
+  },
+  {
+    "nombre": "Varela Alejandro",
+    "materias": [
+      "Cálculo En Varias Variables"
+    ]
+  },
+  {
+    "nombre": "Varela Augusto Daniel",
+    "materias": [
+      "Inglés Académico Profesional I",
+      "Inglés Académico Profesional Ii",
+      "Inglés Con Propósitos Específicos I",
+      "Inglés Con Propósitos Específicos Ii"
+    ]
+  },
+  {
+    "nombre": "Varela Omar David",
+    "materias": [
+      "Infraestructura Y Servicios Urbanos: Energía"
+    ]
+  },
+  {
+    "nombre": "Varela Viviana Maricel",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Vargas Aldo Mariano",
+    "materias": [
+      "Organización Del Computador",
+      "Organización Del Computador I",
+      "Sistemas Operativos Y Redes",
+      "Sistemas Operativos Y Redes I"
+    ]
+  },
+  {
+    "nombre": "Vasquez Davila Omar Hildebrando",
+    "materias": [
+      "Lógica Y Argumentación"
+    ]
+  },
+  {
+    "nombre": "Vazquez Cecilia",
+    "materias": [
+      "Concepciones De La Comunicación"
+    ]
+  },
+  {
+    "nombre": "Vázquez Gonzalo María",
+    "materias": [
+      "Laboratorio Interdisciplinario (redes Sociales Y Condiciones De Vida: Las Organizaciones Soc. En Accion)"
+    ]
+  },
+  {
+    "nombre": "Velazquez\r\nespinola Santiago",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Velazquez Luca\r\nrodrigo",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Velazquez Luca Rodrigo",
+    "materias": [
+      "Introducción A La Programación"
+    ]
+  },
+  {
+    "nombre": "Velazquez Maximiliano Augusto",
+    "materias": [
+      "Ciudad Y Ambiente"
+    ]
+  },
+  {
+    "nombre": "Velcic Estefania Soledad",
+    "materias": [
+      "Introducción A La Matemática"
+    ]
+  },
+  {
+    "nombre": "Velcic Fernando Patricio",
+    "materias": [
+      "Introducción A La Programación",
+      "Organización Del Computador",
+      "Organización Del Computador I"
+    ]
+  },
+  {
+    "nombre": "Veliz Maximiliano Ezequiel",
+    "materias": [
+      "Taller De Introducción A La Ingeniería"
+    ]
+  },
+  {
+    "nombre": "Veron Gonzalo Alan",
+    "materias": [
+      "Instrumentación Y Control Industrial"
+    ]
+  },
+  {
+    "nombre": "Verre Vladimiro",
+    "materias": [
+      "Historia Económica Y Social Mundial Y Latinoamericana"
+    ]
+  },
+  {
+    "nombre": "Vigh Carlos",
+    "materias": [
+      "Física Inicial",
+      "Introducción A La Física (ingeniería)",
+      "Mecánica Elemental"
+    ]
+  },
+  {
+    "nombre": "Villagra Marcela Patricia",
+    "materias": [
+      "Algebra Lineal"
+    ]
+  },
+  {
+    "nombre": "Villagran Ignacio",
+    "materias": [
+      "Historia De Asia"
+    ]
+  },
+  {
+    "nombre": "Villalba Braian Emmanuel",
+    "materias": [
+      "Cartografía, Sensores Remotos Y Sistemas De\r\ninformación Geográfica"
+    ]
+  },
+  {
+    "nombre": "Viqueira Gabarain Mariangeles",
+    "materias": [
+      "Portugués Ii"
+    ]
+  },
+  {
+    "nombre": "Vullo Diana Lía",
+    "materias": [
+      "Química Ambiental"
+    ]
+  },
+  {
+    "nombre": "Wahren Pablo",
+    "materias": [
+      "Teorías Contemporáneas De La Economía Política I"
+    ]
+  },
+  {
+    "nombre": "Waingarten Leonardo David",
+    "materias": [
+      "Programación I"
+    ]
+  },
+  {
+    "nombre": "Wider Silvana",
+    "materias": [
+      "Taller De Utilitarios"
+    ]
+  },
+  {
+    "nombre": "Wilhelm Sebastian Enrique",
+    "materias": [
+      "Cálculo Ii",
+      "Ecuaciones Diferenciales (ingenierías Y Física)",
+      "Ecuaciones Diferenciales (matemática)",
+      "Elementos De Álgebra Lineal"
+    ]
+  },
+  {
+    "nombre": "Wyczykier Gabriela",
+    "materias": [
+      "Sociología Contemporánea"
+    ]
+  },
+  {
+    "nombre": "Yabkowski Nuria\r\npaola",
+    "materias": [
+      "Política"
+    ]
+  },
+  {
+    "nombre": "Yabkowski Nuria Paola",
+    "materias": [
+      "Laboratorio Interdisciplinario (temas De Generos.\r\ndesigualdades, Disidencias Y Derechos)"
+    ]
+  },
+  {
+    "nombre": "Yañez Carlos Manuel Matias",
+    "materias": [
+      "Empresas Públicas"
+    ]
+  },
+  {
+    "nombre": "Young Agustina",
+    "materias": [
+      "Economía Urbana Y Regional"
+    ]
+  },
+  {
+    "nombre": "Zabalza Carlos Manuel Alejo",
+    "materias": [
+      "Taller Inicial Común: Taller De Lectura Y Escritura"
+    ]
+  },
+  {
+    "nombre": "Zambrano Daniel Alberto",
+    "materias": [
+      "Mecánica Y Mecanismos",
+      "Mecanismos Y Elementos De Máquina",
+      "Mecanismos Y Elementos De Máquinas A",
+      "Práctica Profesional Supervisada (anual - Ingeniería\r\nelectromecánica)"
+    ]
+  },
+  {
+    "nombre": "Zamora Albornoz Anabella Cristina",
+    "materias": [
+      "Laboratorio Interdisciplinario (redes Sociales Y Condiciones De Vida: Las Organizaciones Soc. En Accion)"
+    ]
+  },
+  {
+    "nombre": "Zangaro Marcela Beatriz",
+    "materias": [
+      "Sociología Industrial",
+      "Teoría De La Organización"
+    ]
+  },
+  {
+    "nombre": "Zapata Ana Belén",
+    "materias": [
+      "Historia Argentina Contemporánea",
+      "Historia De La Historiografía"
+    ]
+  },
+  {
+    "nombre": "Zapiola María Carolina",
+    "materias": [
+      "Historia Latinoamericana I",
+      "Seminario De Investigación En Historia: “historia De La Infancia En Argentina Y América Latina. Modelos, Identidades Y Experiencias En Tensión (fines Del Siglo Xix-\r\nsiglo Xxi)”"
+    ]
+  },
+  {
+    "nombre": "Zorzoli Giuliana Jazmin",
+    "materias": [
+      "Sistemas Operativos Y Redes",
+      "Sistemas Operativos Y Redes I"
+    ]
+  },
+  {
+    "nombre": "Zuberman Federico",
+    "materias": [
+      "Agroecología",
+      "Cuestiones Ambientales Contemporáneas"
+    ]
+  },
+  {
+    "nombre": "Zubillaga Paula",
+    "materias": [
+      "Historia Argentina Contemporánea",
+      "Historia De La Historiografía"
+    ]
+  },
+  {
+    "nombre": "Zunino Maria Carolina",
+    "materias": [
+      "Literatura I",
+      "Practica Pre Profesional/ De Investigacion (cultura Y\r\nlenguajes Artísticos)"
+    ]
+  }
+]
