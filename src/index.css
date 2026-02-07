@@ -2,17 +2,178 @@
 @import "tw-animate-css";
 
 @theme {
-    --color-fondo: #030712;
-    --color-tarjetas: #101828;
-    --color-bordes: #807769; /*#1d202a */
-    --color-campo: #1a2231;
-    --color-blanco: #e5e7eb;
-    --font-sans: "Geist", sans-serif;
+  --color-fondo: #030712;
+  --color-tarjetas: #101828;
+  --color-bordes: #807769;
+  /*#1d202a */
+  --color-campo: #1a2231;
+  --color-blanco: #e5e7eb;
+  --font-sans: "Geist", sans-serif;
 }
 
 @layer base {
-  body, html {
+
+  body,
+  html {
     background: var(--color-fondo) !important;
     background-image: none !important;
+  }
+}
+
+/* Para móviles pequeños (360px - 639px) */
+@media (min-width: 360px) and (max-width: 639px) {
+  main {
+    height: 100vh !important;
+    width: 100vw !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+
+  }
+
+  main .relative {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  main h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .card-container {
+    height: calc(100vh - 290px) !important;
+    min-height: 400px !important;
+  }
+
+  .pr-3 {
+    padding: 0 !important;
+  }
+
+  .card-container::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .div-main {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 !important;
+  }
+
+  .card-main-docentes {
+    width: 100% !important;
+  }
+
+  .card-main-docentes h2 {
+
+    line-height: 1 !important;
+    max-height: calc(2 * 1.4em) !important;
+  }
+
+  .div-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin-bottom: 12px !important;
+  }
+
+  .search-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 20px 0 !important;
+  }
+}
+
+/* Para móviles medianos (640px - 767px) */
+@media (min-width: 640px) and (max-width: 799px) {
+  main {
+    height: 100vh !important;
+    width: 100vw !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    box-sizing: border-box !important;
+  }
+
+  main .lucide-log-out,
+  main .lucide-log-in {
+    right: 10px !important;
+  }
+
+  .card-container {
+    height: 570px !important;
+  }
+
+  .div-main {
+    width: 100% !important;
+    max-width: 720px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .card-main-docentes {
+    width: 100% !important;
+  }
+
+  .div-card {
+    width: 100% !important;
+    min-width: 280px !important;
+    max-width: 100% !important;
+  }
+
+  .search-container {
+    width: 100% !important;
+    max-width: 712px !important;
+    margin: 0 0 24px 0 !important;
+  }
+}
+
+/* Para tablets (768px - 1023px) */
+@media (min-width: 800px) and (max-width: 1023px) {
+  main {
+    height: 100vh !important;
+    min-height: calc(100vh - 200px) !important;
+  }
+
+  main .lucide-log-out,
+  main .lucide-log-in {
+    right: 10px !important;
+  }
+
+  .card-container {
+    height: 568px !important;
+  }
+}
+
+/* Para laptops pequeñas (1024px - 1279px) */
+@media (min-width: 1024px) {
+  main {
+    height: 100vh !important;
+    min-height: calc(100vh - 250px) !important;
+  }
+
+  main .lucide-log-out,
+  main .lucide-log-in {
+    right: 10px !important;
+  }
+
+  .card-container {
+    height: 568px !important;
+  }
+}
+
+@media (width: 1024px) and (height: 600px){
+  main {
+    height: 100vh !important;
+    width: 100vw !important;
+    min-height: calc(100vh - 250px) !important;
+  }
+
+  main .lucide-log-out,
+  main .lucide-log-in {
+    right: 10px !important;
+  }
+
+  .card-container {
+    height: 340px !important;
   }
 }

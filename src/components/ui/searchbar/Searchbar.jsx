@@ -14,7 +14,7 @@ const SearchBar = ({ value = "", onChange }) => {
     };
 
     return (
-        <div className="text-white flex justify-center w-175 mb-6">
+        <div className="text-white flex justify-center mb-6 w-175 search-container">
             <form
                 role="search"
                 className="w-full h-13 px-4

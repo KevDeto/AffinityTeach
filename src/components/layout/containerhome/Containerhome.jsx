@@ -94,7 +94,7 @@ const Container = () => {
     }
 
     return (
-        <main className="w-200 h-screen min-h-lvh bg-fondo border-2 
+        <main className="w-200 min-h-screen bg-fondo border-2 
             border-dashed border-y-transparent border-bordes
             m-auto text-white p-4 ">
             <div className="relative flex justify-center p-3 mt-4">
@@ -116,7 +116,7 @@ const Container = () => {
                 ) : (
                     <button
                         onClick={handleAuthButtonClick}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
+                        className="absolute right-4 top-1/2 -translate-y-1/2  cursor-pointer"
                         title={user ? "Cerrar sesión" : "Iniciar sesión con Google"}
                     >
                         {user ? (
@@ -124,7 +124,7 @@ const Container = () => {
                             <LogOut
                                 strokeWidth={3}
                                 size={32}
-                                className="absolute right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
+                                className="absolute -right-4 top-1/2 -translate-y-1/2 cursor-pointer"
                                 title="Cerrar sesión"
                             />
                         ) : (
@@ -132,18 +132,19 @@ const Container = () => {
                             <LogIn
                                 strokeWidth={3}
                                 size={32}
-                                className="absolute right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
+                                className="absolute -right-4 top-1/2 -translate-y-1/2 cursor-pointer"
                                 title="Iniciar sesión con Google"
                             />
                         )}
                     </button>
                 )}
             </div>
-            <div className="w-175 flex-col justify-center m-auto mt-6">
+            <div className="w-175 flex-col justify-center m-auto mt-6 flex-1 div-main">
                 <SearchInput value={search} onChange={searcher} />
                 <FilterCombobox onChange={handleOrderChange} value={order} />
-                <div className="w-180 ">
-                    <div className="max-h-[calc(100vh-298px)] sm:max-h-[calc(100vh)] overflow-y-auto 
+                <div className="w-180 div-card">
+                    <div className="card-container h-[calc(100vh-298px)]
+                        overflow-y-auto 
                         [&::-webkit-scrollbar]:w-2
                         [&::-webkit-scrollbar-track]:bg-transparent
                          [&::-webkit-scrollbar-thumb]:bg-bordes
@@ -151,7 +152,7 @@ const Container = () => {
                          [&::-webkit-scrollbar-thumb]:hover:bg-gray-500
                          [&::-webkit-scrollbar-thumb]:cursor-pointer
                         mt-6">
-                        <div className="pr-3">
+                        <div className="pr-3 ">
                             <Card docentes={results} />
                         </div>
                     </div>

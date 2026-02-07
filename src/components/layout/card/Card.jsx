@@ -56,7 +56,7 @@ const Card = ({docentes}) => {
         <>
             {docentes.map((docente) => {
                 return (
-                    <div key={docente.id} className="w-full h-40 flex-col border border-bordes rounded-md bg-tarjetas p-4 mb-6">
+                    <div key={docente.id} className="card-main-docentes w-full h-40 flex-col border border-bordes rounded-md bg-tarjetas p-4 mb-6">
                         <div className="flex justify-between">
                             <div className="flex items-center gap-3">
                                 <div className="w-12 h-12 rounded-full bg-gray-600 flex justify-center items-center">
