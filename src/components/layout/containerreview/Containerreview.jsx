@@ -89,7 +89,7 @@ const Containerreview = () => {
     const results = resenasOrdenadas;
 
     return (
-        <main className="w-200 h-screen min-h-full bg-fondo border-2 
+        <main className="w-200 min-h-screen bg-fondo border-2 
             border-dashed border-y-transparent border-bordes
             m-auto text-white p-4">
             <div className="relative flex justify-center p-3 mt-4">
@@ -106,7 +106,7 @@ const Containerreview = () => {
                 {!authChecked ? (
                     <Loader2
                         size={28}
-                        className="animate-spin absolute right-14 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
+                        className="animate-spin absolute -right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
                     />
                 ) : (
                     <button
@@ -119,7 +119,7 @@ const Containerreview = () => {
                             <LogOut
                                 strokeWidth={3}
                                 size={32}
-                                className="absolute right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
+                                className="absolute -right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
                                 title="Cerrar sesión"
                             />
                         ) : (
@@ -127,14 +127,14 @@ const Containerreview = () => {
                             <LogIn
                                 strokeWidth={3}
                                 size={32}
-                                className="absolute right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
+                                className="absolute -right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
                                 title="Iniciar sesión con Google"
                             />
                         )}
                     </button>
                 )}
             </div>
-            <div className="w-175 flex justify-start m-auto mt-10 items-center gap-4 mb-6 px-1.5">
+            <div className="w-175 flex justify-start m-auto mt-10 items-center gap-4 mb-6 px-1.5 docente-container">
                 <div className="w-17 h-17 rounded-full bg-gray-600 flex justify-center 
                         items-center">
                     <UserRound size={32} />
@@ -143,10 +143,10 @@ const Containerreview = () => {
                     <h2 className="text-[18px]">{docenteSeleccionado?.nombre}</h2>
                 </div>
             </div>
-            <div className="w-175 flex-col justify-center m-auto mt-6">
+            <div className="w-175 flex-col justify-center m-auto mt-6 div-main">
 
-                <div className="w-180">
-                    <div className="max-h-[calc(100vh-250px)] overflow-y-auto 
+                <div className="w-180 div-card">
+                    <div className="card-container h-[calc(100vh-250px)] overflow-y-auto 
                         [&::-webkit-scrollbar]:w-2
                         [&::-webkit-scrollbar-track]:bg-transparent
                          [&::-webkit-scrollbar-thumb]:bg-bordes

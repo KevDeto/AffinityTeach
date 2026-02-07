@@ -111,7 +111,7 @@ const Container = () => {
                 {!authChecked ? (
                     <Loader2
                         size={28}
-                        className="animate-spin absolute right-14 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
+                        className="animate-spin absolute -right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
                     />
                 ) : (
                     <button

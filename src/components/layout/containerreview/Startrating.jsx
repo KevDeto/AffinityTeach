@@ -9,7 +9,7 @@ const StarRating = () => {
         fetchDocenteById,
     } = useDocenteStore();
 
-// Estado para guardar los porcentajes calculados
+    // Estado para guardar los porcentajes calculados
     const [ratings, setRatings] = useState([
         { stars: 5, percentage: 0 },
         { stars: 4, percentage: 0 },
@@ -26,7 +26,7 @@ const StarRating = () => {
 
         // Contar cada tipo de estrella
         const counts = { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0 };
-        
+
         resenas.forEach(resena => {
             const estrellas = resena.estrellas || 0;
             if (estrellas >= 1 && estrellas <= 5) {
@@ -35,7 +35,7 @@ const StarRating = () => {
         });
 
         const totalReviews = resenas.length;
-        
+
         // Calcular porcentajes para cada estrella
         const percentages = [
             totalReviews > 0 ? (counts[5] / totalReviews) * 100 : 0, // 5★
@@ -52,7 +52,7 @@ const StarRating = () => {
     const adjustRatingForStars = (num) => {
         const integerPart = Math.floor(num); // Parte entera
         const decimalPart = num - integerPart; // Parte decimal
-        
+
         // Si no tiene decimales (es exacto), devolvemos el número entero
         if (decimalPart === 0) {
             return integerPart;
@@ -67,7 +67,7 @@ const StarRating = () => {
     useEffect(() => {
         if (docenteSeleccionado?.resenas) {
             const percentages = calcularDistribucion(docenteSeleccionado.resenas);
-            
+
             // Actualizar el estado de ratings con los porcentajes calculados
             setRatings([
                 { stars: 5, percentage: percentages[0] },
@@ -84,18 +84,20 @@ const StarRating = () => {
 
     // Ajustar el rating para las estrellas visuales
     const adjustedRating = adjustRatingForStars(averageRating);
-    
+
     // Calcular el ancho de las estrellas llenas basado en el rating ajustado
     const starsFilledWidth = `${(adjustedRating / 5) * 100}%`;
 
     return (
         <div className="app flex items-center justify-center p-4 mt-6 mb-6">
-            <div className="rating flex flex-col md:flex-row md:gap-12 items-center md:items-start max-w-4xl">
-                <div className="rating__progress flex flex-col gap-3 md:w-auto  min-w-115">
+            <div className="rating flex md:flex-row md:gap-12 items-center md:items-start max-w-4xl sm:gap-12 max-sm:gap-12">
+                <div className="rating__progress flex flex-col 
+                    [@media(min-width:280px)_and_(max-width:480px)]:max-w-40
+                    [@media(min-width:480px)_and_(max-width:550px)]:max-w-65 max-sm:w-80 sm:w-100 sm:gap-2 md:w-115 md:gap-3 ">
                     {ratings.map((rating) => (
                         <div
                             key={rating.stars}
-                            className="rating__progress-value flex items-center gap-3"
+                            className="rating__progress-value flex items-center gap-3 "
                         >
                             <p className="text-sm font-medium w-4 flex justify-center">{rating.stars}</p>
                             <div className="progress flex-1 h-2 rounded-full bg-campo">

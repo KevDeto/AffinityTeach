@@ -82,6 +82,15 @@
     max-width: 100% !important;
     margin: 0 0 20px 0 !important;
   }
+
+  .docente-container {
+    width: 100% !important;
+    max-width: 712px !important;
+  }
+
+  .app{
+    margin-top: 0 !important;
+  }
 }
 
 /* Para móviles medianos (640px - 767px) */
@@ -125,6 +134,15 @@
     max-width: 712px !important;
     margin: 0 0 24px 0 !important;
   }
+
+  .docente-container {
+    width: 100% !important;
+    max-width: 712px !important;
+  }
+
+  .app{
+    margin-top: 0 !important;
+  }
 }
 
 /* Para tablets (768px - 1023px) */
@@ -145,7 +163,7 @@
 }
 
 /* Para laptops pequeñas (1024px - 1279px) */
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
   main {
     height: 100vh !important;
     min-height: calc(100vh - 250px) !important;
@@ -161,7 +179,7 @@
   }
 }
 
-@media (width: 1024px) and (height: 600px){
+@media (width: 1024px) and (height: 600px) {
   main {
     height: 100vh !important;
     width: 100vw !important;
