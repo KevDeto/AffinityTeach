@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { useDocenteStore } from "@/stores/docenteStore";
 
-const Cardreview = ({resenas}) => {
+const Cardreview = ({ resenas }) => {
     const { id } = useParams();
     const {
         docenteSeleccionado,
@@ -185,7 +185,13 @@ const Cardreview = ({resenas}) => {
                                 <div className="relative">
                                     <textarea
                                         readOnly
-                                        className="resize-none w-full bg-tarjetas border-none focus:outline-none text-blanco leading-relaxed overflow-y-auto min-h-1 max-h-50"
+                                        className="resize-none w-full bg-tarjetas border-none focus:outline-none text-blanco leading-relaxed overflow-y-auto min-h-16 max-h-50 
+                                                [&::-webkit-scrollbar]:w-2
+                                                [&::-webkit-scrollbar-track]:bg-transparent
+                                                 [&::-webkit-scrollbar-thumb]:bg-bordes
+                                                [&::-webkit-scrollbar-thumb]:rounded-full
+                                                [&::-webkit-scrollbar-thumb]:hover:bg-gray-500
+                                                [&::-webkit-scrollbar-thumb]:cursor-pointer"
                                         value={resena.comentario}
                                         rows={Math.min(Math.ceil(resena.comentario.length / 60), 5)}
                                     />
