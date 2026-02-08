@@ -32,7 +32,7 @@ const Buttonreview = ({ docenteId }) => {
         const docente = docentes.find(d => d.id === docenteId);
 
         if (!docente || !docente.resenas || !user?.email) {
-            console.log("No hay datos suficientes para verificar");
+            //console.log("No hay datos suficientes para verificar");
             return false;
         }
 
@@ -45,9 +45,9 @@ const Buttonreview = ({ docenteId }) => {
 
     useEffect(() => {
         if (user && docenteId && docentes.length > 0) {
-            console.log("Verificando reseña para usuario:", user.email);
+            //console.log("Verificando reseña para usuario:", user.email);
             const hasReviewed = checkIfAlreadyReviewed();
-            console.log("Resultado verificación:", hasReviewed);
+            //console.log("Resultado verificación:", hasReviewed);
             setAlreadyReviewed(hasReviewed);
         } else {
             setAlreadyReviewed(false);
@@ -161,10 +161,10 @@ const Buttonreview = ({ docenteId }) => {
                 email: user.email,
             };
 
-            console.log("Enviando reseña:", { docenteId, ...resenaData });
+            //console.log("Enviando reseña:", { docenteId, ...resenaData });
 
 
-            console.log("foto de google " + user.photoURL)
+            //console.log("foto de google " + user.photoURL)
             // Llamar a la función del store
             await agregarResena(docenteId, resenaData);
             // Notificación de éxito

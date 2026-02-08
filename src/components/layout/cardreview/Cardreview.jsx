@@ -21,12 +21,12 @@ const Cardreview = ({ resenas }) => {
         // 2. No es el mismo ID que ya cargamos
         // 3. No estamos cargando ya
         if (id && id !== lastFetchedIdRef.current && !loading) {
-            console.log(`Iniciando fetch para docente ${id}`);
+            //console.log(`Iniciando fetch para docente ${id}`);
 
             // Cancelar cualquier fetch anterior
             if (fetchControllerRef.current) {
                 fetchControllerRef.current.abort();
-                console.log(`Cancelando fetch anterior`);
+                //console.log(`Cancelando fetch anterior`);
             }
 
             // Guardar referencia del ID actual
@@ -38,7 +38,7 @@ const Cardreview = ({ resenas }) => {
 
         // Cleanup cuando el componente se desmonta
         return () => {
-            console.log(`Cardreview cleanup para ID: ${id}`);
+            //console.log(`Cardreview cleanup para ID: ${id}`);
             // No resetear lastFetchedIdRef aquí porque queremos
             // recordar que ya cargamos este docente
         };
@@ -149,13 +149,19 @@ const Cardreview = ({ resenas }) => {
                                                 referrerPolicy="no-referrer"
                                                 crossOrigin="anonymous"
                                                 onError={(e) => {
-                                                    console.log(`Error cargando avatar de ${resena.estudiante}:`, resena.photo);
+                                                    //console.log(`Error cargando avatar de ${resena.estudiante}:`, resena.photo);
                                                     e.target.style.display = 'none';
                                                     // Mostrar el ícono por defecto si falla
                                                     e.target.nextElementSibling?.classList.remove('hidden');
                                                 }}
                                             />
-                                        ) : null}
+                                        ) : (
+                                            <div className="w-full h-full bg-linear-to-br from-blue-700 to-violet-500 rounded-full flex items-center justify-center">
+                                                <span className="text-white font-semibold text-lg">
+                                                    {resena.estudiante?.charAt(0).toUpperCase() || 'U'}
+                                                </span>
+                                            </div>
+                                        )}
                                     </div>
                                     <div>
                                         <h2 className="font-semibold text-blanco">{resena.estudiante}</h2>

@@ -26,7 +26,7 @@ const Containerreview = () => {
             setAuthChecked(true); // Marcamos que ya verificamos
 
             if (currentUser && shouldOpenAfterLogin.current) {
-                console.log("Usuario autenticado:", currentUser.email);
+                //console.log("Usuario autenticado:", currentUser.email);
                 shouldOpenAfterLogin.current = false;
             }
         });

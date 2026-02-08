@@ -26,7 +26,7 @@ const Container = () => {
             setAuthChecked(true); // Marcamos que ya verificamos
 
             if (currentUser && shouldOpenAfterLogin.current) {
-                console.log("Usuario autenticado:", currentUser.email);
+                //console.log("Usuario autenticado:", currentUser.email);
                 shouldOpenAfterLogin.current = false;
             }
         });
@@ -57,7 +57,7 @@ const Container = () => {
     const handleLogout = async () => {
         try {
             await auth.signOut();
-            console.log("Sesión cerrada exitosamente");
+            //console.log("Sesión cerrada exitosamente");
         } catch (error) {
             console.error("Error al cerrar sesión:", error);
         }

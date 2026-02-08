@@ -5,7 +5,7 @@ const API_BASE_URL = 'https://affinityteach-backend.onrender.com/api/docentes';
 // Helper mejorado para fetch
 const fetchWithErrorHandling = async (url, options = {}) => {
   try {
-    console.log(`Fetching: ${url}`);
+    //console.log(`Fetching: ${url}`);
 
     const response = await fetch(url, {
       ...options,
@@ -15,7 +15,7 @@ const fetchWithErrorHandling = async (url, options = {}) => {
       },
     });
 
-    console.log(`Response status: ${response.status} ${response.statusText}`);
+    //console.log(`Response status: ${response.status} ${response.statusText}`);
 
     if (!response.ok) {
       let errorMessage = `HTTP error! status: ${response.status}`;
@@ -37,7 +37,7 @@ const fetchWithErrorHandling = async (url, options = {}) => {
     }
 
     const data = await response.json();
-    console.log('Fetch successful:', data);
+    //console.log('Fetch successful:', data);
     return data;
   } catch (error) {
     console.error('Fetch error details:', {
@@ -65,12 +65,12 @@ export const useDocenteStore = create((set, get) => ({
 
   // 1. Obtener todos los docentes
   fetchDocentes: async () => {
-    console.log('fetchDocentes called');
+    //console.log('fetchDocentes called');
     set({ loading: true, error: null });
 
     try {
       const data = await fetchWithErrorHandling(API_BASE_URL);
-      console.log('Data received from API:', data);
+      //console.log('Data received from API:', data);
 
       // Verificar si data es un array
       if (!Array.isArray(data)) {
@@ -88,7 +88,7 @@ export const useDocenteStore = create((set, get) => ({
         especialidad: docente.materias?.[0] || docente.especialidad || 'Sin especialidad'
       }));
 
-      console.log('Formatted docentes:', docentesFormateados);
+      //console.log('Formatted docentes:', docentesFormateados);
 
       set({
         docentes: docentesFormateados,
