@@ -62,8 +62,8 @@ const Cardreview = ({ resenas }) => {
         }
     };
 
-    const getFormattedDate = (dateString) => {
-        if (!dateString) {
+    const getFormattedDate = (firebaseTimestamp) => {
+        if (!firebaseTimestamp) {
             const today = new Date();
             return today.toLocaleDateString('es-ES', {
                 day: '2-digit',
@@ -73,7 +73,15 @@ const Cardreview = ({ resenas }) => {
         }
 
         try {
-            const date = new Date(dateString);
+            if (firebaseTimestamp.seconds) {
+                const date = new Date(firebaseTimestamp.seconds * 1000);
+                return date.toLocaleDateString('es-ES', {
+                    day: '2-digit',
+                    month: '2-digit',
+                    year: 'numeric'
+                });
+            }
+            const date = new Date(firebaseTimestamp);
             if (isNaN(date.getTime())) {
                 return 'Fecha reciente';
             }
@@ -180,7 +188,7 @@ const Cardreview = ({ resenas }) => {
                                         </div>
                                     </div>
                                     <p className="text-[12px] text-gray-400">
-                                        {getFormattedDate(resena.fechaAsLocalDateTime)}
+                                        {getFormattedDate(resena.fecha)}
                                     </p>
                                 </div>
                             </div>
