@@ -37,8 +37,9 @@ const Buttonreview = ({ docenteId }) => {
             return false;
         }
 
-        const hasReviewed = docente.resenas.some(resena =>
-            resena.email === user.email
+        const hasReviewed = docenteSeleccionado.resenas.some(resena =>
+            (resena.estudiante === user.displayName) ||
+            (resena.photo === user.photoURL)
         );
 
         return hasReviewed;
@@ -174,7 +175,6 @@ const Buttonreview = ({ docenteId }) => {
             // Llamar a la función del store
             await agregarResena(docenteId, resenaData, token);
             // Notificación de éxito
-            setAlreadyReviewed(true);
             //alert("¡Reseña enviada exitosamente! Gracias por compartir tu experiencia.");
             //setAlreadyReviewed(true);
             // Cerrar el diálogo
