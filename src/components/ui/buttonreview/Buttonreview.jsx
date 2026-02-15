@@ -45,7 +45,7 @@ const Buttonreview = ({ docenteId }) => {
     }
 
     useEffect(() => {
-        if (user && docenteId && docenteSeleccionado) {
+        if (user?.email && docenteSeleccionado.resenas) {
             //console.log("Verificando reseña para usuario:", user.email);
             const hasReviewed = checkIfAlreadyReviewed();
             //console.log("Resultado verificación:", hasReviewed);
@@ -174,6 +174,7 @@ const Buttonreview = ({ docenteId }) => {
             // Llamar a la función del store
             await agregarResena(docenteId, resenaData, token);
             // Notificación de éxito
+            setAlreadyReviewed(true);
             //alert("¡Reseña enviada exitosamente! Gracias por compartir tu experiencia.");
             //setAlreadyReviewed(true);
             // Cerrar el diálogo
