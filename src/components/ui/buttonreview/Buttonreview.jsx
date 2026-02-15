@@ -152,6 +152,8 @@ const Buttonreview = ({ docenteId }) => {
         */
         setIsSubmitting(true);
         try {
+            //obtengo el token del usuario
+            const token = await user.getIdToken();
             // Preparar los datos de la reseña según la estructura de tu API
             const resenaData = {
                 estudiante: user.displayName,
@@ -166,7 +168,7 @@ const Buttonreview = ({ docenteId }) => {
 
             //console.log("foto de google " + user.photoURL)
             // Llamar a la función del store
-            await agregarResena(docenteId, resenaData);
+            await agregarResena(docenteId, resenaData, token);
             // Notificación de éxito
             //alert("¡Reseña enviada exitosamente! Gracias por compartir tu experiencia.");
             //setAlreadyReviewed(true);

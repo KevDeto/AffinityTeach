@@ -278,7 +278,7 @@ export const useDocenteStore = create((set, get) => ({
   // ============ OPERACIONES CON RESEÑAS ============
 
   // 6. Agregar reseña a un docente
-  agregarResena: async (docenteId, resenaRequest) => {
+  agregarResena: async (docenteId, resenaRequest, token) => {
     if (!docenteId) {
       set({ error: 'ID de docente no proporcionado', loading: false });
       return;
@@ -297,6 +297,10 @@ export const useDocenteStore = create((set, get) => ({
 
       const data = await fetchWithErrorHandling(`${API_BASE_URL}/${docenteId}/resenas`, {
         method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
         body: JSON.stringify(resenaRequest)
       });
 
