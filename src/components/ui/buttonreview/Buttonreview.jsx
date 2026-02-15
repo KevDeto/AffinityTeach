@@ -45,7 +45,7 @@ const Buttonreview = ({ docenteId }) => {
     }
 
     useEffect(() => {
-        if (user?.email && docenteSeleccionado.resenas) {
+        if (user?.email && docenteSeleccionado?.resenas) {
             //console.log("Verificando reseña para usuario:", user.email);
             const hasReviewed = checkIfAlreadyReviewed();
             //console.log("Resultado verificación:", hasReviewed);
