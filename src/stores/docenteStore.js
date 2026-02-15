@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-const API_BASE_URL = 'https://affinityteach-backend.onrender.com/api/docentes';
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 // Helper mejorado para fetch
 const fetchWithErrorHandling = async (url, options = {}) => {
