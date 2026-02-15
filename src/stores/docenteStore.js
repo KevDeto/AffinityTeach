@@ -6,7 +6,16 @@ const API_BASE_URL = import.meta.env.VITE_API_URL;
 const fetchWithErrorHandling = async (url, options = {}) => {
   try {
     //console.log(`Fetching: ${url}`);
+    console.log("📤 Request URL:", url);
+    console.log("📤 Request Method:", options.method || 'GET');
+    console.log("📤 Request Headers:", options.headers);
+    if (options.headers?.Authorization) {
+      console.log("🔑 Auth header presente:", options.headers.Authorization.substring(0, 30) + "...");
+    } else {
+      console.log("❌ NO HAY AUTH HEADER");
+    }
 
+    console.log("📥 Response status:", response.status);
     const response = await fetch(url, {
       ...options,
       headers: {
