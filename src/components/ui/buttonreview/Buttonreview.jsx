@@ -152,12 +152,8 @@ const Buttonreview = ({ docenteId }) => {
         */
         setIsSubmitting(true);
         try {
-            console.log("👤 Usuario actual:", user);
-            console.log("👤 Email:", user?.email);
             //obtengo el token del usuario
             const token = await user.getIdToken();
-            console.log("🔑 Token obtenido (primeros 50 chars):", token.substring(0, 50));
-            console.log("🔑 Token length:", token.length);
             if (!token || token.length < 10) {
                 throw new Error("Token inválido o vacío");
             }
@@ -186,7 +182,12 @@ const Buttonreview = ({ docenteId }) => {
 
         } catch (error) {
             console.error("Error al enviar reseña:", error);
-            alert(`Error al enviar la reseña: ${error.message || "Por favor, intenta nuevamente."}`);
+            if (error.message === "REVIEW_DUPLICATE") {
+                alert("Ya has dejado una reseña para este docente.");
+                setAlreadyReviewed(true);
+            } else {
+                alert(`Error al enviar la reseña: ${error.message || "Por favor, intenta nuevamente."}`);
+            }
         } finally {
             setIsSubmitting(false);
         }
