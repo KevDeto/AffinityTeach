@@ -13,7 +13,7 @@ import {
 import { useDocenteStore } from "@/stores/docenteStore";
 
 const Buttonreview = ({ docenteId }) => {
-    const { agregarResena, docentes } = useDocenteStore();
+    const { agregarResena, docentes, docenteSeleccionado } = useDocenteStore();
     const { handleClickLoginGoogle } = useLoginWithGoogle();
 
     const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +29,8 @@ const Buttonreview = ({ docenteId }) => {
     const shouldOpenAfterLogin = useRef(false);
 
     const checkIfAlreadyReviewed = () => {
-        const docente = docentes.find(d => d.id === docenteId);
+        //const docente = docentes.find(d => d.id === docenteId);
+        const docente = docenteSeleccionado;
 
         if (!docente || !docente.resenas || !user?.email) {
             //console.log("No hay datos suficientes para verificar");
@@ -44,7 +45,7 @@ const Buttonreview = ({ docenteId }) => {
     }
 
     useEffect(() => {
-        if (user && docenteId && docentes.length > 0) {
+        if (user && docenteId && docenteSeleccionado) {
             //console.log("Verificando reseña para usuario:", user.email);
             const hasReviewed = checkIfAlreadyReviewed();
             //console.log("Resultado verificación:", hasReviewed);
@@ -52,7 +53,7 @@ const Buttonreview = ({ docenteId }) => {
         } else {
             setAlreadyReviewed(false);
         }
-    }, [user, docenteId, docentes])
+    }, [user, docenteId, docenteSeleccionado])
 
     // Efecto para escuchar cambios en la autenticación
     useEffect(() => {
