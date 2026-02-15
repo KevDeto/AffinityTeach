@@ -152,8 +152,15 @@ const Buttonreview = ({ docenteId }) => {
         */
         setIsSubmitting(true);
         try {
+            console.log("👤 Usuario actual:", user);
+            console.log("👤 Email:", user?.email);
             //obtengo el token del usuario
             const token = await user.getIdToken();
+            console.log("🔑 Token obtenido (primeros 50 chars):", token.substring(0, 50));
+            console.log("🔑 Token length:", token.length);
+            if (!token || token.length < 10) {
+                throw new Error("Token inválido o vacío");
+            }
             // Preparar los datos de la reseña según la estructura de tu API
             const resenaData = {
                 estudiante: user.displayName,
