@@ -5,17 +5,10 @@ const API_BASE_URL = import.meta.env.VITE_API_URL;
 // Helper mejorado para fetch
 const fetchWithErrorHandling = async (url, options = {}) => {
   try {
-    //console.log(`Fetching: ${url}`);
-    console.log("📤 Request URL:", url);
-    console.log("📤 Request Method:", options.method || 'GET');
-    console.log("📤 Request Headers:", options.headers);
-    if (options.headers?.Authorization) {
-      console.log("🔑 Auth header presente:", options.headers.Authorization.substring(0, 30) + "...");
-    } else {
-      console.log("❌ NO HAY AUTH HEADER");
-    }
-
-    console.log("📥 Response status:", response.status);
+    console.log("🌐 FETCH: Iniciando petición a:", url);
+    console.log("🌐 FETCH: Method:", options.method || 'GET');
+    console.log("🌐 FETCH: Headers:", options.headers);
+    
     const response = await fetch(url, {
       ...options,
       headers: {
@@ -24,38 +17,39 @@ const fetchWithErrorHandling = async (url, options = {}) => {
       },
     });
 
-    //console.log(`Response status: ${response.status} ${response.statusText}`);
+    console.log("🌐 FETCH: Response status:", response.status);
+    console.log("🌐 FETCH: Response headers:", Object.fromEntries(response.headers.entries()));
 
     if (!response.ok) {
       let errorMessage = `HTTP error! status: ${response.status}`;
 
-      // Intentar obtener mensaje de error del cuerpo de la respuesta
       try {
         const errorData = await response.text();
-        console.error('Error response:', errorData);
-
-        // Intentar parsear como JSON
-        const parsedError = JSON.parse(errorData);
-        errorMessage = parsedError.message || parsedError.error || errorMessage;
-      } catch (parseError) {
-        // Si no es JSON, usar el texto plano
-        console.error('Could not parse error response as JSON');
+        console.error('🌐 FETCH: Error response body:', errorData);
+        
+        try {
+          const parsedError = JSON.parse(errorData);
+          errorMessage = parsedError.message || parsedError.error || errorMessage;
+        } catch (parseError) {
+          console.error('🌐 FETCH: Could not parse error response as JSON');
+        }
+      } catch (textError) {
+        console.error('🌐 FETCH: Could not get error response text');
       }
 
       throw new Error(errorMessage);
     }
 
     const data = await response.json();
-    //console.log('Fetch successful:', data);
+    console.log("🌐 FETCH: Response data:", data);
     return data;
   } catch (error) {
-    console.error('Fetch error details:', {
+    console.error('🌐 FETCH: Error details:', {
       url,
       error: error.message,
       stack: error.stack
     });
 
-    // Mejor mensaje de error
     if (error.name === 'TypeError' && error.message.includes('fetch')) {
       throw new Error('No se pudo conectar con el servidor. Verifica tu conexión a internet o si el servidor está disponible.');
     }
@@ -295,6 +289,11 @@ export const useDocenteStore = create((set, get) => ({
 
     set({ loading: true, error: null });
     try {
+      // LOG 1: Verificar que el token llegó a la store
+      console.log("🏪 STORE: Token recibido?", token ? "SÍ" : "NO");
+      console.log("🏪 STORE: Token (primeros 20):", token?.substring(0, 20));
+      console.log("🏪 STORE: Token length:", token?.length);
+      
       // Validar datos de reseña
       if (!resenaRequest.estudiante) {
         throw new Error('El nombre del estudiante es requerido');
@@ -304,7 +303,15 @@ export const useDocenteStore = create((set, get) => ({
         throw new Error('La calificación debe estar entre 1 y 5 estrellas');
       }
 
-      const data = await fetchWithErrorHandling(`${API_BASE_URL}/${docenteId}/resenas`, {
+      // LOG 2: Verificar la URL y headers ANTES del fetch
+      const url = `${API_BASE_URL}/${docenteId}/resenas`;
+      console.log("🏪 STORE: URL:", url);
+      console.log("🏪 STORE: Headers:", {
+        'Content-Type': 'application/json',
+        'Authorization': token ? `Bearer ${token.substring(0,20)}...` : 'NO TOKEN'
+      });
+
+      const data = await fetchWithErrorHandling(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -313,13 +320,21 @@ export const useDocenteStore = create((set, get) => ({
         body: JSON.stringify(resenaRequest)
       });
 
+      // LOG 3: Si llegamos acá, OK
+      console.log("🏪 STORE: Respuesta exitosa:", data);
+
       // IMPORTANTE: Recargar el docente automáticamente después de agregar
-      // Esto asegura que los datos estén actualizados
       const updatedDocente = await get().fetchDocenteById(docenteId);
 
       return data;
     } catch (error) {
-      console.error('Error adding review:', error);
+      // LOG 4: Error detallado
+      console.error("🏪 STORE: Error completo:", {
+        message: error.message,
+        stack: error.stack,
+        token: token ? "presente" : "ausente"
+      });
+      
       set({
         error: `Error al agregar reseña: ${error.message}`,
         loading: false
