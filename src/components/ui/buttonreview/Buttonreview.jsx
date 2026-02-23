@@ -25,7 +25,6 @@ const Buttonreview = ({ docenteId }) => {
     const [isLoggingIn, setIsLoggingIn] = useState(false);
     const [alreadyReviewed, setAlreadyReviewed] = useState(false);
     const maxlength = 350;
-
     const shouldOpenAfterLogin = useRef(false);
 
     const checkIfAlreadyReviewed = () => {
