@@ -3,7 +3,7 @@ import { UserRound } from 'lucide-react';
 import { Link } from "react-router-dom";
 import { useDocenteStore } from "@/stores/docenteStore";
 
-const Card = ({docentes}) => {
+const Card = ({ docentes }) => {
     const {
         /*docentes,*/
         loading,
@@ -17,7 +17,7 @@ const Card = ({docentes}) => {
 
     useEffect(() => {
         // Solo cargar si no hay docentes y no se está cargando ya
-        if (!initialLoadDone && docentes.length === 0 && !loadingRef.current) {
+        {/*        if (!initialLoadDone && docentes.length === 0 && !loadingRef.current) {
             loadingRef.current = true;
             console.log("Cargando docentes...");
             
@@ -25,8 +25,13 @@ const Card = ({docentes}) => {
                 loadingRef.current = false;
                 setInitialLoadDone(true);
             });
+        }*/}
+        if (!initialLoadDone && docentes.length === 0) {
+            fetchDocentes().finally(() => {
+                setInitialLoadDone(true);
+            });
         }
-    }, [docentes.length, initialLoadDone, fetchDocentes]);
+        }, [docentes.length, initialLoadDone, fetchDocentes]);
 
     if (loading) {
         return (
