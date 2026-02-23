@@ -1,7 +1,3 @@
-import { create } from 'zustand';
-
-const API_BASE_URL = import.meta.env.VITE_API_URL;
-
 import { create } from "zustand";
 import api from "../api/apiClient";
 
