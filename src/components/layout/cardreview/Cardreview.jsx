@@ -49,7 +49,7 @@ const Cardreview = ({ resenas, docenteId, user }) => {
             // No resetear lastFetchedIdRef aquí porque queremos
             // recordar que ya cargamos este docente
         };
-    }, [id, loading, fetchDocenteById]);
+    }, [uid, loading, fetchDocenteById]);
 
     /*const handleLikeClick = async (resenaId) => {
         try {

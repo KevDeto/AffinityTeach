@@ -31,9 +31,9 @@ const Containerreview = () => {
             fetchDocenteById(uid);
             fetchResenas(uid);
         } else {
-            console.warn("⚠️ ID no válido:", id);
+            console.warn("⚠️ ID no válido:", uid);
         }
-    }, [id, fetchDocenteById, fetchResenas]);
+    }, [uid, fetchDocenteById, fetchResenas]);
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((currentUser) => {
