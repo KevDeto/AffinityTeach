@@ -140,7 +140,8 @@ const Cardreview = ({ resenas, docenteId, user }) => {
         <>
             {/* Lista de reseñas */}
             {resenas.map((resena) => {
-                const starPercentage = getStarPercentage(resena.estrellas);
+                const starPercentage = getStarPercentage(resena?.estrellas);
+                console.log("porcentaje de estrellas:", starPercentage);
                 const hasReviewText = resena.comentario && resena.comentario.trim().length > 0;
 
                 return (
@@ -169,13 +170,13 @@ const Cardreview = ({ resenas, docenteId, user }) => {
                                         ) : (
                                             <div className="w-full h-full bg-linear-to-br from-blue-700 to-violet-500 rounded-full flex items-center justify-center">
                                                 <span className="text-white font-semibold text-lg">
-                                                    {resena.estudiante?.charAt(0).toUpperCase() || 'U'}
+                                                    {resena.estudianteNombre?.charAt(0).toUpperCase() || 'U'}
                                                 </span>
                                             </div>
                                         )}
                                     </div>
                                     <div>
-                                        <h2 className="font-semibold text-blanco">{resena.estudiante}</h2>
+                                        <h2 className="font-semibold text-blanco">{resena.estudianteNombre}</h2>
                                         <p className="text-sm text-gray-300">Estudiante</p>
                                     </div>
                                 </div>
