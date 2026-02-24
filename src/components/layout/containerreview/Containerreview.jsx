@@ -175,7 +175,7 @@ const Containerreview = () => {
                                 <FilterCombobox onChange={handleOrderChange} value={order} />
                                 <Buttonreview docenteId={id} />
                             </div>
-                            <Cardreview resenas={results} docenteId={id} user={user} />
+                            <Cardreview resenas={results} docenteId={uid} user={user} />
                         </div>
                     </div>
                 </div>
