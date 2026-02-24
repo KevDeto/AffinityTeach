@@ -11,7 +11,6 @@ import { auth } from '@/config/firebaseconfig';
 import { useResenaStore } from '@/stores/resenaStore';
 
 const Containerreview = () => {
-    const { id } = useParams();
     const { docenteSeleccionado, fetchDocenteById } = useDocenteStore();
     const { resenas, fetchResenas } = useResenaStore();
     const [order, setOrder] = useState("highest");
@@ -25,11 +24,10 @@ const Containerreview = () => {
     }
 
     useEffect(() => {
-        if (id) {
-            fetchDocenteById(id);
-            fetchResenas(id);
+        if (docenteId) {
+            fetchResenas(docenteId);
         }
-    }, [id]);
+    }, [docenteId]);
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((currentUser) => {
@@ -82,17 +80,19 @@ const Containerreview = () => {
         }
     };
 
-    const resenasOrdenadas = [...resenas].sort((a, b) => {
-        if (order === "highest") {
-            // Más estrellas primero (descendente)
-            return (b.estrellas || 0) - (a.estrellas || 0);
-        }
-        if (order === "lowest") {
-            // Menos estrellas primero (ascendente)
-            return (a.estrellas || 0) - (b.estrellas || 0);
-        }
-        return 0;
-    });
+    const resenasOrdenadas = resenas
+        ? [...resenas].sort((a, b) => {
+            if (order === "highest") {
+                // Más estrellas primero (descendente)
+                return (b.estrellas || 0) - (a.estrellas || 0);
+            }
+            if (order === "lowest") {
+                // Menos estrellas primero (ascendente)
+                return (a.estrellas || 0) - (b.estrellas || 0);
+            }
+            return 0;
+        })
+        : [];
 
     // No necesitas la parte de search/filter si solo quieres ordenar
     const results = resenasOrdenadas;
@@ -169,7 +169,7 @@ const Containerreview = () => {
                                 <FilterCombobox onChange={handleOrderChange} value={order} />
                                 <Buttonreview docenteId={docenteId} />
                             </div>
-                            <Cardreview resenas={results} docenteId={id} user={user} />
+                            <Cardreview resenas={results} docenteId={docenteId} user={user} />
                         </div>
                     </div>
                 </div>
