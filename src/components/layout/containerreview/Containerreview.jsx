@@ -173,7 +173,7 @@ const Containerreview = () => {
                             <Startrating />
                             <div className='flex justify-between align-middle mb-6'>
                                 <FilterCombobox onChange={handleOrderChange} value={order} />
-                                <Buttonreview docenteId={id} />
+                                <Buttonreview docenteId={uid} />
                             </div>
                             <Cardreview resenas={results} docenteId={uid} user={user} />
                         </div>
