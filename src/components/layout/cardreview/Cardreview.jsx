@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useDocenteStore } from "@/stores/docenteStore";
 import { useResenaStore } from "@/stores/resenaStore";
 
-const Cardreview = ({ resenas, user }) => {
+const Cardreview = ({ resenas, docenteId, user }) => {
     const { id } = useParams();
     const { darLike } = useResenaStore();
     const {
@@ -155,7 +155,7 @@ const Cardreview = ({ resenas, user }) => {
                             <div className="flex gap-3 flex-col">
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-full bg-gray-600 flex justify-center items-center">
-                                        {resena.photo ? (
+                                        {resena.fotoUrl ? (
                                             <img
                                                 src={resena.fotoUrl}
                                                 alt={`Avatar de ${resena.estudiante}`}

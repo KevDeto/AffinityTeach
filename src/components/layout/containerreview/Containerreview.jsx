@@ -4,13 +4,14 @@ import Startrating from './Startrating';
 import Cardreview from '../cardreview/Cardreview';
 import FilterCombobox from '@/components/ui/filtercombobox/Filtercombobox';
 import Buttonreview from '@/components/ui/buttonreview/Buttonreview';
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useDocenteStore } from '@/stores/docenteStore';
 import useLoginWithGoogle from '@/config/useLoginWithGoogle ';
 import { auth } from '@/config/firebaseconfig';
 import { useResenaStore } from '@/stores/resenaStore';
 
 const Containerreview = () => {
+    const { id } = useParams();
     const { docenteSeleccionado, fetchDocenteById } = useDocenteStore();
     const { resenas, fetchResenas } = useResenaStore();
     const [order, setOrder] = useState("highest");
@@ -173,9 +174,9 @@ const Containerreview = () => {
                             <Startrating />
                             <div className='flex justify-between align-middle mb-6'>
                                 <FilterCombobox onChange={handleOrderChange} value={order} />
-                                <Buttonreview docenteId={docenteId} />
+                                <Buttonreview docenteId={id} />
                             </div>
-                            <Cardreview resenas={results} docenteId={docenteId} user={user} />
+                            <Cardreview resenas={results} docenteId={id} user={user} />
                         </div>
                     </div>
                 </div>
