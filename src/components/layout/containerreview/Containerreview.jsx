@@ -24,10 +24,16 @@ const Containerreview = () => {
     }
 
     useEffect(() => {
-        if (docenteId) {
-            fetchResenas(docenteId);
+        if (id) {
+            fetchDocenteById(id);
         }
-    }, [docenteId]);
+    }, [id, fetchDocenteById]);
+
+    useEffect(() => {
+        if (id) {
+            fetchResenas(id);
+        }
+    }, [id, fetchResenas]);
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((currentUser) => {
