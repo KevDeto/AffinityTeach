@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { useDocenteStore } from "@/stores/docenteStore";
 
-const Cardreview = ({ resenas }) => {
+const Cardreview = ({ resenas, docenteId, user }) => {
     const { id } = useParams();
     const {
         docenteSeleccionado,
@@ -125,7 +125,7 @@ const Cardreview = ({ resenas }) => {
         );
     }
 
-    if (!docenteSeleccionado.resenas || docenteSeleccionado.resenas.length === 0) {
+    if (!resenas || resenas.length === 0) {
         return (
             <div className="w-full flex justify-center items-center border border-bordes rounded-md bg-tarjetas p-4 mb-6">
                 <p className="text-blanco">No hay reseñas para este docente</p>
@@ -151,7 +151,7 @@ const Cardreview = ({ resenas }) => {
                                     <div className="w-10 h-10 rounded-full bg-gray-600 flex justify-center items-center">
                                         {resena.photo ? (
                                             <img
-                                                src={resena.photo}
+                                                src={resena.fotoUrl}
                                                 alt={`Avatar de ${resena.estudiante}`}
                                                 className="w-full h-full object-cover rounded-full"
                                                 referrerPolicy="no-referrer"

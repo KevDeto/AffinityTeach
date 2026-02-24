@@ -8,9 +8,11 @@ import { Link } from "react-router-dom";
 import { useDocenteStore } from '@/stores/docenteStore';
 import useLoginWithGoogle from '@/config/useLoginWithGoogle ';
 import { auth } from '@/config/firebaseconfig';
+import { useResenaStore } from '@/stores/resenaStore';
 
 const Containerreview = () => {
-    const { docenteSeleccionado } = useDocenteStore();
+    const { docenteSeleccionado, fetchDocenteById } = useDocenteStore();
+    const { resenas, fetchResenas } = useResenaStore();
     const [order, setOrder] = useState("highest");
     const docenteId = docenteSeleccionado?.id;
     const [user, setUser] = useState(null);
@@ -20,6 +22,14 @@ const Containerreview = () => {
     const handleOrderChange = (newOrder) => {
         setOrder(newOrder);
     }
+
+    useEffect(() => {
+        if (id) {
+            fetchDocenteById(id);
+            fetchResenas(id);
+        }
+    }, [id]);
+
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((currentUser) => {
             setUser(currentUser);
@@ -71,19 +81,17 @@ const Containerreview = () => {
         }
     };
 
-    const resenasOrdenadas = docenteSeleccionado?.resenas
-        ? [...docenteSeleccionado.resenas].sort((a, b) => {
-            if (order === "highest") {
-                // Más estrellas primero (descendente)
-                return (b.estrellas || 0) - (a.estrellas || 0);
-            }
-            if (order === "lowest") {
-                // Menos estrellas primero (ascendente)
-                return (a.estrellas || 0) - (b.estrellas || 0);
-            }
-            return 0;
-        })
-        : [];
+    const resenasOrdenadas = [...resenas].sort((a, b) => {
+        if (order === "highest") {
+            // Más estrellas primero (descendente)
+            return (b.estrellas || 0) - (a.estrellas || 0);
+        }
+        if (order === "lowest") {
+            // Menos estrellas primero (ascendente)
+            return (a.estrellas || 0) - (b.estrellas || 0);
+        }
+        return 0;
+    });
 
     // No necesitas la parte de search/filter si solo quieres ordenar
     const results = resenasOrdenadas;
@@ -160,7 +168,7 @@ const Containerreview = () => {
                                 <FilterCombobox onChange={handleOrderChange} value={order} />
                                 <Buttonreview docenteId={docenteId} />
                             </div>
-                            <Cardreview resenas={results} />
+                            <Cardreview resenas={results} docenteId={id} user={user} />
                         </div>
                     </div>
                 </div>

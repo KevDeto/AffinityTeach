@@ -69,7 +69,7 @@ const Card = ({ docentes }) => {
                                 </div>
                                 <div>
                                     <h2 className="text-blanco font-semibold">{docente.nombre}</h2>
-                                    <p className="text-[12px] text-gray-300">{docente.cantResenas} reseñas</p>
+                                    <p className="text-[12px] text-gray-300">{docente.cantidadResenas} reseñas</p>
 
                                 </div>
                             </div>
