@@ -11,6 +11,7 @@ import { auth } from '@/config/firebaseconfig';
 import { useResenaStore } from '@/stores/resenaStore';
 
 const Containerreview = () => {
+    const { id } = useParams();
     const { docenteSeleccionado, fetchDocenteById } = useDocenteStore();
     const { resenas, fetchResenas } = useResenaStore();
     const [order, setOrder] = useState("highest");
