@@ -11,7 +11,7 @@ function App() {
       <Routes className='bg-fondo bg-none min-h-screen max-w-screen'>
         {/* Contenedor sólido que cubra posibles patrones */}
         <Route path="/" element={<Containerhome />} />
-        <Route path="/docente/:id/reviews" element={<Containerreview />} />
+        <Route path="/api/docentes/:uid/resenas" element={<Containerreview />} />
       </Routes>
 
     </Router>

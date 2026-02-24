@@ -12,9 +12,9 @@ export const useDocenteStore = create((set) => ({
     set({ docentes: res.data, loading: false });
   },
 
-  fetchDocenteById: async (id) => {
+  fetchDocenteById: async (uid) => {
     set({ loading: true });
-    const res = await api.get(`/api/docentes/${id}`);
+    const res = await api.get(`/api/docentes/${uid}`);
     set({ docenteSeleccionado: res.data, loading: false });
   },
 }));

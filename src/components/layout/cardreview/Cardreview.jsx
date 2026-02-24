@@ -4,8 +4,8 @@ import { useDocenteStore } from "@/stores/docenteStore";
 import { useResenaStore } from "@/stores/resenaStore";
 
 const Cardreview = ({ resenas, docenteId, user }) => {
-    const { id } = useParams();
-    console.log("ID de la URL:", id);
+    const { uid } = useParams();
+    console.log("ID de la URL:", uid);
     const { darLike } = useResenaStore();
     const {
         docenteSeleccionado,
@@ -27,7 +27,7 @@ const Cardreview = ({ resenas, docenteId, user }) => {
         // 1. Hay un ID
         // 2. No es el mismo ID que ya cargamos
         // 3. No estamos cargando ya
-        if (id && id !== lastFetchedIdRef.current && !loading) {
+        if (uid && uid !== lastFetchedIdRef.current && !loading) {
             //console.log(`Iniciando fetch para docente ${id}`);
 
             // Cancelar cualquier fetch anterior
@@ -37,10 +37,10 @@ const Cardreview = ({ resenas, docenteId, user }) => {
             }
 
             // Guardar referencia del ID actual
-            lastFetchedIdRef.current = id;
+            lastFetchedIdRef.current = uid;
 
             // Hacer el fetch
-            fetchDocenteById(id);
+            fetchDocenteById(uid);
         }
 
         // Cleanup cuando el componente se desmonta

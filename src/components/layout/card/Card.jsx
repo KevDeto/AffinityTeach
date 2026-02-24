@@ -78,7 +78,7 @@ const Card = ({ docentes }) => {
                             </div>
                         </div>
                         <div className="mt-10 bg-blanco text-black rounded-lg hover:bg-blanco/90 hover:text-black">
-                            <Link to={`/docente/${docente.id}/reviews`}>
+                            <Link to={`/api/docentes/${docente.uid}/resenas`}>
                                 <button className="h-10 w-full text-[16px] font-semibold cursor-pointer">
                                     <span>Ver Reseñas</span>
                                 </button>

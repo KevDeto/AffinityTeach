@@ -5,15 +5,15 @@ export const useResenaStore = create((set) => ({
   resenas: [],
   loading: false,
 
-  fetchResenas: async (docenteId) => {
+  fetchResenas: async (docenteUid) => {
     set({ loading: true });
-    const res = await api.get(`/api/docentes/${docenteId}/resenas`);
+    const res = await api.get(`/api/docentes/${docenteUid}/resenas`);
     set({ resenas: res.data, loading: false });
   },
 
-  crearResena: async (docenteId, data) => {
+  crearResena: async (docenteUid, data) => {
     const res = await api.post(
-      `/api/docentes/${docenteId}/resenas`,
+      `/api/docentes/${docenteUid}/resenas`,
       data
     );
 
@@ -22,14 +22,14 @@ export const useResenaStore = create((set) => ({
     }));
   },
 
-  darLike: async (docenteId, resenaId) => {
+  darLike: async (docenteUid, resenaUid) => {
     const res = await api.post(
-      `/api/docentes/${docenteId}/resenas/${resenaId}/like`
+      `/api/docentes/${docenteUid}/resenas/${resenaUid}/like`
     );
 
     set((state) => ({
       resenas: state.resenas.map((r) =>
-        r.id === resenaId ? res.data : r
+        r.uid === resenaUid ? res.data : r
       ),
     }));
   },

@@ -11,8 +11,8 @@ import { auth } from '@/config/firebaseconfig';
 import { useResenaStore } from '@/stores/resenaStore';
 
 const Containerreview = () => {
-    const { id } = useParams();
-    console.log("ID de la URL container:", id);
+    const { uid } = useParams();
+    console.log("ID de la URL container:", uid);
     const { docenteSeleccionado, fetchDocenteById } = useDocenteStore();
     const { resenas, fetchResenas } = useResenaStore();
     const [order, setOrder] = useState("highest");
@@ -26,10 +26,10 @@ const Containerreview = () => {
     }
 
     useEffect(() => {
-        if (id && id !== 'undefined') { // ← Verificación adicional
-            console.log("🔄 Cargando datos para docente:", id);
-            fetchDocenteById(id);
-            fetchResenas(id);
+        if (uid && uid !== 'undefined') { // ← Verificación adicional
+            console.log("🔄 Cargando datos para docente:", uid);
+            fetchDocenteById(uid);
+            fetchResenas(uid);
         } else {
             console.warn("⚠️ ID no válido:", id);
         }
