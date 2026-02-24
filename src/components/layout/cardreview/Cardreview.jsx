@@ -5,6 +5,7 @@ import { useResenaStore } from "@/stores/resenaStore";
 
 const Cardreview = ({ resenas, docenteId, user }) => {
     const { id } = useParams();
+    console.log("ID de la URL:", id);
     const { darLike } = useResenaStore();
     const {
         docenteSeleccionado,

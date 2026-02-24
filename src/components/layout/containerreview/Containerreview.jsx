@@ -12,6 +12,7 @@ import { useResenaStore } from '@/stores/resenaStore';
 
 const Containerreview = () => {
     const { id } = useParams();
+    console.log("ID de la URL container:", id);
     const { docenteSeleccionado, fetchDocenteById } = useDocenteStore();
     const { resenas, fetchResenas } = useResenaStore();
     const [order, setOrder] = useState("highest");
@@ -25,16 +26,14 @@ const Containerreview = () => {
     }
 
     useEffect(() => {
-        if (id) {
+        if (id && id !== 'undefined') { // ← Verificación adicional
+            console.log("🔄 Cargando datos para docente:", id);
             fetchDocenteById(id);
-        }
-    }, [id, fetchDocenteById]);
-
-    useEffect(() => {
-        if (id) {
             fetchResenas(id);
+        } else {
+            console.warn("⚠️ ID no válido:", id);
         }
-    }, [id, fetchResenas]);
+    }, [id, fetchDocenteById, fetchResenas]);
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((currentUser) => {
