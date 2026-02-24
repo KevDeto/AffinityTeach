@@ -6,7 +6,7 @@ import { useResenaStore } from "@/stores/resenaStore";
 const Cardreview = ({ resenas, docenteId, user }) => {
     const { uid } = useParams();
     console.log("ID de la URL:", uid);
-    const { darLike } = useResenaStore();
+    const { darLike, fetchResenas } = useResenaStore();
     const {
         docenteSeleccionado,
         loading,
@@ -17,11 +17,7 @@ const Cardreview = ({ resenas, docenteId, user }) => {
     const [likes, setLikes] = useState({});
     const fetchControllerRef = useRef(null);
     const lastFetchedIdRef = useRef(null);
-    useEffect(() => {
-        if (docenteId) {
-            fetchResenas(docenteId);
-        }
-    }, [docenteId]);
+
     useEffect(() => {
         // Solo hacer fetch si:
         // 1. Hay un ID
@@ -123,14 +119,14 @@ const Cardreview = ({ resenas, docenteId, user }) => {
             </div>
         );
     }
-/*
-    if (!docenteSeleccionado) {
-        return (
-            <div className="w-full flex justify-center items-center border border-bordes rounded-md bg-tarjetas p-4 mb-6">
-                <p className="text-blanco">Docente no encontrado</p>
-            </div>
-        );
-    }*/
+    /*
+        if (!docenteSeleccionado) {
+            return (
+                <div className="w-full flex justify-center items-center border border-bordes rounded-md bg-tarjetas p-4 mb-6">
+                    <p className="text-blanco">Docente no encontrado</p>
+                </div>
+            );
+        }*/
 
     if (!resenas || resenas.length === 0) {
         return (
