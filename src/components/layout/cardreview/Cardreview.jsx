@@ -14,7 +14,11 @@ const Cardreview = ({ resenas, docenteId, user }) => {
     const [likes, setLikes] = useState({});
     const fetchControllerRef = useRef(null);
     const lastFetchedIdRef = useRef(null);
-
+    useEffect(() => {
+        if (docenteId) {
+            fetchResenas(docenteId);
+        }
+    }, [docenteId]);
     useEffect(() => {
         // Solo hacer fetch si:
         // 1. Hay un ID
