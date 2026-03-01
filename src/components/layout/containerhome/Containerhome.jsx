@@ -1,4 +1,4 @@
-import React, { useState, useRef} from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Loader2, LogIn, LogOut } from 'lucide-react'
 import SearchInput from "@/components/ui/searchbar/Searchbar";
 import FilterCombobox from "@/components/ui/filtercombobox/Filtercombobox";
