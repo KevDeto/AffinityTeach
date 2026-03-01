@@ -170,7 +170,7 @@ const Containerreview = () => {
                          [&::-webkit-scrollbar-thumb]:cursor-pointer
                         mt-6">
                         <div className="pr-3">
-                            <Startrating />
+                            <Startrating docenteUid={uid}/>
                             <div className='flex justify-between align-middle mb-6'>
                                 <FilterCombobox onChange={handleOrderChange} value={order} />
                                 <Buttonreview docenteId={uid} />
