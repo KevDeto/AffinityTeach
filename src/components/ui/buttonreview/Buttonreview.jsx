@@ -13,7 +13,8 @@ import {
 import { useDocenteStore } from "@/stores/docenteStore";
 
 const Buttonreview = ({ docenteId }) => {
-    const { agregarResena, docentes, docenteSeleccionado } = useDocenteStore();
+    const { docenteSeleccionado } = useDocenteStore();
+    const { crearResena, resenas } = useResenaStore();
     const { handleClickLoginGoogle } = useLoginWithGoogle();
 
     const [isOpen, setIsOpen] = useState(false);
@@ -29,10 +30,7 @@ const Buttonreview = ({ docenteId }) => {
 
     const checkIfAlreadyReviewed = () => {
         //const docente = docentes.find(d => d.id === docenteId);
-        const docente = docenteSeleccionado;
-
-        if (!docente || !docente.resenas || !user?.email) {
-            //console.log("No hay datos suficientes para verificar");
+        if (!resenas || !Array.isArray(resenas) || !user?.email) {
             return false;
         }
 
@@ -45,7 +43,7 @@ const Buttonreview = ({ docenteId }) => {
     }
 
     useEffect(() => {
-        if (user?.email && docenteSeleccionado?.resenas) {
+        if (user?.email && resenas) {
             //console.log("Verificando reseña para usuario:", user.email);
             const hasReviewed = checkIfAlreadyReviewed();
             //console.log("Resultado verificación:", hasReviewed);
@@ -53,7 +51,7 @@ const Buttonreview = ({ docenteId }) => {
         } else {
             setAlreadyReviewed(false);
         }
-    }, [user, docenteId, docenteSeleccionado])
+    }, [user, resenas])
 
     // Efecto para escuchar cambios en la autenticación
     useEffect(() => {
@@ -64,7 +62,7 @@ const Buttonreview = ({ docenteId }) => {
             if (currentUser && shouldOpenAfterLogin.current) {
                 handleOpenReview();
                 shouldOpenAfterLogin.current = false;
-                setIsLoggingIn(false);
+                //setIsLoggingIn(false);
             }
         });
 
@@ -163,7 +161,7 @@ const Buttonreview = ({ docenteId }) => {
                 estudiante: user.displayName,
                 comentario: review.trim(),
                 estrellas: rating,
-                photo: user.photoURL,
+                fotoUrl: user.photoURL,
                 email: user.email,
             };
 
