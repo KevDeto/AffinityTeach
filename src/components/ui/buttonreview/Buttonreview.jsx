@@ -35,10 +35,13 @@ const Buttonreview = ({ docenteId }) => {
         if (!resenas || !Array.isArray(resenas) || !user?.email) {
             return false;
         }
+        if (!docenteSeleccionado) {
+            return false;
+        }
 
-        const hasReviewed = docenteSeleccionado.resenas.some(resena =>
-            (resena.estudiante === user.displayName) ||
-            (resena.photo === user.photoURL)
+        const hasReviewed = resenas.some(resena =>
+            resena.email === user.email ||
+            resena.estudiante === user.displayName
         );
 
         return hasReviewed;
@@ -54,23 +57,23 @@ const Buttonreview = ({ docenteId }) => {
             setAlreadyReviewed(false);
         }
     }, [user, resenas])
-/*
-    // Efecto para escuchar cambios en la autenticación
-    useEffect(() => {
-        const unsubscribe = auth.onAuthStateChanged((currentUser) => {
-            setUser(currentUser);
-
-            // Si el usuario se autenticó Y teníamos pendiente abrir el diálogo
-            if (currentUser && shouldOpenAfterLogin.current) {
-                handleOpenReview();
-                shouldOpenAfterLogin.current = false;
-                //setIsLoggingIn(false);
-            }
-        });
-
-        return () => unsubscribe(); // Limpiar suscripción
-    }, []);
-*/
+    /*
+        // Efecto para escuchar cambios en la autenticación
+        useEffect(() => {
+            const unsubscribe = auth.onAuthStateChanged((currentUser) => {
+                setUser(currentUser);
+    
+                // Si el usuario se autenticó Y teníamos pendiente abrir el diálogo
+                if (currentUser && shouldOpenAfterLogin.current) {
+                    handleOpenReview();
+                    shouldOpenAfterLogin.current = false;
+                    //setIsLoggingIn(false);
+                }
+            });
+    
+            return () => unsubscribe(); // Limpiar suscripción
+        }, []);
+    */
     const handleOpenReview = () => {
         /*if (!docenteId) {
             alert("No se ha seleccionado un docente"); //sale alerta al loguearme desde el boton dejar reseña
