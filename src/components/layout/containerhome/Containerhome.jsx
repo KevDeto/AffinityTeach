@@ -7,12 +7,14 @@ import { Link } from "react-router-dom";
 import { useDocenteStore } from "@/stores/docenteStore";
 import useLoginWithGoogle from "@/config/useLoginWithGoogle ";
 import { auth } from "@/config/firebaseconfig";
+import { useAuthStore } from "@/stores/authStore";
 
 const Container = () => {
     const { docentes } = useDocenteStore();
     const [order, setOrder] = useState("highest");
     const [search, setSearch] = useState("");
-    const [user, setUser] = useState(null);
+    //const [user, setUser] = useState(null);
+    const { user, loading: authLoading } = useAuthStore();
     const { handleClickLoginGoogle } = useLoginWithGoogle();
     const shouldOpenAfterLogin = useRef(false);
     const [authChecked, setAuthChecked] = useState(false);
@@ -20,7 +22,7 @@ const Container = () => {
         setOrder(newOrder);
     }
 
-    useEffect(() => {
+    /*useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((currentUser) => {
             setUser(currentUser);
             setAuthChecked(true); // Marcamos que ya verificamos
@@ -53,7 +55,7 @@ const Container = () => {
             }
         }
     };
-
+*/
     const handleLogout = async () => {
         try {
             await auth.signOut();
@@ -67,7 +69,7 @@ const Container = () => {
         if (user) {
             await handleLogout();
         } else {
-            await handleLogin();
+            await handleClickLoginGoogle();
         }
     };
 
@@ -108,7 +110,7 @@ const Container = () => {
                     className="absolute right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
                 />
                 */}
-                {!authChecked ? (
+                {authLoading ? (
                     <Loader2
                         size={28}
                         className="animate-spin absolute -right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"

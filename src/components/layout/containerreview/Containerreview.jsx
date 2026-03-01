@@ -9,15 +9,17 @@ import { useDocenteStore } from '@/stores/docenteStore';
 import useLoginWithGoogle from '@/config/useLoginWithGoogle ';
 import { auth } from '@/config/firebaseconfig';
 import { useResenaStore } from '@/stores/resenaStore';
+import { useAuthStore } from '@/stores/authStore';
 
 const Containerreview = () => {
     const { uid } = useParams();
     console.log("ID de la URL container:", uid);
     const { docenteSeleccionado, fetchDocenteById } = useDocenteStore();
     const { resenas, fetchResenas } = useResenaStore();
+    const { user, loading: authLoading } = useAuthStore();
     const [order, setOrder] = useState("highest");
     const docenteId = docenteSeleccionado?.id;
-    const [user, setUser] = useState(null);
+   // const [user, setUser] = useState(null);
     const { handleClickLoginGoogle } = useLoginWithGoogle();
     const shouldOpenAfterLogin = useRef(false);
     const [authChecked, setAuthChecked] = useState(false);
@@ -31,11 +33,11 @@ const Containerreview = () => {
             fetchDocenteById(uid);
             fetchResenas(uid);
         } else {
-            console.warn("⚠️ ID no válido:", uid);
+            console.warn("ID no válido:", uid);
         }
     }, [uid, fetchDocenteById, fetchResenas]);
 
-    useEffect(() => {
+    /*useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((currentUser) => {
             setUser(currentUser);
             setAuthChecked(true); // Marcamos que ya verificamos
@@ -68,7 +70,7 @@ const Containerreview = () => {
             }
         }
     };
-
+*/
     const handleLogout = async () => {
         try {
             await auth.signOut();
@@ -82,7 +84,7 @@ const Containerreview = () => {
         if (user) {
             await handleLogout();
         } else {
-            await handleLogin();
+            await handleClickLoginGoogle();
         }
     };
 
@@ -118,7 +120,7 @@ const Containerreview = () => {
                     className="absolute right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
                 />
                 */}
-                {!authChecked ? (
+                {authLoading ? (
                     <Loader2
                         size={28}
                         className="animate-spin absolute -right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"

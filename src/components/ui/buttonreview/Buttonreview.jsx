@@ -12,18 +12,19 @@ import {
 } from "@/components/ui/dialog"
 import { useDocenteStore } from "@/stores/docenteStore";
 import { useResenaStore } from "@/stores/resenaStore";
+import { useAuthStore } from "@/stores/authStore";
 
 const Buttonreview = ({ docenteId }) => {
     const { docenteSeleccionado } = useDocenteStore();
     const { crearResena, resenas } = useResenaStore();
     const { handleClickLoginGoogle } = useLoginWithGoogle();
-
+    const { user } = useAuthStore();
     const [isOpen, setIsOpen] = useState(false);
     const [review, setReview] = useState("");
     const [rating, setRating] = useState(0);
     const [hoverRating, setHoverRating] = useState(0);
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [user, setUser] = useState(null);
+    //const [user, setUser] = useState(null);
     const [isLoggingIn, setIsLoggingIn] = useState(false);
     const [alreadyReviewed, setAlreadyReviewed] = useState(false);
     const maxlength = 350;
@@ -53,7 +54,7 @@ const Buttonreview = ({ docenteId }) => {
             setAlreadyReviewed(false);
         }
     }, [user, resenas])
-
+/*
     // Efecto para escuchar cambios en la autenticación
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((currentUser) => {
@@ -69,7 +70,7 @@ const Buttonreview = ({ docenteId }) => {
 
         return () => unsubscribe(); // Limpiar suscripción
     }, []);
-
+*/
     const handleOpenReview = () => {
         /*if (!docenteId) {
             alert("No se ha seleccionado un docente"); //sale alerta al loguearme desde el boton dejar reseña
@@ -114,6 +115,12 @@ const Buttonreview = ({ docenteId }) => {
         }
     };
 
+    useEffect(() => {
+        if (user && shouldOpenAfterLogin.current) {
+            handleOpenReview();
+            shouldOpenAfterLogin.current = false;
+        }
+    }, [user]);
 
     const handleReview = (e) => {
         const value = e.target.value;
