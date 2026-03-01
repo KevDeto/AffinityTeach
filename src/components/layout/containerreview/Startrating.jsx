@@ -79,7 +79,7 @@ const StarRating = ({docenteUid}) => {
                 { stars: 1, percentage: percentages[4] },
             ]);
         }
-    }, [resenas]);
+    }, [resenas, docenteUid]);
 
     const averageRating = docenteSeleccionado?.puntaje || 0;
     const totalReviews = resenas?.length || 0;
