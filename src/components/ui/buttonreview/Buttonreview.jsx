@@ -181,7 +181,7 @@ const Buttonreview = ({ docenteId }) => {
 
             //console.log("foto de google " + user.photoURL)
             // Llamar a la función del store
-            await agregarResena(docenteId, resenaData, token);
+            await crearResena(docenteId, resenaData);
             // Notificación de éxito
             //alert("¡Reseña enviada exitosamente! Gracias por compartir tu experiencia.");
             //setAlreadyReviewed(true);
