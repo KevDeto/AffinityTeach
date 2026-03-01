@@ -67,7 +67,7 @@ const StarRating = ({docenteUid}) => {
 
     // Actualizar ratings cuando cambien las reseñas del docente
     useEffect(() => {
-        if (resenas && resenas.length > 0) {
+        if (resenas && resenas.length >= 0) {
             const percentages = calcularDistribucion(resenas);
 
             // Actualizar el estado de ratings con los porcentajes calculados
