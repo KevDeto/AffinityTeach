@@ -11,6 +11,7 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 import { useDocenteStore } from "@/stores/docenteStore";
+import { useResenaStore } from "@/stores/resenaStore";
 
 const Buttonreview = ({ docenteId }) => {
     const { docenteSeleccionado } = useDocenteStore();
