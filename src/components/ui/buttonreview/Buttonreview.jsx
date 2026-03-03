@@ -44,6 +44,14 @@ const Buttonreview = ({ docenteUid }) => {
         setAlreadyReviewed(checkIfAlreadyReviewed());
     }, [resenas, user]);
 
+    // FUNCIONES QUE FALTABAN 🔽
+    const handleReview = (e) => {
+        const value = e.target.value;
+        if (value.length <= maxlength) {
+            setReview(value);
+        }
+    }
+
     const handleStarClick = (starValue) => {
         setRating(starValue);
     };
