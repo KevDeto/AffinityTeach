@@ -5,17 +5,22 @@ export const useDocenteStore = create((set, get) => ({
   docentes: [],
   docenteSeleccionado: null,
   loading: false,
-  // Control de qué datos ya fueron cargados
-  loadedDocentes: false, // Para la lista completa
-  loadedDocenteById: {}, // { [uid]: true } para docentes individuales
+  loadedDocentes: false,
+  loadedDocenteById: {},
+  lastFetchTimestamp: null, // Para saber cuándo se cargó
 
   fetchDocentes: async (force = false) => {
     const state = get();
+    const CACHE_TTL = 5 * 60 * 1000; // 5 minutos en milisegundos
     
-    // Si ya cargamos los docentes y no forzamos, usamos caché
+    // Si ya cargamos y no ha pasado el TTL, usamos caché
     if (state.loadedDocentes && !force) {
-      console.log("Usando caché para lista de docentes");
-      return;
+      const timeSinceLastFetch = Date.now() - (state.lastFetchTimestamp || 0);
+      if (timeSinceLastFetch < CACHE_TTL) {
+        console.log("📦 Usando caché de docentes (menos de 5 min)");
+        return;
+      }
+      console.log("🔄 Caché expirado, recargando docentes...");
     }
 
     set({ loading: true });
@@ -24,7 +29,8 @@ export const useDocenteStore = create((set, get) => ({
       set({ 
         docentes: res.data, 
         loading: false,
-        loadedDocentes: true
+        loadedDocentes: true,
+        lastFetchTimestamp: Date.now()
       });
     } catch (error) {
       console.error("Error fetching docentes:", error);
@@ -34,11 +40,26 @@ export const useDocenteStore = create((set, get) => ({
 
   fetchDocenteById: async (uid, force = false) => {
     const state = get();
+    const CACHE_TTL = 5 * 60 * 1000; // 5 minutos
     
-    // Si ya cargamos este docente específico y no forzamos, usamos caché
+    // Limpiar selección anterior
+    set({ docenteSeleccionado: null });
+    
+    // Verificar caché con TTL
     if (state.loadedDocenteById[uid] && !force) {
-      console.log(`📦 Usando caché para docente: ${uid}`);
-      return;
+      const timestamp = state.loadedDocenteById[uid];
+      const timeSinceFetch = Date.now() - timestamp;
+      
+      if (timeSinceFetch < CACHE_TTL) {
+        console.log(`📦 Usando caché para docente: ${uid} (${Math.round(timeSinceFetch/1000)}s old)`);
+        
+        // Buscar en la lista de docentes
+        const docenteFromList = state.docentes.find(d => d.uid === uid);
+        if (docenteFromList) {
+          set({ docenteSeleccionado: docenteFromList });
+          return;
+        }
+      }
     }
 
     set({ loading: true });
@@ -49,7 +70,7 @@ export const useDocenteStore = create((set, get) => ({
         loading: false,
         loadedDocenteById: { 
           ...state.loadedDocenteById, 
-          [uid]: true 
+          [uid]: Date.now() 
         }
       });
     } catch (error) {
@@ -58,11 +79,8 @@ export const useDocenteStore = create((set, get) => ({
     }
   },
 
-  // Función para limpiar caché (útil para testing)
-  clearCache: () => {
-    set({
-      loadedDocentes: false,
-      loadedDocenteById: {}
-    });
+  // Para recarga manual (ej. con un botón "Refrescar")
+  refreshDocentes: () => {
+    get().fetchDocentes(true);
   }
 }));
