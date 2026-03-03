@@ -19,24 +19,48 @@ const Containerreview = () => {
     const { user, loading: authLoading } = useAuthStore();
     const [order, setOrder] = useState("highest");
     const docenteId = docenteSeleccionado?.id;
-   // const [user, setUser] = useState(null);
+    // const [user, setUser] = useState(null);
     const { handleClickLoginGoogle } = useLoginWithGoogle();
     const shouldOpenAfterLogin = useRef(false);
     const [authChecked, setAuthChecked] = useState(false);
+    const fetchedDocentes = useRef({}); // { [uid]: true }
+    const fetchedResenas = useRef({});   // { [uid]: true }
     const handleOrderChange = (newOrder) => {
         setOrder(newOrder);
     }
 
     useEffect(() => {
-        if (uid && uid !== 'undefined') { // ← Verificación adicional
-            console.log("🔄 Cargando datos para docente:", uid);
-            fetchDocenteById(uid);
-            fetchResenas(uid);
-        } else {
-            console.warn("ID no válido:", uid);
+        if (uid && uid !== 'undefined') {
+            // Solo fetch si NO hemos cargado este docente antes
+            if (!fetchedDocentes.current[uid]) {
+                console.log(`🔄 Fetching docente: ${uid} (primera vez)`);
+                fetchedDocentes.current[uid] = true;
+                fetchDocenteById(uid);
+            } else {
+                console.log(`📦 Usando caché para docente: ${uid}`);
+            }
         }
-    }, [uid, fetchDocenteById, fetchResenas]);
+    }, [uid]);
 
+    useEffect(() => {
+        if (uid && uid !== 'undefined') {
+            // Solo fetch si NO hemos cargado estas reseñas antes
+            if (!fetchedResenas.current[uid]) {
+                console.log(`🔄 Fetching reseñas para: ${uid} (primera vez)`);
+                fetchedResenas.current[uid] = true;
+                fetchResenas(uid);
+            } else {
+                console.log(`📦 Usando caché para reseñas de: ${uid}`);
+            }
+        }
+    }, [uid]);
+/*
+    useEffect(() => {
+        return () => {
+            // No necesitamos resetear nada, el caché persistirá
+            console.log("🧹 Limpiando componente...");
+        };
+    }, []);*/
     /*useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((currentUser) => {
             setUser(currentUser);
@@ -172,7 +196,7 @@ const Containerreview = () => {
                          [&::-webkit-scrollbar-thumb]:cursor-pointer
                         mt-6">
                         <div className="pr-3">
-                            <Startrating docenteUid={uid}/>
+                            <Startrating docenteUid={uid} />
                             <div className='flex justify-between align-middle mb-6'>
                                 <FilterCombobox onChange={handleOrderChange} value={order} />
                                 <Buttonreview docenteUid={uid} />

@@ -10,7 +10,7 @@ import { auth } from "@/config/firebaseconfig";
 import { useAuthStore } from "@/stores/authStore";
 
 const Container = () => {
-    const { docentes } = useDocenteStore();
+    const { docentes, fetchDocentes  } = useDocenteStore();
     const [order, setOrder] = useState("highest");
     const [search, setSearch] = useState("");
     //const [user, setUser] = useState(null);
@@ -21,6 +21,16 @@ const Container = () => {
     const handleOrderChange = (newOrder) => {
         setOrder(newOrder);
     }
+
+    const fetchedDocentes = useRef(false);
+
+    useEffect(() => {
+        if (!fetchedDocentes.current) {
+            console.log("🔄 Fetching lista de docentes (primera vez)");
+            fetchedDocentes.current = true;
+            fetchDocentes();
+        }
+    }, [])
 
     /*useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((currentUser) => {
