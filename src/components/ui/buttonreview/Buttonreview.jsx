@@ -125,7 +125,7 @@ const Buttonreview = ({ docenteUid }) => {
             }
             const resenaData = {
                 estudiante: user.displayName,
-                comentario: review.trim() || "Sin comentario",
+                comentario: review.trim() || "",
                 estrellas: rating,
                 fotoUrl: user.photoURL,
                 email: user.email,
@@ -173,7 +173,6 @@ const Buttonreview = ({ docenteUid }) => {
             </button>
 
             <Dialog open={isOpen} onOpenChange={setIsOpen}>
-                {/* Resto del JSX igual */}
                 <DialogContent className={`bg-tarjetas border-bordes text-blanco`}>
                     <DialogHeader>
                         <DialogTitle className="text-center mb-2">
