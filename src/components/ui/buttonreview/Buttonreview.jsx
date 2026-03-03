@@ -44,6 +44,18 @@ const Buttonreview = ({ docenteUid }) => {
         setAlreadyReviewed(checkIfAlreadyReviewed());
     }, [resenas, user]);
 
+    const handleStarClick = (starValue) => {
+        setRating(starValue);
+    };
+
+    const handleStarHover = (starValue) => {
+        setHoverRating(starValue);
+    };
+
+    const handleStarLeave = () => {
+        setHoverRating(0);
+    };
+
     const handleCombinado = async () => {
         // Si ya sabemos que reseñó (por el estado), bloqueamos
         if (alreadyReviewed) {
