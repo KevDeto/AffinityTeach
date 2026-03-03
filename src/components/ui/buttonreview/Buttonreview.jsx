@@ -48,14 +48,10 @@ const Buttonreview = ({ docenteId }) => {
     }
 
     useEffect(() => {
-        if (user?.email && resenas) {
-            //console.log("Verificando reseña para usuario:", user.email);
-            const hasReviewed = checkIfAlreadyReviewed();
-            //console.log("Resultado verificación:", hasReviewed);
-            setAlreadyReviewed(hasReviewed);
-        } else {
-            setAlreadyReviewed(false);
-        }
+        //console.log("Verificando reseña para usuario:", user.email);
+        const hasReviewed = checkIfAlreadyReviewed();
+        //console.log("Resultado verificación:", hasReviewed);
+        setAlreadyReviewed(hasReviewed);
     }, [user, resenas])
     /*
         // Efecto para escuchar cambios en la autenticación
@@ -80,7 +76,9 @@ const Buttonreview = ({ docenteId }) => {
             return;
         }
 */
-        if (alreadyReviewed) {
+        const hasReviewedNow = checkIfAlreadyReviewed();
+
+        if (hasReviewedNow) {
             alert("Ya has dejado una reseña para este docente.");
             return;
         }
@@ -110,8 +108,10 @@ const Buttonreview = ({ docenteId }) => {
                 return;
             }
         } else {
-            if (alreadyReviewed) {
+            const hasReviewedNow = checkIfAlreadyReviewed();
+            if (hasReviewedNow) {
                 alert("Ya has dejado una reseña para este docente.");
+                setAlreadyReviewed(true);
                 return;
             }
             handleOpenReview();
@@ -119,7 +119,17 @@ const Buttonreview = ({ docenteId }) => {
     };
 
     useEffect(() => {
+        const hasReviewedNow = checkIfAlreadyReviewed();
         if (user && shouldOpenAfterLogin.current) {
+            //handleOpenReview();
+            //shouldOpenAfterLogin.current = false;
+            if (hasReviewedNow) {
+                alert("Ya has dejado una reseña para este docente.");
+                setAlreadyReviewed(true);
+                shouldOpenAfterLogin.current = false;
+                return;
+            }
+
             handleOpenReview();
             shouldOpenAfterLogin.current = false;
         }
@@ -189,7 +199,7 @@ const Buttonreview = ({ docenteId }) => {
             setIsOpen(false);
             setReview("");
             setRating(0);
-
+            setAlreadyReviewed(true);
         } catch (error) {
             //console.error("Error al enviar reseña:", error);
             if (error.response?.status === 400 || error.response?.status === 409) {
@@ -218,9 +228,9 @@ const Buttonreview = ({ docenteId }) => {
                 className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white 
                  bg-tarjetas hover:bg-gray-700 rounded-lg border border-bordes 
                  transition-colors duration-200 focus:outline-none cursor-pointer"
-                disabled={!docenteId}
+                disabled={alreadyReviewed || !docenteId}
             >
-                Dejar reseña
+                {alreadyReviewed ? "Ya reseñaste" : "Dejar reseña"} 
             </button>
             <Dialog open={isOpen} onOpenChange={setIsOpen}>
                 <DialogContent className={`bg-tarjetas border-bordes text-blanco`}>
