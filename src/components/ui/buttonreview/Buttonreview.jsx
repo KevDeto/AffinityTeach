@@ -19,7 +19,7 @@ const Buttonreview = ({ docenteUid }) => {
     const { crearResena, resenas } = useResenaStore();
     const { handleClickLoginGoogle } = useLoginWithGoogle();
     const { user } = useAuthStore();
-    
+
     const [isOpen, setIsOpen] = useState(false);
     const [review, setReview] = useState("");
     const [rating, setRating] = useState(0);
@@ -31,9 +31,14 @@ const Buttonreview = ({ docenteUid }) => {
     // Función de verificación (SIEMPRE basada en datos actuales, no en estado)
     const checkIfAlreadyReviewed = () => {
         // Si no hay reseñas o no hay usuario, no puede haber reseñado
+        if (!resenas || !Array.isArray(resenas) || !user?.email) {
+            return false;
+        }
+        console.log("Resenas:", resenas);
+        console.log("User email:", user?.email);
         // Buscar directamente en resenas por email (más confiable)
         const hasReviewed = resenas.some(resena =>
-            resena.email === user.email
+            resena.email === user.email, console.log("Comparando:", resena.email, "con", user.email)
         );
 
         return hasReviewed;
@@ -149,11 +154,11 @@ const Buttonreview = ({ docenteUid }) => {
             };
 
             await crearResena(docenteUid, resenaData);
-            
+
             setIsOpen(false);
             setReview("");
             setRating(0);
-            
+
 
         } catch (error) {
             if (error.response?.status === 400 || error.response?.status === 409) {
@@ -185,9 +190,9 @@ const Buttonreview = ({ docenteUid }) => {
                 disabled={checkIfAlreadyReviewed() || !docenteUid}
                 title={checkIfAlreadyReviewed() ? "Ya has dejado una reseña" : "Dejar reseña"}
             >
-                {checkIfAlreadyReviewed() ? "Ya reseñaste" : "Dejar reseña"} 
+                {checkIfAlreadyReviewed() ? "Ya reseñaste" : "Dejar reseña"}
             </button>
-            
+
             <Dialog open={isOpen} onOpenChange={setIsOpen}>
                 {/* Resto del JSX igual */}
                 <DialogContent className={`bg-tarjetas border-bordes text-blanco`}>
