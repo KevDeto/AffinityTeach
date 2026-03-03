@@ -191,9 +191,14 @@ const Buttonreview = ({ docenteId }) => {
             setRating(0);
 
         } catch (error) {
-            console.error("Error al enviar reseña:", error);
-            if (error.message === "REVIEW_DUPLICATE") {
-                alert("Ya has dejado una reseña para este docente.");
+            //console.error("Error al enviar reseña:", error);
+            if (error.response?.status === 400 || error.response?.status === 409) {
+                // Intentar obtener mensaje del backend
+                const errorMsg = error.response?.data?.message ||
+                    error.response?.data?.error ||
+                    "Ya has dejado una reseña para este docente.";
+
+                alert(errorMsg);
                 setAlreadyReviewed(true);
             } else {
                 alert(`Error al enviar la reseña: ${error.message || "Por favor, intenta nuevamente."}`);
