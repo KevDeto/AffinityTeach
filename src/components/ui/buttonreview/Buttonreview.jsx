@@ -30,16 +30,18 @@ const Buttonreview = ({ docenteUid }) => {
 
     // Función de verificación (SIEMPRE basada en datos actuales, no en estado)
     const checkIfAlreadyReviewed = () => {
-        // Si no hay reseñas o no hay usuario, no puede haber reseñado
-        if (!resenas || !Array.isArray(resenas) || !user?.email) {
+        if (!resenas || !Array.isArray(resenas) || !user?.uid) {
             return false;
         }
+
         console.log("Resenas:", resenas);
-        console.log("User email:", user?.email);
-        // Buscar directamente en resenas por email (más confiable)
-        const hasReviewed = resenas.some(resena =>
-            resena.email === user.email, console.log("Comparando:", resena.email, "con", user.email)
-        );
+        console.log("User UID:", user.uid);
+        
+        // Buscar directamente en resenas por UID (es único e inmutable)
+        const hasReviewed = resenas.some(resena => {
+            console.log("Comparando UIDs:", resena.usuarioUid, "con", user.uid);
+            return resena.usuarioUid === user.uid;
+        });
 
         return hasReviewed;
     }
@@ -151,6 +153,7 @@ const Buttonreview = ({ docenteUid }) => {
                 estrellas: rating,
                 fotoUrl: user.photoURL,
                 email: user.email,
+                usuarioUid: user.uid,
             };
 
             await crearResena(docenteUid, resenaData);
