@@ -1,9 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { useDocenteStore } from "@/stores/docenteStore";
+import { useResenaStore } from "@/stores/resenaStore";
 
-const Cardreview = ({ resenas }) => {
-    const { id } = useParams();
+const Cardreview = ({ resenas, docenteId, user }) => {
+    const { uid } = useParams();
+    console.log("ID de la URL:", uid);
+    const { darLike, fetchResenas } = useResenaStore();
     const {
         docenteSeleccionado,
         loading,
@@ -20,7 +23,7 @@ const Cardreview = ({ resenas }) => {
         // 1. Hay un ID
         // 2. No es el mismo ID que ya cargamos
         // 3. No estamos cargando ya
-        if (id && id !== lastFetchedIdRef.current && !loading) {
+        if (uid && uid !== lastFetchedIdRef.current && !loading) {
             //console.log(`Iniciando fetch para docente ${id}`);
 
             // Cancelar cualquier fetch anterior
@@ -30,10 +33,10 @@ const Cardreview = ({ resenas }) => {
             }
 
             // Guardar referencia del ID actual
-            lastFetchedIdRef.current = id;
+            lastFetchedIdRef.current = uid;
 
             // Hacer el fetch
-            fetchDocenteById(id);
+            fetchDocenteById(uid);
         }
 
         // Cleanup cuando el componente se desmonta
@@ -42,9 +45,9 @@ const Cardreview = ({ resenas }) => {
             // No resetear lastFetchedIdRef aquí porque queremos
             // recordar que ya cargamos este docente
         };
-    }, [id, loading, fetchDocenteById]);
+    }, [uid, loading, fetchDocenteById]);
 
-    const handleLikeClick = async (resenaId) => {
+    /*const handleLikeClick = async (resenaId) => {
         try {
             // Llamar a la API para dar like
             await darLikeResena(id, resenaId);
@@ -60,7 +63,7 @@ const Cardreview = ({ resenas }) => {
         } catch (error) {
             console.error('Error dando like:', error);
         }
-    };
+    };*/
 
     const getFormattedDate = (firebaseTimestamp) => {
         if (!firebaseTimestamp) {
@@ -116,16 +119,16 @@ const Cardreview = ({ resenas }) => {
             </div>
         );
     }
+    /*
+        if (!docenteSeleccionado) {
+            return (
+                <div className="w-full flex justify-center items-center border border-bordes rounded-md bg-tarjetas p-4 mb-6">
+                    <p className="text-blanco">Docente no encontrado</p>
+                </div>
+            );
+        }*/
 
-    if (!docenteSeleccionado) {
-        return (
-            <div className="w-full flex justify-center items-center border border-bordes rounded-md bg-tarjetas p-4 mb-6">
-                <p className="text-blanco">Docente no encontrado</p>
-            </div>
-        );
-    }
-
-    if (!docenteSeleccionado.resenas || docenteSeleccionado.resenas.length === 0) {
+    if (!resenas || resenas.length === 0) {
         return (
             <div className="w-full flex justify-center items-center border border-bordes rounded-md bg-tarjetas p-4 mb-6">
                 <p className="text-blanco">No hay reseñas para este docente</p>
@@ -137,7 +140,8 @@ const Cardreview = ({ resenas }) => {
         <>
             {/* Lista de reseñas */}
             {resenas.map((resena) => {
-                const starPercentage = getStarPercentage(resena.estrellas);
+                const starPercentage = getStarPercentage(resena?.estrellas);
+                console.log("porcentaje de estrellas:", starPercentage);
                 const hasReviewText = resena.comentario && resena.comentario.trim().length > 0;
 
                 return (
@@ -149,9 +153,9 @@ const Cardreview = ({ resenas }) => {
                             <div className="flex gap-3 flex-col">
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-full bg-gray-600 flex justify-center items-center">
-                                        {resena.photo ? (
+                                        {resena.fotoUrl ? (
                                             <img
-                                                src={resena.photo}
+                                                src={resena.fotoUrl}
                                                 alt={`Avatar de ${resena.estudiante}`}
                                                 className="w-full h-full object-cover rounded-full"
                                                 referrerPolicy="no-referrer"
@@ -166,13 +170,13 @@ const Cardreview = ({ resenas }) => {
                                         ) : (
                                             <div className="w-full h-full bg-linear-to-br from-blue-700 to-violet-500 rounded-full flex items-center justify-center">
                                                 <span className="text-white font-semibold text-lg">
-                                                    {resena.estudiante?.charAt(0).toUpperCase() || 'U'}
+                                                    {resena.estudianteNombre?.charAt(0).toUpperCase() || 'U'}
                                                 </span>
                                             </div>
                                         )}
                                     </div>
                                     <div>
-                                        <h2 className="font-semibold text-blanco">{resena.estudiante}</h2>
+                                        <h2 className="font-semibold text-blanco">{resena.estudianteNombre}</h2>
                                         <p className="text-sm text-gray-300">Estudiante</p>
                                     </div>
                                 </div>

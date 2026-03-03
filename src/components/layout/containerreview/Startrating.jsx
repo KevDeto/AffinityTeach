@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useDocenteStore } from "@/stores/docenteStore";
+import { useResenaStore } from "@/stores/resenaStore";
 
-const StarRating = () => {
+const StarRating = ({docenteUid}) => {
+    const { resenas } = useResenaStore();
     const {
         docenteSeleccionado,
         loading,
@@ -65,8 +67,8 @@ const StarRating = () => {
 
     // Actualizar ratings cuando cambien las reseñas del docente
     useEffect(() => {
-        if (docenteSeleccionado?.resenas) {
-            const percentages = calcularDistribucion(docenteSeleccionado.resenas);
+        if (resenas && resenas.length >= 0) {
+            const percentages = calcularDistribucion(resenas);
 
             // Actualizar el estado de ratings con los porcentajes calculados
             setRatings([
@@ -77,10 +79,10 @@ const StarRating = () => {
                 { stars: 1, percentage: percentages[4] },
             ]);
         }
-    }, [docenteSeleccionado]);
+    }, [resenas, docenteUid]);
 
     const averageRating = docenteSeleccionado?.puntaje || 0;
-    const totalReviews = docenteSeleccionado?.cantResenas || 0;
+    const totalReviews = resenas?.length || 0;
 
     // Ajustar el rating para las estrellas visuales
     const adjustedRating = adjustRatingForStars(averageRating);

@@ -4,23 +4,64 @@ import Startrating from './Startrating';
 import Cardreview from '../cardreview/Cardreview';
 import FilterCombobox from '@/components/ui/filtercombobox/Filtercombobox';
 import Buttonreview from '@/components/ui/buttonreview/Buttonreview';
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useDocenteStore } from '@/stores/docenteStore';
 import useLoginWithGoogle from '@/config/useLoginWithGoogle ';
 import { auth } from '@/config/firebaseconfig';
+import { useResenaStore } from '@/stores/resenaStore';
+import { useAuthStore } from '@/stores/authStore';
 
 const Containerreview = () => {
-    const { docenteSeleccionado } = useDocenteStore();
+    const { uid } = useParams();
+    console.log("ID de la URL container:", uid);
+    const { docenteSeleccionado, fetchDocenteById } = useDocenteStore();
+    const { resenas, fetchResenas } = useResenaStore();
+    const { user, loading: authLoading } = useAuthStore();
     const [order, setOrder] = useState("highest");
     const docenteId = docenteSeleccionado?.id;
-    const [user, setUser] = useState(null);
+    // const [user, setUser] = useState(null);
     const { handleClickLoginGoogle } = useLoginWithGoogle();
     const shouldOpenAfterLogin = useRef(false);
     const [authChecked, setAuthChecked] = useState(false);
+    const fetchedDocentes = useRef({}); // { [uid]: true }
+    const fetchedResenas = useRef({});   // { [uid]: true }
     const handleOrderChange = (newOrder) => {
         setOrder(newOrder);
     }
+
     useEffect(() => {
+        if (uid && uid !== 'undefined') {
+            // Solo fetch si NO hemos cargado este docente antes
+            if (!fetchedDocentes.current[uid]) {
+                console.log(`🔄 Fetching docente: ${uid} (primera vez)`);
+                fetchedDocentes.current[uid] = true;
+                fetchDocenteById(uid);
+            } else {
+                console.log(`📦 Usando caché para docente: ${uid}`);
+            }
+        }
+    }, [uid]);
+
+    useEffect(() => {
+        if (uid && uid !== 'undefined') {
+            // Solo fetch si NO hemos cargado estas reseñas antes
+            if (!fetchedResenas.current[uid]) {
+                console.log(`🔄 Fetching reseñas para: ${uid} (primera vez)`);
+                fetchedResenas.current[uid] = true;
+                fetchResenas(uid);
+            } else {
+                console.log(`📦 Usando caché para reseñas de: ${uid}`);
+            }
+        }
+    }, [uid]);
+/*
+    useEffect(() => {
+        return () => {
+            // No necesitamos resetear nada, el caché persistirá
+            console.log("🧹 Limpiando componente...");
+        };
+    }, []);*/
+    /*useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((currentUser) => {
             setUser(currentUser);
             setAuthChecked(true); // Marcamos que ya verificamos
@@ -53,7 +94,7 @@ const Containerreview = () => {
             }
         }
     };
-
+*/
     const handleLogout = async () => {
         try {
             await auth.signOut();
@@ -67,12 +108,12 @@ const Containerreview = () => {
         if (user) {
             await handleLogout();
         } else {
-            await handleLogin();
+            await handleClickLoginGoogle();
         }
     };
 
-    const resenasOrdenadas = docenteSeleccionado?.resenas
-        ? [...docenteSeleccionado.resenas].sort((a, b) => {
+    const resenasOrdenadas = resenas
+        ? [...resenas].sort((a, b) => {
             if (order === "highest") {
                 // Más estrellas primero (descendente)
                 return (b.estrellas || 0) - (a.estrellas || 0);
@@ -103,7 +144,7 @@ const Containerreview = () => {
                     className="absolute right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
                 />
                 */}
-                {!authChecked ? (
+                {authLoading ? (
                     <Loader2
                         size={28}
                         className="animate-spin absolute -right-4 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
@@ -155,12 +196,12 @@ const Containerreview = () => {
                          [&::-webkit-scrollbar-thumb]:cursor-pointer
                         mt-6">
                         <div className="pr-3">
-                            <Startrating />
+                            <Startrating docenteUid={uid} />
                             <div className='flex justify-between align-middle mb-6'>
                                 <FilterCombobox onChange={handleOrderChange} value={order} />
-                                <Buttonreview docenteId={docenteId} />
+                                <Buttonreview docenteUid={uid} />
                             </div>
-                            <Cardreview resenas={results} />
+                            <Cardreview resenas={results} docenteId={uid} user={user} />
                         </div>
                     </div>
                 </div>

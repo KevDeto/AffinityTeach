@@ -3,7 +3,7 @@ import { UserRound } from 'lucide-react';
 import { Link } from "react-router-dom";
 import { useDocenteStore } from "@/stores/docenteStore";
 
-const Card = ({docentes}) => {
+const Card = ({ docentes }) => {
     const {
         /*docentes,*/
         loading,
@@ -17,7 +17,7 @@ const Card = ({docentes}) => {
 
     useEffect(() => {
         // Solo cargar si no hay docentes y no se está cargando ya
-        if (!initialLoadDone && docentes.length === 0 && !loadingRef.current) {
+        {/*        if (!initialLoadDone && docentes.length === 0 && !loadingRef.current) {
             loadingRef.current = true;
             console.log("Cargando docentes...");
             
@@ -25,8 +25,13 @@ const Card = ({docentes}) => {
                 loadingRef.current = false;
                 setInitialLoadDone(true);
             });
+        }*/}
+        if (!initialLoadDone && docentes.length === 0) {
+            fetchDocentes().finally(() => {
+                setInitialLoadDone(true);
+            });
         }
-    }, [docentes.length, initialLoadDone, fetchDocentes]);
+        }, [docentes.length, initialLoadDone, fetchDocentes]);
 
     if (loading) {
         return (
@@ -64,7 +69,7 @@ const Card = ({docentes}) => {
                                 </div>
                                 <div>
                                     <h2 className="text-blanco font-semibold">{docente.nombre}</h2>
-                                    <p className="text-[12px] text-gray-300">{docente.cantResenas} reseñas</p>
+                                    <p className="text-[12px] text-gray-300">{docente.cantidadResenas} reseñas</p>
 
                                 </div>
                             </div>
@@ -73,7 +78,7 @@ const Card = ({docentes}) => {
                             </div>
                         </div>
                         <div className="mt-10 bg-blanco text-black rounded-lg hover:bg-blanco/90 hover:text-black">
-                            <Link to={`/docente/${docente.id}/reviews`}>
+                            <Link to={`/api/docentes/${docente.uid}/resenas`}>
                                 <button className="h-10 w-full text-[16px] font-semibold cursor-pointer">
                                     <span>Ver Reseñas</span>
                                 </button>
