@@ -25,49 +25,32 @@ const Buttonreview = ({ docenteUid }) => {
     const [rating, setRating] = useState(0);
     const [hoverRating, setHoverRating] = useState(0);
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [alreadyReviewed, setAlreadyReviewed] = useState(false);
+
     const maxlength = 350;
     const shouldOpenAfterLogin = useRef(false);
 
-    // Función de verificación (SIEMPRE basada en datos actuales, no en estado)
     const checkIfAlreadyReviewed = () => {
-        if (!resenas || !Array.isArray(resenas) || !user?.uid) {
+        if (!resenas || !Array.isArray(resenas) || !user?.email) {
             return false;
         }
 
-        console.log("Resenas:", resenas);
-        console.log("User UID:", user.uid);
-        
-        // Buscar directamente en resenas por UID (es único e inmutable)
-        const hasReviewed = resenas.some(resena => {
-            console.log("Comparando UIDs:", resena.usuarioUid, "con", user.uid);
-            return resena.usuarioUid === user.uid;
-        });
-
-        return hasReviewed;
+        // Usar fotoUrl como identificador temporal
+        return resenas.some(resena => resena.fotoUrl === user.photoURL);
     }
 
-    // Estado derivado - se recalcula en CADA render
-    const alreadyReviewed = checkIfAlreadyReviewed();
-
-    // Efecto solo para logging (opcional)
+    // Efecto para sincronizar con las reseñas
     useEffect(() => {
-        console.log("Verificando reseña:", alreadyReviewed);
-    }, [alreadyReviewed]);
+        setAlreadyReviewed(checkIfAlreadyReviewed());
+    }, [resenas, user]);
 
-    const handleOpenReview = () => {
-        // Verificación en el momento exacto
-        if (checkIfAlreadyReviewed()) {
+    const handleCombinado = async () => {
+        // Si ya sabemos que reseñó (por el estado), bloqueamos
+        if (alreadyReviewed) {
             alert("Ya has dejado una reseña para este docente.");
             return;
         }
 
-        setReview("");
-        setRating(0);
-        setIsOpen(true);
-    };
-
-    const handleCombinado = async () => {
-        // Verificar si ya está autenticado
         if (!user) {
             shouldOpenAfterLogin.current = true;
             try {
@@ -75,61 +58,35 @@ const Buttonreview = ({ docenteUid }) => {
             } catch (error) {
                 console.error("Error en login:", error);
                 shouldOpenAfterLogin.current = false;
-                if (error.code === 'auth/popup-closed-by-user') {
-                    return;
-                }
             }
-        } else {
-            // Verificación en el momento exacto
-            if (checkIfAlreadyReviewed()) {
-                alert("Ya has dejado una reseña para este docente.");
-                return;
-            }
-            handleOpenReview();
+            return;
         }
+
+        // Si no hay impedimentos, abrimos
+        setIsOpen(true);
+        setReview("");
+        setRating(0);
     };
 
+    // Efecto para después del login
     useEffect(() => {
         if (user && shouldOpenAfterLogin.current) {
-            // Verificación después del login
+            // Verificamos nuevamente
             if (checkIfAlreadyReviewed()) {
                 alert("Ya has dejado una reseña para este docente.");
+                setAlreadyReviewed(true);
                 shouldOpenAfterLogin.current = false;
                 return;
             }
 
-            handleOpenReview();
+            setIsOpen(true);
+            setReview("");
+            setRating(0);
             shouldOpenAfterLogin.current = false;
         }
     }, [user]);
 
-    const handleReview = (e) => {
-        const value = e.target.value;
-        if (value.length <= maxlength) {
-            setReview(value);
-        }
-    }
-
-    const handleStarClick = (starValue) => {
-        setRating(starValue);
-    };
-
-    const handleStarHover = (starValue) => {
-        setHoverRating(starValue);
-    };
-
-    const handleStarLeave = () => {
-        setHoverRating(0);
-    };
-
     const handleSubmitReview = async () => {
-        // Verificación final antes de enviar
-        if (checkIfAlreadyReviewed()) {
-            alert("Ya has dejado una reseña para este docente.");
-            setIsOpen(false);
-            return;
-        }
-
         if (!docenteUid) {
             alert("Error: No se ha identificado al docente");
             return;
@@ -146,14 +103,12 @@ const Buttonreview = ({ docenteUid }) => {
             if (!token || token.length < 10) {
                 throw new Error("Token inválido o vacío");
             }
-
             const resenaData = {
                 estudiante: user.displayName,
-                comentario: review.trim(),
+                comentario: review.trim() || "Sin comentario",
                 estrellas: rating,
                 fotoUrl: user.photoURL,
                 email: user.email,
-                usuarioUid: user.uid,
             };
 
             await crearResena(docenteUid, resenaData);
@@ -161,7 +116,7 @@ const Buttonreview = ({ docenteUid }) => {
             setIsOpen(false);
             setReview("");
             setRating(0);
-
+            setAlreadyReviewed(true);
 
         } catch (error) {
             if (error.response?.status === 400 || error.response?.status === 409) {
@@ -170,6 +125,7 @@ const Buttonreview = ({ docenteUid }) => {
                     "Ya has dejado una reseña para este docente.";
 
                 alert(errorMsg);
+                setAlreadyReviewed(true);
                 setIsOpen(false);
             } else {
                 alert(`Error al enviar la reseña: ${error.message || "Por favor, intenta nuevamente."}`);
